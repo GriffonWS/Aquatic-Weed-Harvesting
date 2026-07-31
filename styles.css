@@ -506,61 +506,8 @@ em{font-style:normal}
 .weed__desc{color:var(--txt-dim);font-size:14.5px;margin:0}
 
 
-/* ==========================================================================
-   SERVICE AREA
-   ========================================================================== */
-.area{display:grid;grid-template-columns:1fr .85fr;gap:clamp(32px,6vw,80px);align-items:center}
-.area__cols{display:grid;grid-template-columns:1fr 1fr;gap:8px 28px;margin:32px 0 34px}
-.area__list{list-style:none;margin:0;padding:0;display:grid;gap:11px}
-.area__list li{padding-left:22px;position:relative;font-size:15px;color:var(--txt-dim)}
-.area__list li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--aqua);opacity:.7}
-.area__map{
-  position:relative;aspect-ratio:1;border-radius:var(--r-xl);overflow:hidden;
-  border:1px solid var(--line);background:linear-gradient(160deg,var(--deep-2),var(--ink));
-  display:grid;place-items:center;
-}
-.area__map svg{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--aqua);stroke-width:1.2;opacity:.22}
-.area__rings span{
-  position:absolute;top:50%;left:50%;border:1px solid var(--line);border-radius:50%;
-  transform:translate(-50%,-50%);
-}
-.area__rings span:nth-child(1){width:34%;height:34%;border-color:color-mix(in srgb,var(--aqua) 40%,transparent)}
-.area__rings span:nth-child(2){width:62%;height:62%}
-.area__rings span:nth-child(3){width:90%;height:90%}
-.area__pin{position:relative;z-index:2;display:grid;justify-items:center;gap:12px}
-.area__pin::before{
-  content:"";width:14px;height:14px;border-radius:50%;background:var(--lime);
-  box-shadow:0 0 0 0 rgba(168,224,95,.5);animation:ping 2.6s var(--ease) infinite;
-}
-@keyframes ping{to{box-shadow:0 0 0 40px rgba(168,224,95,0)}}
-.area__pin b{font:700 14px/1 var(--display);letter-spacing:.02em}
 
 
-/* ==========================================================================
-   FAQ
-   ========================================================================== */
-.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,80px);align-items:start}
-.faq__head{position:sticky;top:120px}
-.faq__head .lead a{color:var(--aqua);border-bottom:1px solid currentColor}
-.faq__item{border-bottom:1px solid var(--line)}
-.faq__item:first-child{border-top:1px solid var(--line)}
-.faq__q{
-  width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;
-  padding:24px 0;text-align:left;
-  font:600 clamp(16.5px,1.8vw,20px)/1.35 var(--display);letter-spacing:-.015em;
-  transition:color .3s;
-}
-.faq__q:hover{color:var(--aqua)}
-.faq__q svg{
-  width:22px;height:22px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.8;
-  stroke-linecap:round;transition:transform .45s var(--ease);
-}
-.faq__q[aria-expanded="true"]{color:var(--aqua)}
-.faq__q[aria-expanded="true"] svg{transform:rotate(135deg)}
-.faq__a{overflow:hidden;height:0;transition:height .45s var(--ease)}
-.faq__a p{margin:0 0 26px;color:var(--txt-dim);max-width:62ch;padding-right:40px}
-.faq__a strong{color:var(--txt)}
-.faq__a em{font-style:italic;opacity:.75;font-size:13.5px;display:block;margin-top:8px}
 
 /* ==========================================================================
    QUOTE FORM
@@ -571,7 +518,7 @@ em{font-style:normal}
     radial-gradient(70% 70% at 0% 100%,rgba(168,224,95,.12),transparent 60%),
     var(--bg-alt);
 }
-.quote-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(34px,6vw,84px);align-items:start}
+.quote-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,74px);align-items:start}
 .quote-copy{position:sticky;top:120px}
 .quote-call{
   display:inline-flex;align-items:center;gap:16px;margin:40px 0 18px;
@@ -584,6 +531,24 @@ em{font-style:normal}
 .quote-call em{font-size:13px;color:var(--txt-dim)}
 .quote-mail{display:block;color:var(--txt-dim);font-size:15px;border-bottom:1px solid var(--line);padding-bottom:3px;width:fit-content}
 .quote-mail:hover{color:var(--aqua)}
+
+/* the "where we work" + "before you call" essentials, folded in from the two
+   sections we cut so the page loses length without losing the information */
+.minis{display:grid;gap:26px;margin-top:38px;padding-top:32px;border-top:1px solid var(--line)}
+.mini__h{
+  font:600 11.5px/1 var(--font);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--aqua);margin:0 0 12px;
+}
+.mini__p{margin:0;color:var(--txt-dim);font-size:14.5px;line-height:1.65;max-width:52ch}
+.mini__list{list-style:none;margin:0;padding:0;display:grid;gap:11px;max-width:52ch}
+.mini__list li{
+  position:relative;padding-left:22px;color:var(--txt-dim);font-size:14.5px;line-height:1.6;
+}
+.mini__list li::before{
+  content:"";position:absolute;left:0;top:.58em;width:7px;height:7px;border-radius:50%;
+  background:var(--aqua);opacity:.85;
+}
+.mini__list b{color:var(--txt);font-weight:600}
 
 .form{
   padding:clamp(26px,3.4vw,42px);border-radius:var(--r-xl);
@@ -663,8 +628,8 @@ textarea.field__input{resize:vertical;min-height:92px}
   .svc--wide .svc__media{order:-1;margin-bottom:22px}
   .footer__grid{grid-template-columns:1fr 1fr}
   .section__head--split{grid-template-columns:1fr}
-  .faq,.quote-wrap,.area,.boat{grid-template-columns:1fr}
-  .faq__head,.quote-copy{position:static}
+  .quote-wrap,.boat{grid-template-columns:1fr}
+  .quote-copy{position:static}
   .boat__figure{order:-1}
   .boat__badge{width:108px;height:108px;left:auto;right:-14px;bottom:-18px}
 }
@@ -700,7 +665,7 @@ textarea.field__input{resize:vertical;min-height:92px}
   .quote-call b{font-size:19px}
 }
 @media (max-width:600px){
-  .svcs,.weeds,.form__row,.area__cols,.boat__specs,.footer__grid{grid-template-columns:1fr}
+  .svcs,.weeds,.form__row,.boat__specs,.footer__grid{grid-template-columns:1fr}
   /* spans must be cleared too, or they invent an implicit 2nd column and crush the cards */
   .svc--wide{grid-column:auto}
   .nav__logo img{height:66px}
