@@ -127,26 +127,6 @@
     }
   }
 
-  /* -------------------------------------------------------------- accordion */
-  $$('.faq__q').forEach(btn => {
-    const panel = btn.nextElementSibling;
-    btn.addEventListener('click', () => {
-      const open = btn.getAttribute('aria-expanded') === 'true';
-      $$('.faq__q').forEach(o => {
-        if (o === btn) return;
-        o.setAttribute('aria-expanded', 'false');
-        o.nextElementSibling.style.height = '0px';
-      });
-      btn.setAttribute('aria-expanded', String(!open));
-      panel.style.height = open ? '0px' : `${panel.scrollHeight}px`;
-    });
-  });
-  addEventListener('resize', () => {
-    $$('.faq__q[aria-expanded="true"]').forEach(b => {
-      b.nextElementSibling.style.height = `${b.nextElementSibling.scrollHeight}px`;
-    });
-  });
-
   /* --------------------------------------------------------------- gallery */
   const lb = $('#lightbox');
   const lbCap = $('#lbCap');
