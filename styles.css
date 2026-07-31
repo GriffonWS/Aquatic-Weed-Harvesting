@@ -1,30 +1,43 @@
 /* ==========================================================================
    Aquatic Weed Harvesting LLC — wedowaterweeds.com
-   Design direction: "Deep Water" — dark lake gradients, glass cards,
-   lime/aqua accents, mechanical-not-chemical typography.
+   Design direction: "Deep Water" — dark forest-green lake blocks, glass cards,
+   logo colours (boat orange / lake blue / leaf green), mechanical-not-chemical
+   typography.
    ========================================================================== */
+
+/* ---------- brand ----------
+   Sampled straight off the logo: the orange work boat, the forest-green oval
+   and wordmark, the sky-blue lake inside it. Everything below is mixed from
+   these three and nothing else. */
+:root{
+  --sun:#f8981a;           /* the boat — the CTA / energy colour */
+  --sun-lift:#fdb94b;      /* its lit top edge; the gradient partner of --sun */
+  --forest:#2e4b3d;        /* the oval frame and the wordmark */
+  --leaf:#4a7f3e;          /* the fish — the "natural/eco" green */
+  --leaf-lift:#8dc063;     /* same green, for use on the dark surfaces */
+  --lake:#7ac9ea;          /* open water */
+  --lake-deep:#15607f;     /* water blue pushed dark enough to read on white */
+}
 
 /* ---------- tokens ----------
    The page is light by default. Dark blocks opt in with .on-dark, which
    re-declares the same variables — so every component below is written once
-   and works on either surface. --aqua is the "readable accent" and flips
-   between deep teal and bright aqua; --aqua-bright never changes and is used
-   for gradients and anything sitting on top of a photograph. */
+   and works on either surface. --accent is the "readable accent" and flips
+   between deep lake blue and bright lake blue; --sun / --sun-lift never change,
+   so the orange reads identically on both surfaces and over photographs. */
 :root{
-  --lime:#a8e05f;
-  --aqua:#0b7f72;          /* readable on light */
-  --aqua-bright:#3ddbc4;   /* gradients / over photos — constant */
-  --mark:#4f9a1f;          /* lime-family marks that must read on light */
+  --accent:var(--lake-deep);
+  --mark:var(--leaf);      /* green marks that must read on light */
   --danger:#c0392b;
 
   --ink:#ffffff;
   --deep:#ffffff;
-  --deep-2:#eef4f3;
-  --line:rgba(6,32,43,.12);
-  --card:rgba(6,32,43,.028);
-  --card-2:rgba(6,32,43,.055);
-  --txt:#07222d;
-  --txt-dim:#4d6b74;
+  --deep-2:#edf4f0;
+  --line:color-mix(in srgb,var(--forest) 14%,transparent);
+  --card:color-mix(in srgb,var(--forest) 3%,transparent);
+  --card-2:color-mix(in srgb,var(--forest) 6%,transparent);
+  --txt:#12281f;
+  --txt-dim:#4f6b5e;
 
   --page:#ffffff;          /* the light surface dark blocks fade out of */
 
@@ -40,25 +53,27 @@
   --display:"Sora","Inter",system-ui,sans-serif;
 
   --ease:cubic-bezier(.22,1,.36,1);
-  --shadow:0 26px 60px -30px rgba(6,40,52,.35);
+  --shadow:0 26px 60px -30px rgba(20,48,36,.32);
 }
 
-/* ---------- dark blocks ---------- */
+/* ---------- dark blocks ----------
+   The dark surface is the logo's forest green taken almost to black, so the
+   orange and the lake blue sit on it the way they do inside the oval. */
 .on-dark{
-  --aqua:#3ddbc4;
-  --mark:#a8e05f;
+  --accent:var(--lake);
+  --mark:var(--leaf-lift);
   --danger:#ff8a7a;
 
-  --ink:#04141d;
-  --deep:#07202c;
-  --deep-2:#0a2b39;
-  --bg:#04141d;
-  --bg-alt:#07202c;
+  --ink:#0d221c;
+  --deep:#123028;
+  --deep-2:#173c31;
+  --bg:#0d221c;
+  --bg-alt:#123028;
   --line:rgba(255,255,255,.10);
   --card:rgba(255,255,255,.045);
   --card-2:rgba(255,255,255,.075);
-  --txt:#eaf4f4;
-  --txt-dim:#9fb6bd;
+  --txt:#eaf4ef;
+  --txt-dim:#a3bcaf;
 
   --shadow:0 30px 80px -30px rgba(0,0,0,.6);
 
@@ -79,10 +94,10 @@ body{
 
 /* ---------- lake texture ----------
    A tiling wave field behind the light sections. Deliberately near-invisible
-   (5–6% teal): it should register as water, not as a pattern. Dark blocks paint
+   (5–6% lake blue): it should register as water, not a pattern. Dark blocks paint
    an opaque background over it, so it only ever shows on the white bands. */
 body{
-  background-image:url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='400'%20viewBox='0%200%20400%20400'><path%20d='M0%2040q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.055'%20stroke-width='1.6'/><path%20d='M0%20120q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20200q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.065'%20stroke-width='1.6'/><path%20d='M0%20280q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20360q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.05'%20stroke-width='1.6'/></svg>");
+  background-image:url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='400'%20viewBox='0%200%20400%20400'><path%20d='M0%2040q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.055'%20stroke-width='1.6'/><path%20d='M0%20120q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20200q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.065'%20stroke-width='1.6'/><path%20d='M0%20280q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20360q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.05'%20stroke-width='1.6'/></svg>");
   background-size:400px 400px;
   background-repeat:repeat;
   background-attachment:local;
@@ -90,12 +105,12 @@ body{
 img,svg,canvas{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-::selection{background:var(--lime);color:#06202b}
+::selection{background:var(--sun);color:#12281f}
 
 .wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
 .skip{position:absolute;left:-9999px}
-.skip:focus{left:12px;top:12px;z-index:200;background:var(--lime);color:#06202b;padding:10px 16px;border-radius:8px}
-:focus-visible{outline:2px solid var(--aqua);outline-offset:3px}
+.skip:focus{left:12px;top:12px;z-index:200;background:var(--sun);color:#12281f;padding:10px 16px;border-radius:8px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
 /* ---------- type ---------- */
 .h2{
@@ -104,7 +119,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .eyebrow{
   font:600 12px/1 var(--font);letter-spacing:.16em;text-transform:uppercase;
-  color:var(--aqua);margin:0 0 18px;
+  color:var(--accent);margin:0 0 18px;
 }
 .lead{color:var(--txt-dim);font-size:clamp(16px,1.5vw,18.5px);margin:18px 0 0;max-width:56ch}
 em{font-style:normal}
@@ -122,14 +137,14 @@ em{font-style:normal}
 .btn--lg{padding:17px 30px;font-size:15.5px}
 .btn--block{width:100%;justify-content:center}
 .btn--primary{
-  background:linear-gradient(105deg,var(--lime),var(--aqua-bright));
-  color:#06202b;
-  box-shadow:0 12px 34px -14px rgba(61,219,196,.75);
+  background:linear-gradient(105deg,var(--sun),var(--sun-lift));
+  color:#12281f;
+  box-shadow:0 12px 34px -14px rgba(248,152,26,.55);
 }
-.btn--primary:hover{transform:translateY(-3px);box-shadow:0 20px 44px -14px rgba(61,219,196,.9)}
+.btn--primary:hover{transform:translateY(-3px);box-shadow:0 20px 44px -14px rgba(248,152,26,.7)}
 .btn--primary:active{transform:translateY(-1px)}
 .btn--ghost{border:1px solid var(--line);color:var(--txt);background:var(--card)}
-.btn--ghost:hover{background:var(--card-2);border-color:var(--aqua);transform:translateY(-3px)}
+.btn--ghost:hover{background:var(--card-2);border-color:var(--accent);transform:translateY(-3px)}
 
 /* ==========================================================================
    NAV
@@ -139,15 +154,15 @@ em{font-style:normal}
   transition:background .4s var(--ease),backdrop-filter .4s,border-color .4s,padding .4s var(--ease);
   border-bottom:1px solid transparent;
   /* over the dark hero */
-  --aqua:#3ddbc4;--txt:#eaf4f4;--txt-dim:#c2d5da;
+  --accent:#7ac9ea;--txt:#eaf4ef;--txt-dim:#c5d9cd;
   --line:rgba(255,255,255,.12);--card:rgba(255,255,255,.05);--card-2:rgba(255,255,255,.09);
-  --bg:#04141d;
+  --bg:#0d221c;
   color:var(--txt);
 }
 .nav.is-stuck{
   /* over the light page */
-  --aqua:#0b7f72;--txt:#07222d;--txt-dim:#4d6b74;
-  --line:rgba(6,32,43,.12);--card:rgba(6,32,43,.028);--card-2:rgba(6,32,43,.055);
+  --accent:#15607f;--txt:#12281f;--txt-dim:#4f6b5e;
+  --line:rgba(46,75,61,.14);--card:rgba(46,75,61,.03);--card-2:rgba(46,75,61,.06);
   --bg:#ffffff;
 }
 .nav__inner{
@@ -173,15 +188,15 @@ em{font-style:normal}
 }
 .nav__link::after{
   content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;
-  background:var(--aqua);transition:right .4s var(--ease);
+  background:var(--accent);transition:right .4s var(--ease);
 }
 .nav__link:hover{color:var(--txt)}
 .nav__link:hover::after{right:0}
 
 .nav__actions{display:flex;align-items:center;gap:12px;margin-left:auto}
 .nav__phone{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px}
-.nav__phone svg{width:16px;height:16px;fill:none;stroke:var(--aqua);stroke-width:1.8;stroke-linejoin:round}
-.nav__phone:hover{color:var(--aqua)}
+.nav__phone svg{width:16px;height:16px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linejoin:round}
+.nav__phone:hover{color:var(--accent)}
 
 .nav__burger{display:none;width:42px;height:42px;flex-direction:column;justify-content:center;gap:5px;align-items:center}
 .nav__burger span{width:20px;height:1.8px;background:var(--txt);transition:.35s var(--ease);border-radius:2px}
@@ -198,7 +213,7 @@ em{font-style:normal}
 @keyframes drawerIn{from{opacity:0;transform:translateY(-12px)}}
 .drawer a:not(.btn){font:700 clamp(26px,7vw,40px)/1.5 var(--display);letter-spacing:-.02em}
 .drawer .btn{margin-top:22px;align-self:flex-start}
-.drawer__call{color:var(--aqua)!important;font-size:18px!important;font-weight:600!important}
+.drawer__call{color:var(--accent)!important;font-size:18px!important;font-weight:600!important}
 
 /* ==========================================================================
    HERO
@@ -208,7 +223,7 @@ em{font-style:normal}
   padding:150px 0 190px;overflow:hidden;
   background:
     radial-gradient(120% 90% at 80% 0%,var(--deep-2) 0%,transparent 60%),
-    radial-gradient(90% 70% at 10% 100%,rgba(18,160,143,.22) 0%,transparent 60%),
+    radial-gradient(90% 70% at 10% 100%,rgba(33,116,152,.22) 0%,transparent 60%),
     var(--bg);
 }
 /* Hero photograph, scrimmed hard so the headline keeps its contrast.
@@ -222,15 +237,15 @@ em{font-style:normal}
 .hero__photo::after{
   content:"";position:absolute;inset:0;
   background:
-    linear-gradient(100deg,var(--ink) 12%,rgba(4,20,29,.88) 40%,rgba(4,20,29,.52) 68%,rgba(4,20,29,.8)),
-    linear-gradient(0deg,var(--bg-alt),rgba(4,20,29,0) 34%),
-    radial-gradient(80% 60% at 15% 40%,rgba(18,160,143,.28),transparent 65%);
+    linear-gradient(100deg,var(--ink) 12%,rgba(13,34,28,.88) 40%,rgba(13,34,28,.52) 68%,rgba(13,34,28,.8)),
+    linear-gradient(0deg,var(--bg-alt),rgba(13,34,28,0) 34%),
+    radial-gradient(80% 60% at 15% 40%,rgba(33,116,152,.28),transparent 65%);
 }
 .hero__canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
 .hero__glow{
   position:absolute;left:50%;top:-20%;width:min(900px,90vw);aspect-ratio:1;
   transform:translateX(-50%);pointer-events:none;
-  background:radial-gradient(circle,rgba(168,224,95,.13),transparent 62%);
+  background:radial-gradient(circle,rgba(248,152,26,.13),transparent 62%);
   filter:blur(20px);
 }
 .hero__inner{position:relative;z-index:2;width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
@@ -242,8 +257,8 @@ em{font-style:normal}
   font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--txt-dim);
   animation:up .8s var(--ease) both;
 }
-.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(168,224,95,.18);animation:pulse 2.4s infinite}
-@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(168,224,95,0)}}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px rgba(248,152,26,.18);animation:pulse 2.4s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(248,152,26,0)}}
 
 .hero__title{
   font:800 clamp(52px,11.5vw,148px)/.9 var(--display);
@@ -253,7 +268,7 @@ em{font-style:normal}
 .hero__title .line>span{display:block;animation:up 1s var(--ease) both}
 .hero__title .line:nth-child(2)>span{animation-delay:.1s}
 .hero__title em{
-  background:linear-gradient(100deg,var(--lime),var(--aqua-bright) 65%);
+  background:linear-gradient(100deg,var(--sun),var(--sun-lift) 65%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
   /* background-clip:text paints only inside the inline box, and Sora's bold "s"
      overhangs its advance width — without this the last letter gets a flat
@@ -277,7 +292,7 @@ em{font-style:normal}
   animation:up .9s .42s var(--ease) both;
 }
 .stat{display:flex;flex-direction:column;gap:6px;position:relative;padding-left:20px}
-.stat::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--lime),transparent)}
+.stat::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--sun),transparent)}
 .stat__num{font:700 clamp(30px,3.6vw,44px)/1 var(--display);letter-spacing:-.03em}
 .stat__label{font-size:12.5px;line-height:1.45;color:var(--txt-dim);letter-spacing:.03em}
 
@@ -314,7 +329,7 @@ em{font-style:normal}
 .hero__scroll span{display:block;width:24px;height:38px;border:1.5px solid var(--line);border-radius:14px;position:relative}
 .hero__scroll span::after{
   content:"";position:absolute;left:50%;top:8px;width:3px;height:7px;border-radius:2px;
-  background:var(--aqua);transform:translateX(-50%);animation:wheel 1.8s var(--ease) infinite;
+  background:var(--accent);transform:translateX(-50%);animation:wheel 1.8s var(--ease) infinite;
 }
 @keyframes wheel{60%{transform:translate(-50%,14px);opacity:0}61%{opacity:0}100%{opacity:1}}
 
@@ -354,7 +369,7 @@ em{font-style:normal}
 /* a touch of the deep-water gradient over every photo so they sit in the palette */
 .shot::after{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(200deg,rgba(4,20,29,0) 45%,rgba(4,20,29,.55));
+  background:linear-gradient(200deg,rgba(13,34,28,0) 45%,rgba(13,34,28,.55));
   mix-blend-mode:multiply;
 }
 
@@ -378,23 +393,23 @@ em{font-style:normal}
 .ba__pane--before{clip-path:inset(0 50% 0 0)}
 .ba__pane::after{
   content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(4,20,29,.28),rgba(4,20,29,.05) 40%,rgba(4,20,29,.4));
+  background:linear-gradient(180deg,rgba(13,34,28,.28),rgba(13,34,28,.05) 40%,rgba(13,34,28,.4));
 }
 .ba__tag{
   position:absolute;top:18px;left:18px;z-index:4;
   font:600 11px/1 var(--font);letter-spacing:.16em;text-transform:uppercase;
-  padding:8px 13px;border-radius:99px;background:rgba(4,20,29,.6);backdrop-filter:blur(8px);
-  border:1px solid rgba(255,255,255,.16);color:#eaf4f4;
+  padding:8px 13px;border-radius:99px;background:rgba(13,34,28,.6);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.16);color:#eaf4ef;
 }
-.ba__tag--right{left:auto;right:18px;color:var(--aqua)}
+.ba__tag--right{left:auto;right:18px;color:var(--accent)}
 .ba__handle{
   position:absolute;top:0;bottom:0;left:50%;width:2px;z-index:5;
-  background:linear-gradient(var(--lime),var(--aqua-bright));transform:translateX(-50%);
+  background:linear-gradient(var(--sun),var(--sun-lift));transform:translateX(-50%);
 }
 .ba__grip{
   position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
   width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
-  background:linear-gradient(120deg,var(--lime),var(--aqua-bright));color:#06202b;
+  background:linear-gradient(120deg,var(--sun),var(--sun-lift));color:#12281f;
   box-shadow:0 10px 30px -8px rgba(0,0,0,.6);
 }
 .ba__grip svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
@@ -410,9 +425,9 @@ em{font-style:normal}
 }
 .svc::before{
   content:"";position:absolute;inset:0;opacity:0;transition:opacity .5s;
-  background:radial-gradient(100% 90% at 0% 0%,rgba(61,219,196,.13),transparent 62%);
+  background:radial-gradient(100% 90% at 0% 0%,rgba(122,201,234,.12),transparent 62%);
 }
-.svc:hover{transform:translateY(-6px);background:var(--card-2);border-color:color-mix(in srgb,var(--aqua) 45%,transparent)}
+.svc:hover{transform:translateY(-6px);background:var(--card-2);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
 .svc:hover::before{opacity:1}
 .svc--wide{
   grid-column:span 3;display:grid;grid-template-columns:1.05fr .95fr;
@@ -432,9 +447,9 @@ em{font-style:normal}
 /* every card's photo sits under this corner, so the number needs a chip */
 .svc__num{
   position:absolute;top:clamp(20px,2.4vw,30px);right:clamp(20px,2.4vw,30px);z-index:3;
-  font:700 12px/1 var(--display);letter-spacing:.14em;color:#dbe9ec;
+  font:700 12px/1 var(--display);letter-spacing:.14em;color:#dfeae2;
   padding:6px 10px;border-radius:99px;
-  background:rgba(4,20,29,.55);border:1px solid rgba(255,255,255,.14);
+  background:rgba(13,34,28,.55);border:1px solid rgba(255,255,255,.14);
   backdrop-filter:blur(6px);
 }
 .svc__title{font:700 clamp(19px,2vw,25px)/1.2 var(--display);letter-spacing:-.02em;margin:0 0 10px;position:relative;z-index:2}
@@ -460,7 +475,7 @@ em{font-style:normal}
   border:1px solid var(--line);background:var(--card);
   transition:.5s var(--ease);
 }
-.step:hover .step__num{background:linear-gradient(130deg,var(--lime),var(--aqua-bright));color:#06202b;border-color:transparent;transform:scale(1.06)}
+.step:hover .step__num{background:linear-gradient(130deg,var(--sun),var(--sun-lift));color:#12281f;border-color:transparent;transform:scale(1.06)}
 .step__body{max-width:64ch}
 .step__body h3{font:700 clamp(22px,2.6vw,32px)/1.2 var(--display);letter-spacing:-.025em;margin:.15em 0 .5em}
 .step__body p{color:var(--txt-dim);margin:0}
@@ -479,19 +494,19 @@ em{font-style:normal}
   padding:20px 22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
   transition:border-color .35s,background .35s;
 }
-.spec:hover{border-color:color-mix(in srgb,var(--aqua) 40%,transparent);background:var(--card-2)}
+.spec:hover{border-color:color-mix(in srgb,var(--accent) 40%,transparent);background:var(--card-2)}
 .spec b{font:700 15.5px/1.3 var(--display);letter-spacing:-.01em}
 .spec span{font-size:13.5px;line-height:1.45;color:var(--txt-dim)}
 .boat__figure{position:relative}
 .boat__badge{
   position:absolute;bottom:-30px;left:-30px;width:146px;height:146px;border-radius:50%;
   display:grid;place-items:center;text-align:center;
-  background:linear-gradient(140deg,var(--lime),var(--aqua-bright));color:#06202b;
+  background:linear-gradient(140deg,var(--sun),var(--sun-lift));color:#12281f;
   box-shadow:0 20px 44px -16px rgba(0,0,0,.55);
 }
 .boat__badge b{font:800 18px/1.1 var(--display);letter-spacing:-.02em;position:relative;z-index:2}
 .boat__badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
-.boat__badge text{font:600 6.6px var(--font);letter-spacing:.2em;text-transform:uppercase;fill:#06202b;opacity:.72}
+.boat__badge text{font:600 6.6px var(--font);letter-spacing:.2em;text-transform:uppercase;fill:#12281f;opacity:.72}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* ==========================================================================
@@ -510,7 +525,7 @@ em{font-style:normal}
   content:attr(data-tag);position:absolute;top:16px;right:16px;z-index:2;
   font:600 10px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;
   padding:7px 11px;border-radius:99px;
-  color:#eaf4f4;background:rgba(4,20,29,.58);border:1px solid rgba(255,255,255,.22);
+  color:#eaf4ef;background:rgba(13,34,28,.58);border:1px solid rgba(255,255,255,.22);
 }
 .weed:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--mark) 45%,transparent);background:var(--card-2)}
 /* full-bleed banner: pulled out to the card edges, top corners clipped by the
@@ -536,8 +551,8 @@ em{font-style:normal}
    ========================================================================== */
 .section--quote{
   background:
-    radial-gradient(90% 80% at 100% 0%,rgba(18,160,143,.24),transparent 60%),
-    radial-gradient(70% 70% at 0% 100%,rgba(168,224,95,.12),transparent 60%),
+    radial-gradient(90% 80% at 100% 0%,rgba(33,116,152,.24),transparent 60%),
+    radial-gradient(70% 70% at 0% 100%,rgba(248,152,26,.12),transparent 60%),
     var(--bg-alt);
 }
 .quote-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,74px);align-items:start}
@@ -547,19 +562,19 @@ em{font-style:normal}
   padding:18px 26px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);
   transition:.4s var(--ease);
 }
-.quote-call:hover{border-color:var(--aqua);transform:translateY(-3px)}
-.quote-call svg{width:26px;height:26px;fill:none;stroke:var(--aqua);stroke-width:1.7;stroke-linejoin:round}
+.quote-call:hover{border-color:var(--accent);transform:translateY(-3px)}
+.quote-call svg{width:26px;height:26px;fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linejoin:round}
 .quote-call b{display:block;font:700 22px/1.15 var(--display);letter-spacing:-.02em}
 .quote-call em{font-size:13px;color:var(--txt-dim)}
 .quote-mail{display:block;color:var(--txt-dim);font-size:15px;border-bottom:1px solid var(--line);padding-bottom:3px;width:fit-content}
-.quote-mail:hover{color:var(--aqua)}
+.quote-mail:hover{color:var(--accent)}
 
 /* the "where we work" + "before you call" essentials, folded in from the two
    sections we cut so the page loses length without losing the information */
 .minis{display:grid;gap:26px;margin-top:38px;padding-top:32px;border-top:1px solid var(--line)}
 .mini__h{
   font:600 11.5px/1 var(--font);letter-spacing:.16em;text-transform:uppercase;
-  color:var(--aqua);margin:0 0 12px;
+  color:var(--accent);margin:0 0 12px;
 }
 .mini__p{margin:0;color:var(--txt-dim);font-size:14.5px;line-height:1.65;max-width:52ch}
 .mini__list{list-style:none;margin:0;padding:0;display:grid;gap:11px;max-width:52ch}
@@ -568,7 +583,7 @@ em{font-style:normal}
 }
 .mini__list li::before{
   content:"";position:absolute;left:0;top:.58em;width:7px;height:7px;border-radius:50%;
-  background:var(--aqua);opacity:.85;
+  background:var(--accent);opacity:.85;
 }
 .mini__list b{color:var(--txt);font-weight:600}
 
@@ -587,7 +602,7 @@ em{font-style:normal}
   font:400 15px var(--font);transition:.3s;appearance:none;
 }
 .field__input::placeholder{color:color-mix(in srgb,var(--txt-dim) 70%,transparent)}
-.field__input:focus{outline:none;border-color:var(--aqua);background:var(--card-2);box-shadow:0 0 0 4px rgba(61,219,196,.12)}
+.field__input:focus{outline:none;border-color:var(--accent);background:var(--card-2);box-shadow:0 0 0 4px rgba(122,201,234,.18)}
 select.field__input{cursor:pointer}
 textarea.field__input{resize:vertical;min-height:92px}
 .field__err{font-size:12.5px;color:var(--danger);min-height:0;transition:min-height .2s}
@@ -604,9 +619,9 @@ textarea.field__input{resize:vertical;min-height:92px}
   display:block;padding:9px 15px;border-radius:99px;border:1px solid var(--line);
   background:var(--card);font-size:13.5px;cursor:pointer;transition:.25s;
 }
-.chip span:hover{border-color:var(--aqua)}
-.chip input:checked+span{background:linear-gradient(110deg,var(--lime),var(--aqua-bright));color:#06202b;border-color:transparent;font-weight:600}
-.chip input:focus-visible+span{outline:2px solid var(--aqua);outline-offset:2px}
+.chip span:hover{border-color:var(--accent)}
+.chip input:checked+span{background:linear-gradient(110deg,var(--sun),var(--sun-lift));color:#12281f;border-color:transparent;font-weight:600}
+.chip input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
 .form__ok{
   margin:0;padding:14px;border-radius:var(--r-sm);text-align:center;font-weight:600;
   background:color-mix(in srgb,var(--mark) 14%,transparent);
@@ -629,7 +644,7 @@ textarea.field__input{resize:vertical;min-height:92px}
 .footer h4{font:600 12px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--txt);margin:0 0 22px}
 .footer__grid>div a,.footer__grid>div span{display:block;color:var(--txt-dim);font-size:14.5px;margin-bottom:13px;transition:color .25s,transform .25s}
 .footer__grid>div a:last-child,.footer__grid>div span:last-child{margin-bottom:0}
-.footer__grid>div a:hover{color:var(--aqua);transform:translateX(3px)}
+.footer__grid>div a:hover{color:var(--accent);transform:translateX(3px)}
 .footer__bar{
   display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   margin-top:clamp(44px,6vw,70px);padding-block:26px;border-top:1px solid var(--line);
@@ -681,7 +696,7 @@ textarea.field__input{resize:vertical;min-height:92px}
     text-align:center;padding:14px;border-radius:99px;font:600 15px var(--font);
   }
   .mobilebar__call{border:1px solid var(--line);background:var(--card)}
-  .mobilebar__quote{background:linear-gradient(105deg,var(--lime),var(--aqua-bright));color:#06202b}
+  .mobilebar__quote{background:linear-gradient(105deg,var(--sun),var(--sun-lift));color:#12281f}
   .footer{padding-bottom:80px}
   .quote-call b{font-size:19px}
 }

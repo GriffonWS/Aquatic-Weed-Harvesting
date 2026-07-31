@@ -235,9 +235,10 @@
           x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
         }
         const g = ctx.createLinearGradient(0, 0, w, 0);
-        g.addColorStop(0, `rgba(61,219,196,0)`);
-        g.addColorStop(0.5, `rgba(61,219,196,${b.a})`);
-        g.addColorStop(1, `rgba(168,224,95,0)`);
+        // lake blue fading into the boat orange — the logo's two accents
+        g.addColorStop(0, `rgba(122,201,234,0)`);
+        g.addColorStop(0.5, `rgba(122,201,234,${b.a})`);
+        g.addColorStop(1, `rgba(248,152,26,0)`);
         ctx.strokeStyle = g;
         ctx.stroke();
       });
