@@ -76,6 +76,17 @@ body{
   overflow-x:clip;
   -webkit-font-smoothing:antialiased;
 }
+
+/* ---------- lake texture ----------
+   A tiling wave field behind the light sections. Deliberately near-invisible
+   (5–6% teal): it should register as water, not as a pattern. Dark blocks paint
+   an opaque background over it, so it only ever shows on the white bands. */
+body{
+  background-image:url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='400'%20viewBox='0%200%20400%20400'><path%20d='M0%2040q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.055'%20stroke-width='1.6'/><path%20d='M0%20120q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20200q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.065'%20stroke-width='1.6'/><path%20d='M0%20280q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20360q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%230b7f72'%20stroke-opacity='0.05'%20stroke-width='1.6'/></svg>");
+  background-size:400px 400px;
+  background-repeat:repeat;
+  background-attachment:local;
+}
 img,svg,canvas{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
@@ -282,6 +293,21 @@ em{font-style:normal}
 .hero__waves .w2{animation:sway 9s ease-in-out infinite alternate-reverse}
 @keyframes sway{to{transform:translateX(-5%)}}
 
+/* Same wave, same geometry, at the TOP of a light section that sits under a
+   dark block. bottom:100% puts the svg's bottom edge on the section's top edge,
+   so the white paths spill up over the dark section above it; the -1px kills the
+   hairline. Overhangs ±10% for the same reason the hero one does — the sway
+   would otherwise expose a bare strip at the right edge. */
+.section--wavetop{padding-top:calc(var(--sec) - clamp(10px,2vw,30px))}
+.wavetop{
+  position:absolute;left:-10%;bottom:100%;margin-bottom:-1px;
+  width:120%;max-width:none;height:clamp(80px,12vw,150px);z-index:2;
+  pointer-events:none;
+}
+.wavetop path{fill:var(--page)}
+.wavetop .w1{opacity:.5;animation:sway 13s ease-in-out infinite alternate}
+.wavetop .w2{animation:sway 9s ease-in-out infinite alternate-reverse}
+
 /* right-aligned so it never collides with the stat row on short viewports */
 .hero__scroll{position:absolute;right:var(--pad);bottom:clamp(100px,13vw,168px);z-index:3;opacity:.7}
 .hero__scroll:hover{opacity:1}
@@ -349,13 +375,6 @@ em{font-style:normal}
   position:absolute;inset:0;width:100%;height:100%;
   object-fit:cover;object-position:center;
 }
-.ba__illus{
-  position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:4;
-  font:600 10px/1 var(--font);letter-spacing:.18em;text-transform:uppercase;
-  padding:7px 12px;border-radius:99px;color:#cfe0e4;
-  background:rgba(4,20,29,.62);border:1px solid rgba(255,255,255,.16);
-  backdrop-filter:blur(8px);pointer-events:none;
-}
 .ba__pane--before{clip-path:inset(0 50% 0 0)}
 .ba__pane::after{
   content:"";position:absolute;inset:0;
@@ -379,7 +398,6 @@ em{font-style:normal}
   box-shadow:0 10px 30px -8px rgba(0,0,0,.6);
 }
 .ba__grip svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-.ba__note{text-align:center;color:var(--txt-dim);font-size:13px;margin-top:20px}
 
 /* ==========================================================================
    SERVICES
@@ -481,27 +499,31 @@ em{font-style:normal}
    ========================================================================== */
 .weeds{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.6vw,22px)}
 .weed{
-  position:relative;padding:clamp(24px,2.6vw,32px);border-radius:var(--r-lg);
+  --weed-pad:clamp(24px,2.6vw,32px);
+  position:relative;padding:var(--weed-pad);border-radius:var(--r-lg);
   background:var(--card);border:1px solid var(--line);overflow:hidden;
   transition:transform .5s var(--ease),border-color .4s,background .4s;
 }
+/* the chip now sits on a photograph, so it carries its own dark plate rather
+   than relying on --line / --txt-dim against the card */
 .weed::after{
-  content:attr(data-tag);position:absolute;top:22px;right:22px;
+  content:attr(data-tag);position:absolute;top:16px;right:16px;z-index:2;
   font:600 10px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;
-  padding:6px 10px;border-radius:99px;border:1px solid var(--line);color:var(--txt-dim);
+  padding:7px 11px;border-radius:99px;
+  color:#eaf4f4;background:rgba(4,20,29,.58);border:1px solid rgba(255,255,255,.22);
 }
 .weed:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--mark) 45%,transparent);background:var(--card-2)}
+/* full-bleed banner: pulled out to the card edges, top corners clipped by the
+   card's own overflow:hidden + radius. Images are pre-cropped to 2:1. */
 .weed__art{
-  height:120px;display:grid;place-items:end center;margin-bottom:20px;
+  margin:calc(var(--weed-pad) * -1) calc(var(--weed-pad) * -1) 22px;
+  aspect-ratio:2/1;overflow:hidden;background:var(--card-2);
 }
-.weed__art svg{
-  height:110px;width:auto;fill:none;stroke:var(--aqua);stroke-width:2;
-  stroke-linecap:round;transition:stroke .4s,transform .6s var(--ease);
+.weed__art img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .7s var(--ease);
 }
-.weed__art svg g path{stroke:var(--mark)}
-.weed:hover .weed__art svg{transform:translateY(-5px) scale(1.05)}
-.weed__art--lily ellipse{stroke:var(--mark)}
-.weed__art--cattail rect{fill:var(--mark);stroke:none}
+.weed:hover .weed__art img{transform:scale(1.05)}
 .weed__name{font:700 clamp(18px,1.9vw,22px)/1.2 var(--display);letter-spacing:-.02em;margin:0 0 10px}
 .weed__desc{color:var(--txt-dim);font-size:14.5px;margin:0}
 
@@ -585,7 +607,6 @@ textarea.field__input{resize:vertical;min-height:92px}
 .chip span:hover{border-color:var(--aqua)}
 .chip input:checked+span{background:linear-gradient(110deg,var(--lime),var(--aqua-bright));color:#06202b;border-color:transparent;font-weight:600}
 .chip input:focus-visible+span{outline:2px solid var(--aqua);outline-offset:2px}
-.form__note{font-size:12.5px;color:var(--txt-dim);text-align:center;margin:0}
 .form__ok{
   margin:0;padding:14px;border-radius:var(--r-sm);text-align:center;font-weight:600;
   background:color-mix(in srgb,var(--mark) 14%,transparent);
@@ -641,7 +662,7 @@ textarea.field__input{resize:vertical;min-height:92px}
   .nav.is-stuck,.mobilebar{background:var(--bg)}
   .form{background:color-mix(in srgb,var(--ink) 92%,transparent)}
   .hero__canvas{display:none}
-  .hero__waves .w1,.hero__waves .w2{animation:none}
+  .hero__waves .w1,.hero__waves .w2,.wavetop .w1,.wavetop .w2{animation:none}
   .hero__glow{filter:none}
 
   .nav__links,.nav__phone{display:none}

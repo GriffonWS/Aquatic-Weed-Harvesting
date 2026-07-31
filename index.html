@@ -117,7 +117,6 @@
 <section class="section" id="before-after">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The whole pitch, in one slider</p>
       <h2 class="h2">Drag it. That's your shoreline before lunch, and after.</h2>
     </div>
 
@@ -133,11 +132,8 @@
                alt="A pond blanketed in weed and lily pads right up to the dock.">
           <span class="ba__tag">Before</span>
         </div>
-        <span class="ba__illus">Illustration</span>
         <div class="ba__handle" id="baHandle"><span class="ba__grip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></span></div>
       </div>
-      <p class="ba__note">Illustration of a typical job. Swap in a real photo pair from one of Jim's
-      jobs — same camera position, before and after — and delete the "Illustration" tag.</p>
     </div>
   </div>
 </section>
@@ -208,7 +204,11 @@
 </section>
 
 <!-- ============ PROCESS ============ -->
-<section class="section" id="process">
+<section class="section section--wavetop" id="process">
+  <svg class="wavetop" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+    <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z"/>
+    <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z"/>
+  </svg>
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">How it works</p>
@@ -274,7 +274,11 @@
 </section>
 
 <!-- ============ WEEDS ============ -->
-<section class="section" id="weeds">
+<section class="section section--wavetop" id="weeds">
+  <svg class="wavetop" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+    <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z"/>
+    <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z"/>
+  </svg>
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Know your enemy</p>
@@ -283,42 +287,60 @@
 
     <div class="weeds">
       <article class="weed reveal" data-tag="Invasive">
-        <div class="weed__art weed__art--milfoil" aria-hidden="true"><svg viewBox="0 0 60 80"><path d="M30 78V10"/><g><path d="M30 66l-12-8M30 66l12-8M30 54l-14-9M30 54l14-9M30 42l-12-8M30 42l12-8M30 30l-10-7M30 30l10-7M30 20l-8-5M30 20l8-5"/></g></svg></div>
+        <figure class="weed__art">
+          <img src="images/weed-milfoil.jpg" width="1200" height="600" loading="lazy" decoding="async"
+               alt="Eurasian watermilfoil in a dense underwater canopy, feathery leaf whorls on reddish stems breaking the lake surface.">
+        </figure>
         <h3 class="weed__name">Eurasian Watermilfoil</h3>
         <p class="weed__desc">Feathery, dense, and it spreads from a single broken fragment. Forms mats
         thick enough to stop a propeller. The reason most people call us.</p>
       </article>
 
       <article class="weed reveal" data-tag="Invasive">
-        <div class="weed__art weed__art--chestnut" aria-hidden="true"><svg viewBox="0 0 60 80"><path d="M30 78V44"/><g class="rosette"><path d="M30 44l-16-6M30 44l16-6M30 44l-13 8M30 44l13 8M30 44l-6-14M30 44l6-14"/></g></svg></div>
+        <figure class="weed__art">
+          <img src="images/weed-chestnut.jpg" width="1200" height="600" loading="lazy" decoding="async"
+               alt="A floating water chestnut rosette of toothed triangular leaves on still water, with a spiked seed nut on the shore beside it.">
+        </figure>
         <h3 class="weed__name">Water Chestnut</h3>
         <p class="weed__desc">Floating rosettes that blanket the surface and drop spiked nuts on your beach.
         Timing matters — we target it before the seed drops.</p>
       </article>
 
       <article class="weed reveal" data-tag="Invasive">
-        <div class="weed__art weed__art--hydrilla" aria-hidden="true"><svg viewBox="0 0 60 80"><path d="M22 78C22 50 38 46 38 20"/><path d="M38 78C38 52 24 44 24 16" opacity=".55"/><g><path d="M26 66h8M28 56h8M26 46h9M30 36h8M28 26h8"/></g></svg></div>
+        <figure class="weed__art">
+          <img src="images/weed-hydrilla.jpg" width="1200" height="600" loading="lazy" decoding="async"
+               alt="Dense strands of hydrilla growing up from the lake bed through sunlit green water.">
+        </figure>
         <h3 class="weed__name">Hydrilla</h3>
         <p class="weed__desc">Aggressive, fast, and regulated in New York. Grows from tubers, so mechanical
         removal is about staying ahead of it every season.</p>
       </article>
 
       <article class="weed reveal" data-tag="Nuisance">
-        <div class="weed__art weed__art--lily" aria-hidden="true"><svg viewBox="0 0 60 80"><path d="M30 78V34"/><ellipse cx="30" cy="30" rx="20" ry="8"/><path d="M30 30h20M30 30l-14 6M30 30l14 6"/></svg></div>
+        <figure class="weed__art">
+          <img src="images/weed-lily.jpg" width="1200" height="600" loading="lazy" decoding="async"
+               alt="Water lily pads covering a pond surface, with a single white flower open among them.">
+        </figure>
         <h3 class="weed__name">Lily Pads</h3>
         <p class="weed__desc">Pretty in a photo, a wall in a canoe. We clear swim lanes and dock approaches
         and leave the rest as habitat if you want it.</p>
       </article>
 
       <article class="weed reveal" data-tag="Nuisance">
-        <div class="weed__art weed__art--cattail" aria-hidden="true"><svg viewBox="0 0 60 80"><path d="M22 78V22M38 78V30"/><rect x="18.5" y="8" width="7" height="16" rx="3.5"/><rect x="34.5" y="16" width="7" height="16" rx="3.5"/></svg></div>
+        <figure class="weed__art">
+          <img src="images/weed-cattail.jpg" width="1200" height="600" loading="lazy" decoding="async"
+               alt="Cattails standing in the shallows at a pond's edge, brown seed heads above an exposed mass of roots.">
+        </figure>
         <h3 class="weed__name">Cattails</h3>
         <p class="weed__desc">Root-bound and stubborn. This is a rake job, not a cutting job — we take the
         root ball so it doesn't march further into the pond.</p>
       </article>
 
       <article class="weed reveal" data-tag="Surface">
-        <div class="weed__art weed__art--algae" aria-hidden="true"><svg viewBox="0 0 60 80"><path d="M6 34c8-6 16-6 24 0s16 6 24 0M6 46c8-6 16-6 24 0s16 6 24 0M6 58c8-6 16-6 24 0s16 6 24 0"/></svg></div>
+        <figure class="weed__art">
+          <img src="images/weed-algae.jpg" width="1200" height="600" loading="lazy" decoding="async"
+               alt="A pond surface carpeted in bright green duckweed and stringy filamentous algae, seen from directly above.">
+        </figure>
         <h3 class="weed__name">Algae &amp; Duckweed</h3>
         <p class="weed__desc">Surface scum that shows up on the windward shore. Skimmed off the top and
         removed before it turns your waterfront green.</p>
@@ -418,7 +440,6 @@
         <textarea class="field__input" name="notes" rows="3" placeholder="Dock in the way, access notes, when you'd like it done…"></textarea>
       </label>
       <button class="btn btn--primary btn--lg btn--block" type="submit">Send my request</button>
-      <p class="form__note">Demo form — no back end wired up yet. Point it at the client's inbox or form handler before launch.</p>
       <p class="form__ok" id="formOk" hidden>Thanks — that's through. Jim will be in touch shortly.</p>
     </form>
   </div>
