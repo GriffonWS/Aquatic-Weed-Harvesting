@@ -348,22 +348,30 @@ em{font-style:normal}
 }
 .svc:hover{transform:translateY(-6px);background:var(--card-2);border-color:color-mix(in srgb,var(--aqua) 45%,transparent)}
 .svc:hover::before{opacity:1}
-.svc--wide{grid-column:span 3;display:grid;grid-template-columns:auto 1fr 1fr;gap:clamp(22px,3vw,44px);align-items:start}
-.svc--wide .svc__ico{grid-row:span 2}
-.svc--wide .svc__title{margin-top:0}
-.svc--wide .svc__text{grid-column:2;margin:0}
-.svc--wide .svc__list{grid-column:3;grid-row:1/span 2;align-self:center}
+.svc--wide{
+  grid-column:span 3;display:grid;grid-template-columns:1.05fr .95fr;
+  gap:clamp(24px,3.5vw,48px);align-items:center;
+}
+.svc--wide .svc__main{position:relative;z-index:2}
+
+/* photo slot — full-bleed inside the card's rounded corner */
+.svc__media{
+  margin:0;overflow:hidden;border-radius:var(--r);border:1px solid var(--line);
+  background:var(--deep-2);position:relative;z-index:2;
+}
+.svc__media img{width:100%;height:100%;object-fit:cover;display:block}
+.svc--wide .svc__media{aspect-ratio:16/10}
+/* narrow cards: banner above the content (used once photos exist for 02–04) */
+.svc:not(.svc--wide) .svc__media{aspect-ratio:16/10;margin-bottom:22px}
+/* every card's photo sits under this corner, so the number needs a chip */
 .svc__num{
-  position:absolute;top:clamp(20px,2.4vw,30px);right:clamp(20px,2.4vw,30px);
-  font:700 12px/1 var(--display);letter-spacing:.14em;color:var(--txt-dim);opacity:.55;
+  position:absolute;top:clamp(20px,2.4vw,30px);right:clamp(20px,2.4vw,30px);z-index:3;
+  font:700 12px/1 var(--display);letter-spacing:.14em;color:#dbe9ec;
+  padding:6px 10px;border-radius:99px;
+  background:rgba(4,20,29,.55);border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(6px);
 }
-.svc__ico{
-  width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
-  background:linear-gradient(140deg,rgba(168,224,95,.18),rgba(61,219,196,.14));
-  border:1px solid var(--line);position:relative;z-index:2;
-}
-.svc__ico svg{width:26px;height:26px;fill:none;stroke:var(--aqua);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.svc__title{font:700 clamp(19px,2vw,25px)/1.2 var(--display);letter-spacing:-.02em;margin:22px 0 10px;position:relative;z-index:2}
+.svc__title{font:700 clamp(19px,2vw,25px)/1.2 var(--display);letter-spacing:-.02em;margin:0 0 10px;position:relative;z-index:2}
 .svc__text{color:var(--txt-dim);font-size:15px;margin:0;position:relative;z-index:2}
 .svc__list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:11px;position:relative;z-index:2}
 .svc__list li{padding-left:26px;position:relative;font-size:14.5px;color:var(--txt-dim)}
@@ -662,8 +670,7 @@ textarea.field__input{resize:vertical;min-height:92px}
 @media (max-width:1080px){
   .svcs,.weeds,.quotes{grid-template-columns:repeat(2,1fr)}
   .svc--wide{grid-column:span 2;grid-template-columns:1fr}
-  .svc--wide .svc__ico{grid-row:auto}
-  .svc--wide .svc__text,.svc--wide .svc__list{grid-column:1;grid-row:auto}
+  .svc--wide .svc__media{order:-1;margin-bottom:22px}
   .footer__grid{grid-template-columns:1fr 1fr}
   .section__head--split{grid-template-columns:1fr}
   .faq,.quote-wrap,.area,.boat{grid-template-columns:1fr}
