@@ -353,6 +353,13 @@ em{font-style:normal}
   max-width:none;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,70px);align-items:end;
 }
 .section__head--split .lead{margin:0;padding-bottom:6px}
+/* centred variant — used where the block below it is symmetrical (the
+   before/after slider), so a left-ranged head would sit off-axis to it */
+.section__head--center{margin-inline:auto;text-align:center}
+.section__head--center .lead{margin-inline:auto}
+/* the mission band already closes on a rule and its own generous padding;
+   without this the two stacked paddings leave a dead gap above the slider */
+.mission + .section{padding-top:clamp(48px,6vw,88px)}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -543,7 +550,139 @@ em{font-style:normal}
 .weed__desc{color:var(--txt-dim);font-size:14.5px;margin:0}
 
 
+/* ==========================================================================
+   MISSION BAND
+   A quiet full-width statement between the marquee and the before/after.
+   Deliberately typographic — no card, no photo — so it reads as the company
+   speaking rather than another content block.
+   ========================================================================== */
+.mission{padding:clamp(56px,8vw,96px) 0;position:relative}
+.mission::before,.mission::after{
+  content:"";position:absolute;left:50%;transform:translateX(-50%);
+  width:min(100% - 2*var(--pad),var(--max));height:1px;background:var(--line);
+}
+.mission::before{top:0}
+.mission::after{bottom:0}
+/* Split rather than centred: the statement runs to three paragraphs, and
+   centred body copy that long is hard to read. The slogan holds the left
+   rail so the block still reads as a statement, not another content section. */
+.mission__inner{
+  display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,72px);
+  align-items:start;
+}
+.mission__aside{position:sticky;top:120px}
+.mission__tag{
+  font:600 12px/1 var(--font);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 18px;
+}
+.mission__slogan{
+  font:700 clamp(22px,2.6vw,33px)/1.2 var(--display);letter-spacing:-.028em;
+  color:var(--txt);margin:0;text-wrap:balance;
+}
+.mission__p{
+  color:var(--txt-dim);font-size:clamp(15.5px,1.5vw,17px);line-height:1.72;
+  margin:0 0 20px;max-width:60ch;
+}
+.mission__p strong{color:var(--txt);font-weight:600}
+.mission__p em{color:var(--mark);font-style:normal;font-weight:600}
+.mission__join{
+  margin:26px 0 0;padding-top:24px;border-top:1px solid var(--line);
+  font:700 clamp(18px,2vw,25px)/1.32 var(--display);letter-spacing:-.024em;
+  color:var(--txt);max-width:26ch;text-wrap:balance;
+}
 
+/* ==========================================================================
+   MECHANICAL VS CHEMICAL
+   Sits directly above the dark boat block, so it carries its own radial wash
+   and settles back to --bg at the bottom edge to hand over cleanly.
+   ========================================================================== */
+.section--why{
+  background:
+    radial-gradient(80% 70% at 8% 0%,rgba(33,116,152,.22),transparent 62%),
+    radial-gradient(70% 60% at 100% 40%,rgba(248,152,26,.10),transparent 60%),
+    var(--bg);
+}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,26px)}
+.cmp{
+  padding:clamp(26px,3vw,38px);border-radius:var(--r-lg);
+  background:var(--card);border:1px solid var(--line);
+  transition:border-color .4s,background .4s;
+}
+.cmp--bad{background:color-mix(in srgb,var(--danger) 6%,var(--card))}
+.cmp--bad:hover{border-color:color-mix(in srgb,var(--danger) 42%,transparent)}
+.cmp--good{background:color-mix(in srgb,var(--mark) 7%,var(--card))}
+.cmp--good:hover{border-color:color-mix(in srgb,var(--mark) 50%,transparent)}
+.cmp__head{
+  display:flex;align-items:center;gap:12px;margin:0 0 22px;
+  font:700 clamp(18px,2vw,23px)/1.2 var(--display);letter-spacing:-.02em;
+}
+.cmp__mark{
+  flex-shrink:0;width:30px;height:30px;border-radius:50%;
+  display:grid;place-items:center;font-size:14px;font-weight:700;
+}
+.cmp--bad .cmp__mark{background:color-mix(in srgb,var(--danger) 20%,transparent);color:var(--danger)}
+.cmp--good .cmp__mark{background:color-mix(in srgb,var(--mark) 22%,transparent);color:var(--mark)}
+.cmp__list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.cmp__list li{
+  position:relative;padding-left:20px;color:var(--txt-dim);
+  font-size:14.5px;line-height:1.6;
+}
+.cmp__list li::before{
+  content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;
+}
+.cmp--bad .cmp__list li::before{background:var(--danger);opacity:.75}
+.cmp--good .cmp__list li::before{background:var(--mark);opacity:.9}
+
+/* the herbicide-resistance figures */
+.factbar{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,26px);
+  margin-top:clamp(16px,2vw,26px);
+}
+.fact{
+  padding:clamp(24px,2.6vw,32px);border-radius:var(--r-lg);
+  background:var(--card);border:1px solid var(--line);
+}
+.fact__num{
+  display:block;font:800 clamp(38px,5vw,60px)/1 var(--display);letter-spacing:-.04em;
+  color:var(--sun);margin-bottom:12px;
+}
+.fact__label{display:block;color:var(--txt-dim);font-size:14px;line-height:1.55;max-width:30ch}
+
+/* the Roundup analogy */
+.pull{margin:clamp(40px,6vw,72px) 0 0;text-align:center}
+.pull blockquote{margin:0}
+.pull blockquote p{
+  font:700 clamp(23px,3.4vw,42px)/1.25 var(--display);letter-spacing:-.03em;
+  color:var(--txt);margin:0;text-wrap:balance;
+}
+.pull blockquote p em{color:var(--sun);font-style:normal}
+.pull__kick{margin-top:.5em!important;color:var(--txt-dim)!important}
+.pull figcaption{
+  margin-top:28px;font:600 clamp(14px,1.5vw,17px)/1.5 var(--font);
+  color:var(--accent);text-wrap:balance;
+}
+
+/* ==========================================================================
+   WHY NOW
+   Runs straight into the quote block, so it ends on --bg-alt to match it.
+   ========================================================================== */
+.section--urgency{background:linear-gradient(180deg,var(--bg),var(--bg) 55%,var(--bg-alt))}
+.urgency{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,74px);align-items:start}
+.urgency__lead{color:var(--txt-dim);font-size:clamp(15.5px,1.5vw,17.5px);margin:20px 0 0;max-width:54ch}
+.urgency__copy .btn{margin-top:34px}
+.notsurface{
+  padding:clamp(28px,3.2vw,42px);border-radius:var(--r-xl);
+  background:var(--card);border:1px solid var(--line);
+  border-left:3px solid var(--sun);
+}
+.notsurface__h{
+  font:700 clamp(20px,2.2vw,27px)/1.25 var(--display);letter-spacing:-.025em;margin:0 0 16px;
+}
+.notsurface__p{color:var(--txt-dim);font-size:15px;line-height:1.65;margin:0}
+.notsurface__note{
+  margin:22px 0 0;padding-top:20px;border-top:1px solid var(--line);
+  color:var(--txt-dim);font-size:13.5px;line-height:1.55;
+}
 
 
 /* ==========================================================================
@@ -664,7 +803,9 @@ textarea.field__input{resize:vertical;min-height:92px}
   .svc--wide .svc__media{order:-1;margin-bottom:22px}
   .footer__grid{grid-template-columns:1fr 1fr}
   .section__head--split{grid-template-columns:1fr}
-  .quote-wrap,.boat{grid-template-columns:1fr}
+  .quote-wrap,.boat,.urgency,.mission__inner{grid-template-columns:1fr}
+  .mission__aside{position:static}
+  .factbar{grid-template-columns:1fr 1fr}
   .quote-copy{position:static}
   .boat__figure{order:-1}
   .boat__badge{width:108px;height:108px;left:auto;right:-14px;bottom:-18px}
@@ -702,6 +843,8 @@ textarea.field__input{resize:vertical;min-height:92px}
 }
 @media (max-width:600px){
   .svcs,.weeds,.form__row,.boat__specs,.footer__grid{grid-template-columns:1fr}
+  .compare,.factbar{grid-template-columns:1fr}
+  .fact__label{max-width:none}
   /* spans must be cleared too, or they invent an implicit 2nd column and crush the cards */
   .svc--wide{grid-column:auto}
   .nav__logo img{height:66px}
