@@ -1,0 +1,131 @@
+<?php
+/**
+ * Template Name: Why mechanical
+ *
+ * Renders for the Page with slug "why-mechanical"; awh_create_pages() creates it.
+ *
+ * @package aquatic-weed
+ */
+
+get_header();
+?>
+
+<main id="main">
+
+<!-- ============ PAGE HERO ============ -->
+<section class="phero on-dark">
+  <div class="wrap phero__inner">
+    <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Why mechanical</b></p>
+    <h1 class="phero__title">Don’t sink the problem.<br><em>Remove</em> it.</h1>
+    <p class="phero__lead">Chemical treatment controls the symptoms, not the cause of the nuisance plant problem. Herbicides are a short-term remedy to a longer-term problem. Mechanical harvesting allows for precision weed removal and prevents the build-up of biomass and muck.</p>
+    <div class="phero__cta">
+      <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">(518) 441-7742</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MECHANICAL VS CHEMICAL ============ -->
+<section class="section section--why on-dark" id="why">
+  <div class="wrap">
+    <div class="compare">
+      <article class="cmp cmp--bad reveal">
+        <h3 class="cmp__head"><span class="cmp__mark" aria-hidden="true">✕</span> Spraying herbicides</h3>
+        <ul class="cmp__list">
+          <li>Doesn't remove the plant — it sinks it. The weed dies off and drops to the bottom.</li>
+          <li>That dead biomass becomes muck, which fuels more weed growth next season.</li>
+          <li>Milfoil fragments can regenerate, so spraying often accelerates the infestation —
+          essentially replanting the weed at the bottom of the lake.</li>
+          <li>Limits use of the water for a period of time after treatment.</li>
+          <li>Introduces chemicals, like glyphosate, into ecosystems where fish, birds, pets and
+          people recreate.</li>
+          <li>Disrupts aquatic and wildlife habitats.</li>
+        </ul>
+      </article>
+
+      <article class="cmp cmp--good reveal">
+        <h3 class="cmp__head"><span class="cmp__mark" aria-hidden="true">✓</span> Mechanical harvesting</h3>
+        <ul class="cmp__list">
+          <li>Pulls the problem out by the roots — we physically cut and remove roots, stems,
+          fragments and, most importantly, the seeds.</li>
+          <li>Prevents the build-up of biomass and muck instead of adding to it.</li>
+          <li>We're not just trimming the weed — we're preventing its comeback.</li>
+          <li>Immediate use of the waterway for swimming, fishing, boating and irrigation.</li>
+          <li>100% chemical-free. No toxic runoff, no collateral damage, no downstream consequences.</li>
+          <li>Precision removal that leaves the habitat intact.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="factbar reveal">
+      <div class="fact">
+        <b class="fact__num stat__num" data-count="177">177</b>
+        <span class="fact__label">plant species worldwide have developed resistance to herbicides</span>
+      </div>
+      <div class="fact">
+        <b class="fact__num stat__num" data-count="70" data-suffix="+">70+</b>
+        <span class="fact__label">of them in the United States, most in agricultural systems</span>
+      </div>
+      <div class="fact">
+        <b class="fact__num stat__num" data-count="0">0</b>
+        <span class="fact__label">chemicals introduced to your water by mechanical harvesting</span>
+      </div>
+    </div>
+
+    <!-- Kathy's second sheet — the milfoil argument, kept close to her wording.
+         It sits after the figures because it is the worked example of them. -->
+    <article class="spotlight reveal">
+      <div class="spotlight__side">
+        <p class="spotlight__tag">Case in point</p>
+        <h3 class="spotlight__h">Eurasian milfoil</h3>
+        <p class="spotlight__kick">Spraying doesn't remove the plant.<br>It sinks it.</p>
+      </div>
+      <div class="spotlight__body">
+        <p>Eurasian milfoil is a notoriously invasive aquatic weed. It doesn't just grow — it takes
+        over, choking out native plants, reducing oxygen levels and damaging water quality. And the
+        biggest mistake many lake managers make? Spraying it with herbicides and thinking the problem
+        is solved.</p>
+        <p>When you spray, you aren't eliminating the weed. You're causing it to die off and sink to
+        the bottom, where that dead biomass becomes muck — and muck fuels more weed growth. Worse,
+        milfoil fragments can regenerate, so spraying often <strong>accelerates</strong> the
+        infestation by essentially replanting the weed at the bottom of the lake.</p>
+        <p>Mechanical removal pulls the problem out by the roots. Using aquatic weed harvesters we
+        physically cut and remove milfoil from the water — roots, stems, fragments and, most
+        importantly, the seeds. We're not just trimming the weed. We're preventing its comeback.</p>
+      </div>
+    </article>
+
+    <figure class="pull reveal">
+      <blockquote>
+        <p>Would you spray <em>Roundup</em> on your front lawn and leave the weeds to rot into the
+        soil? Or would you pull them out and haul them away?</p>
+        <p class="pull__kick">The same principle applies underwater.</p>
+      </blockquote>
+      <figcaption>Don't sink the problem — remove it. Mechanical harvesting works where chemicals fail.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section--cta on-dark">
+  <div class="wrap cta">
+    <div class="cta__copy reveal">
+      <p class="eyebrow">Free estimate</p>
+      <h2 class="cta__h">Send us a photo of your water.</h2>
+      <p class="cta__p">That's all we need to start. We'll tell you what's growing, what it takes to
+      clear it and what it costs — no charge, no obligation.</p>
+    </div>
+    <div class="cta__side reveal">
+      <a class="cta__call" href="tel:+15184417742">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
+        <span><b>(518) 441-7742</b><em>or (518) 755-2770</em></span>
+      </a>
+      <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<?php
+get_footer();

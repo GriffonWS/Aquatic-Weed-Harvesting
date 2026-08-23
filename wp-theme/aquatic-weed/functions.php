@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWH_VERSION', '1.0.0' );
+define( 'AWH_VERSION', '2.0.1' );
 
 /* ============================================================== theme setup */
 
@@ -76,6 +76,74 @@ function awh_document_title( $title ) {
 	return $title;
 }
 add_filter( 'pre_get_document_title', 'awh_document_title', 5 );
+
+/* ============================================================= theme pages */
+
+/**
+ * The About and Resources templates render against real Pages, so create them
+ * if they are not there. Without them the header menu points at a 404.
+ *
+ * page-about.php / page-resources.php are picked up automatically by the
+ * template hierarchy once a page with the matching slug exists.
+ */
+function awh_create_pages() {
+	$pages = array(
+		'about'          => 'About',
+		'services'       => 'Services',
+		'why-mechanical' => 'Why mechanical',
+		'how-it-works'   => 'How it works',
+		'who-we-serve'   => 'Who we serve',
+		'resources'      => 'Resources',
+		'contact'        => 'Contact',
+	);
+
+	foreach ( $pages as $slug => $title ) {
+		$existing = get_page_by_path( $slug );
+
+		if ( $existing instanceof WP_Post ) {
+			// There already, but a draft or in the trash renders as a 404.
+			if ( 'publish' !== $existing->post_status ) {
+				wp_update_post(
+					array(
+						'ID'          => $existing->ID,
+						'post_status' => 'publish',
+					)
+				);
+			}
+			continue;
+		}
+
+		wp_insert_post(
+			array(
+				'post_title'     => $title,
+				'post_name'      => $slug,
+				'post_type'      => 'page',
+				'post_status'    => 'publish',
+				'post_content'   => '',
+				'comment_status' => 'closed',
+				'ping_status'    => 'closed',
+			)
+		);
+	}
+
+	// New page URLs will not resolve on pretty permalinks until this runs.
+	flush_rewrite_rules();
+}
+add_action( 'after_switch_theme', 'awh_create_pages' );
+
+/**
+ * after_switch_theme only fires on activation, so a theme updated in place
+ * would never get its pages. Check once per version instead.
+ */
+function awh_maybe_create_pages() {
+	if ( AWH_VERSION === get_option( 'awh_pages_created' ) ) {
+		return;
+	}
+
+	awh_create_pages();
+	update_option( 'awh_pages_created', AWH_VERSION );
+}
+add_action( 'admin_init', 'awh_maybe_create_pages' );
 
 /* ============================================================== quote form  */
 

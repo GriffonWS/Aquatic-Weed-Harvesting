@@ -181,13 +181,17 @@ em{font-style:normal}
 .nav__logo img{width:auto;height:112px;transition:height .4s var(--ease)}
 .nav.is-stuck .nav__logo img{height:78px}
 
-/* seven links now, so the gap and size are tuned to fit them alongside the
-   logo and the CTA — below 1080px the whole row hands over to the burger */
-.nav__links{display:flex;gap:clamp(9px,1.5vw,22px)}
+/* eight links: the gap and size are tuned to sit alongside the logo and the
+   CTA at full width, and the row hands over to the burger below 1080px */
+.nav__links{display:flex;gap:clamp(9px,1.5vw,21px)}
 .nav__link{
   position:relative;font-size:13.5px;font-weight:500;color:var(--txt-dim);
   padding:6px 0;white-space:nowrap;transition:color .25s;
 }
+/* the page you are on */
+.nav__link[aria-current="page"]{color:var(--txt)}
+.nav__link[aria-current="page"]::after{right:0}
+.drawer a[aria-current="page"]{color:var(--accent)}
 .nav__link::after{
   content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;
   background:var(--accent);transition:right .4s var(--ease);
@@ -206,8 +210,6 @@ em{font-style:normal}
 .nav__burger[aria-expanded="true"] span:nth-child(2){opacity:0}
 .nav__burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.8px) rotate(-45deg)}
 
-/* Nine links plus the CTA no longer fit a centred column on a short phone, so
-   the drawer scrolls from the top rather than centring and clipping. */
 .drawer{
   position:fixed;inset:0;z-index:99;background:var(--bg);
   display:flex;flex-direction:column;justify-content:flex-start;gap:2px;
@@ -216,7 +218,7 @@ em{font-style:normal}
   animation:drawerIn .4s var(--ease);
 }
 @keyframes drawerIn{from{opacity:0;transform:translateY(-12px)}}
-.drawer a:not(.btn){font:700 clamp(21px,5.4vw,32px)/1.5 var(--display);letter-spacing:-.02em}
+.drawer a:not(.btn){font:700 clamp(20px,5vw,30px)/1.5 var(--display);letter-spacing:-.02em}
 .drawer .btn{margin-top:22px;align-self:flex-start}
 .drawer__call{color:var(--accent)!important;font-size:18px!important;font-weight:600!important}
 
@@ -565,11 +567,13 @@ em{font-style:normal}
    The second light section in a row (it follows the process steps), so it
    opens on a hairline rule rather than relying on a background change.
    ========================================================================== */
-.section--serve{padding-top:clamp(52px,7vw,92px)}
-.section--serve::before{
+.section--serve,.section--rule{padding-top:clamp(52px,7vw,92px)}
+.section--rule::before{
   content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);
   width:min(100% - 2*var(--pad),var(--max));height:1px;background:var(--line);
 }
+/* a wave overrides the rule — you get one or the other, never both */
+.section--rule.section--wavetop::before{display:none}
 .serve{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,24px)}
 /* flex column with the paragraph growing, so the three cards' divider rules
    line up across the row even though the copy runs to different lengths */
@@ -1116,8 +1120,8 @@ textarea.field__input{resize:vertical;min-height:92px}
 /* ==========================================================================
    RESPONSIVE
    ========================================================================== */
-/* the phone number is the first thing to go when the nav row runs out of
-   room — the burger menu and the sticky mobile bar both still carry it */
+/* the phone number goes first when the nav row runs out of room — the burger
+   menu and the sticky mobile bar both still carry it */
 @media (max-width:1280px){
   .nav__phone{display:none}
 }
@@ -1134,7 +1138,7 @@ textarea.field__input{resize:vertical;min-height:92px}
   .boat__figure{order:-1}
   .boat__badge{width:108px;height:108px;left:auto;right:-14px;bottom:-18px}
 
-  /* seven nav links need more room than a tablet has */
+  /* eight nav links need more room than a tablet has */
   .nav__links{display:none}
   .nav__burger{display:flex}
 
@@ -1198,4 +1202,82 @@ textarea.field__input{resize:vertical;min-height:92px}
   *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none}
+}
+
+/* ==========================================================================
+   PAGE HERO
+   Inner pages don't have the tall photographic hero, but the nav still starts
+   transparent over the top of the page — so every page opens on a dark band
+   deep enough for the white nav to read against before it goes .is-stuck.
+   ========================================================================== */
+.phero{
+  position:relative;overflow:hidden;
+  padding:clamp(150px,17vw,210px) 0 clamp(78px,10vw,124px);
+  background:
+    radial-gradient(90% 90% at 78% 0%,var(--deep-2) 0%,transparent 62%),
+    radial-gradient(80% 70% at 5% 100%,rgba(33,116,152,.24) 0%,transparent 62%),
+    var(--bg);
+}
+.phero__inner{position:relative;z-index:2}
+.phero__crumb{
+  display:inline-flex;align-items:center;gap:9px;margin:0 0 20px;
+  font:600 12px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--txt-dim);
+}
+.phero__crumb a{color:var(--txt-dim);transition:color .25s}
+.phero__crumb a:hover{color:var(--accent)}
+.phero__crumb i{font-style:normal;color:var(--mark)}
+.phero__crumb b{color:var(--accent);font-weight:600}
+.phero__title{
+  font:800 clamp(38px,6.4vw,80px)/1.02 var(--display);letter-spacing:-.045em;
+  margin:0;max-width:18ch;text-wrap:balance;
+}
+.phero__title em{
+  background:linear-gradient(100deg,var(--sun),var(--sun-lift) 65%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  padding-right:.09em;margin-right:-.09em;
+}
+.phero__lead{
+  max-width:56ch;margin:24px 0 0;color:var(--txt-dim);
+  font-size:clamp(15.5px,1.6vw,18.5px);line-height:1.62;
+}
+.phero__cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:34px}
+/* the hero already gave the top of the page its air, so the first section
+   under it opens tighter than a mid-page one would */
+.phero + .section{padding-top:clamp(50px,6.5vw,86px)}
+
+/* ==========================================================================
+   CTA BAND
+   Closes every page except contact, which closes on the form itself.
+   ========================================================================== */
+.section--cta{
+  background:
+    radial-gradient(85% 80% at 100% 0%,rgba(33,116,152,.24),transparent 60%),
+    radial-gradient(70% 70% at 0% 100%,rgba(248,152,26,.13),transparent 60%),
+    var(--bg-alt);
+  padding-block:clamp(56px,7vw,96px);
+}
+.cta{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center;
+}
+.cta__h{font:700 clamp(28px,4vw,50px)/1.08 var(--display);letter-spacing:-.032em;margin:0;text-wrap:balance}
+.cta__p{color:var(--txt-dim);font-size:clamp(15.5px,1.5vw,17.5px);line-height:1.62;margin:18px 0 0;max-width:52ch}
+.cta__side{display:grid;gap:14px;justify-items:start}
+.cta__call{
+  display:inline-flex;align-items:center;gap:15px;width:100%;
+  padding:18px 24px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);
+  transition:transform .4s var(--ease),border-color .3s;
+}
+.cta__call:hover{transform:translateY(-3px);border-color:var(--accent)}
+.cta__call svg{
+  width:25px;height:25px;flex:none;fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linejoin:round;
+}
+.cta__call b{display:block;font:700 21px/1.15 var(--display);letter-spacing:-.02em}
+.cta__call em{font-style:normal;font-size:13px;color:var(--txt-dim)}
+
+@media (max-width:1080px){
+  .cta{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .phero__title{max-width:none}
+  .cta__call b{font-size:19px}
 }

@@ -18,18 +18,24 @@
     </div>
     <div>
       <h4>Services</h4>
-      <a href="#services">Cutter</a>
-      <a href="#services">Vegetation bucket</a>
-      <a href="#services">Skimmer bucket</a>
-      <a href="#services">Hydraulic pole saw</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Aquatic weed harvesting</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Lake weed removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Pond weed removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Shoreline weed removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Muck reduction</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Leaf &amp; debris removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Invasive aquatic weed removal</a>
     </div>
     <div>
       <h4>Company</h4>
-      <a href="#why">Why mechanical</a>
-      <a href="#boat">The boat</a>
-      <a href="#process">How it works</a>
-      <a href="#weeds">What we remove</a>
-      <a href="#quote">Free quote</a>
+      <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">About us</a>
+      <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>">Who we serve</a>
+      <a href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>">Why mechanical</a>
+      <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>">How it works</a>
+      <a href="<?php echo esc_url( home_url( '/#weeds' ) ); ?>">What we remove</a>
+      <a href="<?php echo esc_url( home_url( '/how-it-works/#boat' ) ); ?>">The boat</a>
+      <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>">Resources</a>
+      <a href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Free quote</a>
     </div>
     <div>
       <h4>Get in touch</h4>
@@ -48,7 +54,7 @@
 <!-- sticky mobile bar -->
 <div class="mobilebar on-dark">
   <a href="tel:+15184417742" class="mobilebar__call">Call now</a>
-  <a href="#quote" class="mobilebar__quote">Free quote</a>
+  <a href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>" class="mobilebar__quote">Free quote</a>
 </div>
 
 <?php wp_footer(); ?>

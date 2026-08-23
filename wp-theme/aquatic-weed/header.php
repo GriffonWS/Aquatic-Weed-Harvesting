@@ -54,10 +54,14 @@
     </a>
 
     <nav class="nav__links" aria-label="Main">
-      <a class="nav__link" href="#services">Services</a>
-      <a class="nav__link" href="#why">Why mechanical</a>
-      <a class="nav__link" href="#process">How it works</a>
-      <a class="nav__link" href="#weeds">What we remove</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/' ) ); ?>"<?php echo is_front_page() ? ' aria-current="page"' : ''; ?>>Home</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"<?php echo is_page( 'about' ) ? ' aria-current="page"' : ''; ?>>About</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"<?php echo is_page( 'services' ) ? ' aria-current="page"' : ''; ?>>Services</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>"<?php echo is_page( 'why-mechanical' ) ? ' aria-current="page"' : ''; ?>>Why mechanical</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>"<?php echo is_page( 'how-it-works' ) ? ' aria-current="page"' : ''; ?>>How it works</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>"<?php echo is_page( 'who-we-serve' ) ? ' aria-current="page"' : ''; ?>>Who we serve</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?>>Resources</a>
+      <a class="nav__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php echo is_page( 'contact' ) ? ' aria-current="page"' : ''; ?>>Contact</a>
     </nav>
 
     <div class="nav__actions">
@@ -65,18 +69,21 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
         <span>(518) 441-7742</span>
       </a>
-      <a class="btn btn--primary" href="#quote">Free Quote</a>
+      <a class="btn btn--primary" href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Free Quote</a>
       <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <div class="drawer on-dark" id="drawer" hidden>
-  <a href="#services">Services</a>
-  <a href="#why">Why mechanical</a>
-  <a href="#process">How it works</a>
-  <a href="#weeds">What we remove</a>
-  <a href="#boat">The boat</a>
-  <a class="btn btn--primary" href="#quote">Get a free quote</a>
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>"<?php echo is_front_page() ? ' aria-current="page"' : ''; ?>>Home</a>
+  <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"<?php echo is_page( 'about' ) ? ' aria-current="page"' : ''; ?>>About</a>
+  <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"<?php echo is_page( 'services' ) ? ' aria-current="page"' : ''; ?>>Services</a>
+  <a href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>"<?php echo is_page( 'why-mechanical' ) ? ' aria-current="page"' : ''; ?>>Why mechanical</a>
+  <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>"<?php echo is_page( 'how-it-works' ) ? ' aria-current="page"' : ''; ?>>How it works</a>
+  <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>"<?php echo is_page( 'who-we-serve' ) ? ' aria-current="page"' : ''; ?>>Who we serve</a>
+  <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?>>Resources</a>
+  <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php echo is_page( 'contact' ) ? ' aria-current="page"' : ''; ?>>Contact</a>
+  <a class="btn btn--primary" href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Get a free quote</a>
   <a class="drawer__call" href="tel:+15184417742">(518) 441-7742</a>
 </div>
