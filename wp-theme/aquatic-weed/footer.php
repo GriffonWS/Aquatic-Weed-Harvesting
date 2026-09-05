@@ -18,13 +18,13 @@
     </div>
     <div>
       <h4>Services</h4>
-      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Aquatic weed harvesting</a>
-      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Lake weed removal</a>
-      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Pond weed removal</a>
-      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Shoreline weed removal</a>
-      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Muck reduction</a>
-      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Leaf &amp; debris removal</a>
-      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Invasive aquatic weed removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#lake-weed-removal">Lake weed removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#pond-weed-removal">Pond weed removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#shoreline-weed-removal">Shoreline weed removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#muck-reduction">Muck reduction</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#leaf-debris-removal">Leaf &amp; debris removal</a>
+      <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#invasive-weed-removal">Invasive aquatic weed removal</a>
     </div>
     <div>
       <h4>Company</h4>

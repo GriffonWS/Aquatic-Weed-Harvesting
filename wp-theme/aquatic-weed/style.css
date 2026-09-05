@@ -3,7 +3,7 @@ Theme Name: Aquatic Weed Harvesting
 Theme URI: https://wedowaterweeds.com/
 Author: Griffon Web Studios
 Description: Multi-page theme for Aquatic Weed Harvesting LLC — mechanical aquatic weed and debris removal, based in the Hudson Valley, NY. Converted from the approved static build.
-Version: 2.0.1
+Version: 2.2.0
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -106,16 +106,6 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
-/* ---------- lake texture ----------
-   A tiling wave field behind the light sections. Deliberately near-invisible
-   (5–6% lake blue): it should register as water, not a pattern. Dark blocks paint
-   an opaque background over it, so it only ever shows on the white bands. */
-body{
-  background-image:url("data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='400'%20viewBox='0%200%20400%20400'><path%20d='M0%2040q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.055'%20stroke-width='1.6'/><path%20d='M0%20120q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20200q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.065'%20stroke-width='1.6'/><path%20d='M0%20280q50%2020%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.04'%20stroke-width='1.6'/><path%20d='M0%20360q50%20-20%20100%200t100%200t100%200t100%200'%20fill='none'%20stroke='%2315607f'%20stroke-opacity='0.05'%20stroke-width='1.6'/></svg>");
-  background-size:400px 400px;
-  background-repeat:repeat;
-  background-attachment:local;
-}
 img,svg,canvas{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
@@ -181,7 +171,7 @@ em{font-style:normal}
 }
 .nav__inner{
   max-width:var(--max);margin-inline:auto;padding:12px var(--pad);
-  display:flex;align-items:center;gap:clamp(14px,3vw,42px);
+  display:flex;align-items:center;gap:clamp(14px,2.2vw,34px);
   transition:padding .4s var(--ease);
 }
 .nav.is-stuck{
@@ -213,8 +203,11 @@ em{font-style:normal}
 .nav__link:hover{color:var(--txt)}
 .nav__link:hover::after{right:0}
 
-.nav__actions{display:flex;align-items:center;gap:12px;margin-left:auto}
-.nav__phone{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px}
+.nav__actions{display:flex;align-items:center;gap:12px;margin-left:auto;flex-shrink:0}
+.nav__phone{
+  display:flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;
+  white-space:nowrap;flex-shrink:0;
+}
 .nav__phone svg{width:16px;height:16px;fill:none;stroke:var(--accent);stroke-width:1.8;stroke-linejoin:round}
 .nav__phone:hover{color:var(--accent)}
 
@@ -235,6 +228,56 @@ em{font-style:normal}
 .drawer a:not(.btn){font:700 clamp(20px,5vw,30px)/1.5 var(--display);letter-spacing:-.02em}
 .drawer .btn{margin-top:22px;align-self:flex-start}
 .drawer__call{color:var(--accent)!important;font-size:18px!important;font-weight:600!important}
+
+/* ---- Services dropdown ----------------------------------------------------
+   The seven service names are the menu: each item jumps to that service's card
+   on the Services page. Opens on hover and on :focus-within, so it works by
+   keyboard with no JS — the nav re-declares its own tokens for the over-hero
+   and stuck-over-white states, so the panel follows both without extra rules.
+   Below 1080px .nav__links is hidden entirely and .drawer__sub takes over. */
+.nav__item{position:relative;display:flex;align-items:center}
+.nav__link--menu{display:inline-flex;align-items:center;gap:5px}
+.nav__caret{
+  width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2.4;
+  stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--ease);
+}
+.nav__item:hover .nav__caret,
+.nav__item:focus-within .nav__caret{transform:rotate(180deg)}
+/* the panel sits a little below the link; this bridges the gap so crossing it
+   with the pointer doesn't close the menu */
+.nav__item::after{content:"";position:absolute;top:100%;left:0;right:0;height:16px}
+.nav__menu{
+  position:absolute;top:100%;left:50%;margin-top:14px;
+  transform:translate(-50%,8px);
+  min-width:262px;padding:9px;display:grid;gap:1px;
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:0 28px 64px -30px rgba(0,0,0,.55);
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s;
+}
+.nav__item:hover .nav__menu,
+.nav__item:focus-within .nav__menu{
+  opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);
+}
+.nav__menu a{
+  display:block;padding:9px 12px;border-radius:10px;
+  font-size:13.5px;font-weight:500;line-height:1.35;color:var(--txt-dim);
+  white-space:nowrap;transition:background .25s,color .25s;
+}
+.nav__menu a:hover,.nav__menu a:focus-visible{background:var(--card-2);color:var(--txt)}
+
+/* ---- the same list inside the mobile drawer ----
+   .drawer a:not(.btn) sets a 30px display face for the top-level links; these
+   are children of those, so they are pulled back to body size. */
+.drawer__sub{
+  display:grid;gap:1px;margin:4px 0 14px;padding-left:16px;
+  border-left:2px solid var(--line);
+}
+.drawer .drawer__sub a{
+  font:500 15.5px/1.95 var(--font);letter-spacing:0;color:var(--txt-dim);
+}
+.drawer .drawer__sub a:hover{color:var(--accent)}
+
 
 /* ==========================================================================
    HERO
@@ -394,6 +437,13 @@ em{font-style:normal}
 .shot img{width:100%;height:100%;object-fit:cover;display:block}
 /* landscape to match the source photography — fills the column, no letterboxing */
 .shot--feature{width:100%;aspect-ratio:4/3}
+/* a full-width band above a card grid — capped to the comparison slider's width
+   so a 4:3 source doesn't crop to something enormous at full wrap width */
+.shot--band{width:100%;max-width:1080px;margin:0 auto clamp(34px,4vw,54px);aspect-ratio:16/9}
+/* the sunset shot is the one portrait frame in the set — capped so it anchors
+   the copy column without running the section long. Lives in .about__copy, not
+   the sticky aside, where a frame this tall would break the stick. */
+.shot--portrait{width:100%;max-width:360px;aspect-ratio:3/4;margin-top:clamp(28px,3.5vw,44px)}
 /* a touch of the deep-water gradient over every photo so they sit in the palette */
 .shot::after{
   content:"";position:absolute;inset:0;pointer-events:none;
@@ -410,10 +460,9 @@ em{font-style:normal}
   border:1px solid var(--line);box-shadow:var(--shadow);cursor:ew-resize;user-select:none;
 }
 .ba__pane{position:absolute;inset:0}
-/* Both panes are the same photograph, framed on two different parts of the
-   pond: the untouched weed mat on one side, the channel the boat has already
-   cut on the other. object-position does the framing. */
-/* A matched pair: identical framing, so only the water changes as you drag. */
+/* Two photographs of the same pond, before and after harvesting. Both sources
+   are 4:3, so cover-cropping to the frame treats them identically and the
+   shoreline stays put as you drag. */
 .ba__pane img{
   position:absolute;inset:0;width:100%;height:100%;
   object-fit:cover;object-position:center;
@@ -426,10 +475,12 @@ em{font-style:normal}
 .ba__tag{
   position:absolute;top:18px;left:18px;z-index:4;
   font:600 11px/1 var(--font);letter-spacing:.16em;text-transform:uppercase;
-  padding:8px 13px;border-radius:99px;background:rgba(13,34,28,.6);backdrop-filter:blur(8px);
+  padding:8px 13px;border-radius:99px;background:rgba(13,34,28,.72);backdrop-filter:blur(8px);
   border:1px solid rgba(255,255,255,.16);color:#eaf4ef;
 }
-.ba__tag--right{left:auto;right:18px;color:var(--accent)}
+/* The pill is a dark surface sitting in a light section, so it resolves accent
+   the way .on-dark does — the light lake blue, not the dark-on-white one. */
+.ba__tag--right{left:auto;right:18px;color:var(--lake)}
 .ba__handle{
   position:absolute;top:0;bottom:0;left:50%;width:2px;z-index:5;
   background:linear-gradient(var(--sun),var(--sun-lift));transform:translateX(-50%);
@@ -497,6 +548,14 @@ em{font-style:normal}
   margin-top:20px;padding-top:18px;border-top:1px solid var(--line);
 }
 
+
+/* the sticky nav would otherwise cover the card a menu item jumps to */
+.svc,.serveCard,.res__video,.res__list{scroll-margin-top:clamp(96px,11vw,132px)}
+/* the two column labels the Resources menu points at; the grid gap carries the
+   rest of the spacing, so the eyebrow's own margin is pulled back */
+.res__video .eyebrow{margin-bottom:12px}
+.res__list .eyebrow{margin-bottom:2px}
+
 .svc__title{font:700 clamp(19px,2vw,25px)/1.2 var(--display);letter-spacing:-.02em;margin:0 0 10px;position:relative;z-index:2}
 .svc__text{color:var(--txt-dim);font-size:15px;margin:0;position:relative;z-index:2}
 .svc__list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:11px;position:relative;z-index:2}
@@ -562,8 +621,18 @@ em{font-style:normal}
    PROCESS
    ========================================================================== */
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
-.step{display:grid;grid-template-columns:auto 1fr;gap:clamp(22px,4vw,54px);padding:clamp(28px,4vw,44px) 0;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:auto 1fr clamp(200px,24vw,320px);gap:clamp(22px,4vw,54px);padding:clamp(28px,4vw,44px) 0;border-top:1px solid var(--line)}
 .step:last-child{border-bottom:1px solid var(--line)}
+/* the process photo is the row's third column. align-self keeps it at its own
+   3:2 — stretching it to the row height would override the aspect-ratio. Below
+   900px three columns don't fit, so it drops under the copy; below 600px .step
+   is already one column and it simply stacks. */
+.shot--step{width:100%;aspect-ratio:3/2;align-self:center}
+@media (max-width:900px){
+  .step{grid-template-columns:auto 1fr}
+  .shot--step{grid-column:2}
+}
+
 .step__num{
   width:clamp(56px,6vw,76px);height:clamp(56px,6vw,76px);border-radius:50%;
   display:grid;place-items:center;flex-shrink:0;
@@ -596,6 +665,16 @@ em{font-style:normal}
   padding:clamp(26px,2.8vw,36px);border-radius:var(--r-lg);
   background:var(--card);border:1px solid var(--line);
   transition:transform .5s var(--ease),background .4s,border-color .4s;
+  overflow:hidden;
+}
+/* the card photo runs edge to edge: the negative margin cancels the card's own
+   padding, so the figure bleeds to the border without restructuring the flex
+   column that keeps the three cards' divider rules aligned. The card supplies
+   the radius and the clip, so .shot's own frame is dropped here. */
+.shot--serve{
+  margin:calc(-1 * clamp(26px,2.8vw,36px));
+  margin-bottom:clamp(22px,2.4vw,30px);
+  aspect-ratio:16/10;border-radius:0;border:0;box-shadow:none;
 }
 .serveCard__p{flex:1}
 .serveCard:hover{
@@ -758,9 +837,15 @@ em{font-style:normal}
   padding:clamp(18px,2.2vw,26px);border-radius:var(--r-lg);
   background:var(--card);border:1px solid var(--line);
 }
-.res__slot,.res__video iframe{
+.res__slot,.res__video iframe,.res__player{
   width:100%;aspect-ratio:16/9;border:0;border-radius:var(--r);display:block;
 }
+/* the width/height attributes on <video> are kept so the box is reserved before
+   the poster loads, but they'd make both axes definite and cancel aspect-ratio */
+.res__player{height:auto}
+/* the poster is letterboxed against the dark surface rather than cropped, so
+   the boat is never cut in half by the card's 16:9 box */
+.res__player{background:var(--deep-2);object-fit:cover}
 .res__slot{
   position:relative;overflow:hidden;
   display:grid;place-items:center;align-content:center;gap:16px;
@@ -1136,8 +1221,15 @@ textarea.field__input{resize:vertical;min-height:92px}
    ========================================================================== */
 /* the phone number goes first when the nav row runs out of room — the burger
    menu and the sticky mobile bar both still carry it */
-@media (max-width:1280px){
+@media (max-width:1360px){
   .nav__phone{display:none}
+}
+/* three of the eight links now carry a caret and a dropdown, so the row needs
+   about 50px more than it used to — it hands over to the burger a touch earlier
+   than the rest of the 1080px layout does. */
+@media (max-width:1180px){
+  .nav__links{display:none}
+  .nav__burger{display:flex}
 }
 @media (max-width:1080px){
   .svcs,.weeds{grid-template-columns:repeat(2,1fr)}

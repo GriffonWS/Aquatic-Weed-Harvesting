@@ -35,11 +35,35 @@
     <nav class="nav__links" aria-label="Main">
       <a class="nav__link" href="index.html">Home</a>
       <a class="nav__link" href="about.html">About</a>
-      <a class="nav__link" href="services.html" aria-current="page">Services</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="services.html" aria-current="page" aria-haspopup="true">Services <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+          <a href="services.html#lake-weed-removal">Lake weed removal</a>
+          <a href="services.html#pond-weed-removal">Pond weed removal</a>
+          <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+          <a href="services.html#muck-reduction">Muck reduction</a>
+          <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+          <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
+        </div>
+      </div>
       <a class="nav__link" href="why-mechanical.html">Why mechanical</a>
       <a class="nav__link" href="how-it-works.html">How it works</a>
-      <a class="nav__link" href="who-we-serve.html">Who we serve</a>
-      <a class="nav__link" href="resources.html">Resources</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="who-we-serve.html" aria-haspopup="true">Who we serve <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="who-we-serve.html#commercial">Commercial</a>
+          <a href="who-we-serve.html#municipal">Municipal</a>
+          <a href="who-we-serve.html#residential">Residential</a>
+        </div>
+      </div>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="resources.html" aria-haspopup="true">Resources <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="resources.html#videos">Videos</a>
+          <a href="resources.html#blogs">Blog &amp; guides</a>
+        </div>
+      </div>
       <a class="nav__link" href="contact.html">Contact</a>
     </nav>
 
@@ -58,10 +82,28 @@
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="services.html" aria-current="page">Services</a>
+  <div class="drawer__sub">
+    <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+    <a href="services.html#lake-weed-removal">Lake weed removal</a>
+    <a href="services.html#pond-weed-removal">Pond weed removal</a>
+    <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+    <a href="services.html#muck-reduction">Muck reduction</a>
+    <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+    <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
+  </div>
   <a href="why-mechanical.html">Why mechanical</a>
   <a href="how-it-works.html">How it works</a>
   <a href="who-we-serve.html">Who we serve</a>
+  <div class="drawer__sub">
+    <a href="who-we-serve.html#commercial">Commercial</a>
+    <a href="who-we-serve.html#municipal">Municipal</a>
+    <a href="who-we-serve.html#residential">Residential</a>
+  </div>
   <a href="resources.html">Resources</a>
+  <div class="drawer__sub">
+    <a href="resources.html#videos">Videos</a>
+    <a href="resources.html#blogs">Blog &amp; guides</a>
+  </div>
   <a href="contact.html">Contact</a>
   <a class="btn btn--primary" href="contact.html#quote">Get a free quote</a>
   <a class="drawer__call" href="tel:+15184417742">(518) 441-7742</a>
@@ -73,10 +115,10 @@
 <section class="phero on-dark">
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="index.html">Home</a> <i>/</i> <b>Services</b></p>
-    <h1 class="phero__title">Four quick-change<br>attachments, <em>one boat</em>.</h1>
-    <p class="phero__lead">Everything is mechanical harvesting — we physically remove the plant
-    and the biomass leaves with us. Nothing is sprayed, and nothing is left to rot on the bottom
-    and feed next year’s growth.</p>
+    <h1 class="phero__title">Seven services,<br><em>one work boat</em>.</h1>
+    <p class="phero__lead">Everything below is mechanical harvesting — we physically remove the
+    plant and the biomass leaves with us. Nothing is sprayed, and nothing is left to rot on the
+    bottom and feed next year’s growth.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="contact.html#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">(518) 441-7742</a>
@@ -91,111 +133,107 @@
     <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z"/>
   </svg>
   <div class="wrap">
-    <!-- Text-only by design: the stock/AI equipment photos were pulled because
-         they weren't the client's own boat. The photo slots go back in once the
-         McNamees send shots of their machine — .svc__media styling is retained. -->
+    <!-- The seven services people actually search for, as the page's headline
+         content. Text-only by design: the stock/AI equipment photos were pulled
+         because they weren't the client's own boat. The photo slots go back in
+         once the McNamees send shots — .svc__media styling is retained. -->
     <div class="svcs svcs--text">
-      <article class="svc svc--wide reveal">
+      <article class="svc svc--wide reveal" id="aquatic-weed-harvesting">
         <span class="svc__num">01</span>
         <div class="svc__main">
-          <h3 class="svc__title">Cutter</h3>
-          <p class="svc__text">The core service. The cutter shears vegetation at the root crown while the
-          onboard basket collects it, so the cuttings never drift back into your cove. Ideal for milfoil,
-          hydrilla and water chestnut mats.</p>
+          <h3 class="svc__title">Aquatic weed harvesting</h3>
+          <p class="svc__text">The whole job, start to finish. We cut the vegetation at the root crown,
+          collect it on the boat as we go, and haul the biomass off site — so nothing drifts back into
+          your cove and nothing is left to rot on the bottom and feed next year's growth.</p>
         </div>
         <ul class="svc__list">
-          <li>Cuts down to a depth of 5 feet</li>
+          <li>Cuts to a depth of 5 feet</li>
           <li>Collects the cuttings as it cuts</li>
           <li>Off-site disposal included</li>
         </ul>
       </article>
 
-      <article class="svc reveal">
+      <article class="svc reveal" id="lake-weed-removal">
         <span class="svc__num">02</span>
-        <h3 class="svc__title">Vegetation bucket</h3>
-        <p class="svc__text">The vegetation bucket, or front end loader, scoops up vegetation to a
-        3 foot depth — the heavy, root-bound material a cutter can't take.</p>
+        <h3 class="svc__title">Lake weed removal</h3>
+        <p class="svc__text">Swim areas, dock approaches, boat lanes and the weedy corner the wind
+        pushes everything into — cleared without closing the lake.</p>
         <ul class="svc__list">
-          <li>Scoops to 3 foot depth</li>
-          <li>Cattail root balls &amp; matted growth</li>
+          <li>Open channels and swim areas</li>
+          <li>Works around docks and moorings</li>
         </ul>
       </article>
 
-      <article class="svc reveal">
+      <article class="svc reveal" id="pond-weed-removal">
         <span class="svc__num">03</span>
-        <h3 class="svc__title">Skimmer bucket</h3>
-        <p class="svc__text">Used for finer material and algae — it lifts floating growth off the top of
-        the water before it blows onto your beach.</p>
+        <h3 class="svc__title">Pond weed removal</h3>
+        <p class="svc__text">Private, farm and association ponds — small, shallow water where a
+        full-size harvester can't get in and can't turn around.</p>
         <ul class="svc__list">
-          <li>Finer material &amp; algae</li>
-          <li>Surface and just below</li>
+          <li>Shallow draft, no ramp required</li>
+          <li>Lily pads, cattails, algae mats</li>
         </ul>
       </article>
 
-      <article class="svc reveal">
+      <article class="svc reveal" id="shoreline-weed-removal">
         <span class="svc__num">04</span>
-        <h3 class="svc__title">Hydraulic pole saw</h3>
-        <p class="svc__text">Worked from the water side, so nobody has to put a ladder on a soft bank
-        or drag brush back up the shoreline.</p>
+        <h3 class="svc__title">Shoreline weed removal</h3>
+        <p class="svc__text">The waterline itself: cattail stands, phragmites and overgrowth taken
+        from the water side, so nobody works off a soft bank.</p>
         <ul class="svc__list">
-          <li>Tree branches &amp; small trees</li>
-          <li>Downed logs in the water</li>
+          <li>Cut and root-ball removal</li>
+          <li>Brush cut from the water side</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal" id="muck-reduction">
+        <span class="svc__num">05</span>
+        <h3 class="svc__title">Muck reduction</h3>
+        <p class="svc__text">Muck is last year's plants. Taking the biomass out before it dies and
+        settles is how you stop feeding next season's growth.</p>
+        <ul class="svc__list">
+          <li>Removes the nutrient load, not just the weed</li>
+          <li>Firmer bottom season over season</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal" id="leaf-debris-removal">
+        <span class="svc__num">06</span>
+        <h3 class="svc__title">Leaf &amp; debris removal</h3>
+        <p class="svc__text">Leaf mats, blow-in, branches and downed logs skimmed or lifted out
+        before they sink and rot down into muck.</p>
+        <ul class="svc__list">
+          <li>Surface skimming and log removal</li>
+          <li>Spring and fall clean-ups</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal" id="invasive-weed-removal">
+        <span class="svc__num">07</span>
+        <h3 class="svc__title">Invasive aquatic weed removal</h3>
+        <p class="svc__text">Milfoil, water chestnut and hydrilla — targeted removal timed around
+        each species so seeds and fragments come out with us.</p>
+        <ul class="svc__list">
+          <li>Timed to each species' season</li>
+          <li>Fragment and seed control</li>
         </ul>
       </article>
     </div>
 
-    <!-- The same boat and the same four tools, listed under the names people
-         actually search for. Kept as one list rather than seven service pages
-         so the site stays a single page. -->
+    <!-- One boat, four quick-change tools. Kept to a single strip so the page
+         stays short — the full equipment story lives on How it works. -->
     <div class="subhead reveal">
-      <h3 class="subhead__h">What we get called for</h3>
-      <p class="subhead__p">Different water, different name for the job — but it is the same crew,
-      the same boat, and the same rule: whatever we cut comes out with us.</p>
+      <h3 class="subhead__h">One boat, four tools</h3>
+      <p class="subhead__p">Every service above is done from the same shallow-draft work boat, with
+      the attachment the job calls for. Nothing is sprayed — whatever we cut comes out with us.
+      <a class="offer__link" href="how-it-works.html#equipment">See how the equipment works <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
     </div>
 
     <ul class="offers">
-      <li class="offer reveal">
-        <h4 class="offer__h">Aquatic weed harvesting</h4>
-        <p class="offer__p">The whole job, start to finish — cut the vegetation, collect it on the
-        boat, and haul the biomass off site.</p>
-      </li>
-      <li class="offer reveal">
-        <h4 class="offer__h">Lake weed removal</h4>
-        <p class="offer__p">Swim areas, dock approaches, boat lanes and the weedy cove the wind
-        pushes everything into.</p>
-      </li>
-      <li class="offer reveal">
-        <h4 class="offer__h">Pond weed removal</h4>
-        <p class="offer__p">Private, farm and association ponds — small, shallow water where a
-        full-size harvester can't work.</p>
-      </li>
-      <li class="offer reveal">
-        <h4 class="offer__h">Shoreline weed removal</h4>
-        <p class="offer__p">The waterline itself: cattail stands, phragmites and overgrowth taken
-        from the water side, not off your bank.</p>
-      </li>
-      <li class="offer reveal">
-        <h4 class="offer__h">Muck reduction</h4>
-        <p class="offer__p">Muck is last year's plants. Taking the biomass out before it dies and
-        settles is how you stop feeding next season's growth.</p>
-      </li>
-      <li class="offer reveal">
-        <h4 class="offer__h">Leaf &amp; debris removal</h4>
-        <p class="offer__p">Leaf mats, blow-in, branches and downed logs skimmed or lifted out
-        before they sink and rot down.</p>
-      </li>
-      <li class="offer reveal">
-        <h4 class="offer__h">Invasive aquatic weed removal</h4>
-        <p class="offer__p">Milfoil, water chestnut and hydrilla — targeted removal timed around
-        each species, seeds and fragments included.</p>
-      </li>
-      <li class="offer offer--cta reveal">
-        <h4 class="offer__h">Not sure which one you need?</h4>
-        <p class="offer__p">Send a photo of your water. We'll tell you what's growing and which
-        of these it actually is.</p>
-        <a class="offer__link" href="contact.html#quote">Get a free quote
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      </li>
+      <li class="spec reveal"><b>Cutter</b><span>Shears vegetation to 5 feet and baskets the cuttings as it cuts</span></li>
+      <li class="spec reveal"><b>Vegetation bucket</b><span>Scoops root-bound growth and cattail root balls to 3 feet</span></li>
+      <li class="spec reveal"><b>Skimmer bucket</b><span>Lifts algae and fine floating material off the surface</span></li>
+      <li class="spec reveal"><b>Hydraulic pole saw</b><span>Branches, small trees and downed logs, worked from the water</span></li>
     </ul>
   </div>
 </section>
@@ -233,13 +271,13 @@
     </div>
     <div>
       <h4>Services</h4>
-      <a href="services.html">Aquatic weed harvesting</a>
-      <a href="services.html">Lake weed removal</a>
-      <a href="services.html">Pond weed removal</a>
-      <a href="services.html">Shoreline weed removal</a>
-      <a href="services.html">Muck reduction</a>
-      <a href="services.html">Leaf &amp; debris removal</a>
-      <a href="services.html">Invasive aquatic weed removal</a>
+      <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+      <a href="services.html#lake-weed-removal">Lake weed removal</a>
+      <a href="services.html#pond-weed-removal">Pond weed removal</a>
+      <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+      <a href="services.html#muck-reduction">Muck reduction</a>
+      <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+      <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
     </div>
     <div>
       <h4>Company</h4>

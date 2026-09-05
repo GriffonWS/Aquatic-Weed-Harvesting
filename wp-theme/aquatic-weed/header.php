@@ -56,11 +56,35 @@
     <nav class="nav__links" aria-label="Main">
       <a class="nav__link" href="<?php echo esc_url( home_url( '/' ) ); ?>"<?php echo is_front_page() ? ' aria-current="page"' : ''; ?>>Home</a>
       <a class="nav__link" href="<?php echo esc_url( home_url( '/about/' ) ); ?>"<?php echo is_page( 'about' ) ? ' aria-current="page"' : ''; ?>>About</a>
-      <a class="nav__link" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"<?php echo is_page( 'services' ) ? ' aria-current="page"' : ''; ?>>Services</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"<?php echo is_page( 'services' ) ? ' aria-current="page"' : ''; ?> aria-haspopup="true">Services <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#lake-weed-removal">Lake weed removal</a>
+          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#pond-weed-removal">Pond weed removal</a>
+          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#shoreline-weed-removal">Shoreline weed removal</a>
+          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#muck-reduction">Muck reduction</a>
+          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#leaf-debris-removal">Leaf &amp; debris removal</a>
+          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#invasive-weed-removal">Invasive aquatic weed removal</a>
+        </div>
+      </div>
       <a class="nav__link" href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>"<?php echo is_page( 'why-mechanical' ) ? ' aria-current="page"' : ''; ?>>Why mechanical</a>
       <a class="nav__link" href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>"<?php echo is_page( 'how-it-works' ) ? ' aria-current="page"' : ''; ?>>How it works</a>
-      <a class="nav__link" href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>"<?php echo is_page( 'who-we-serve' ) ? ' aria-current="page"' : ''; ?>>Who we serve</a>
-      <a class="nav__link" href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?>>Resources</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>"<?php echo is_page( 'who-we-serve' ) ? ' aria-current="page"' : ''; ?> aria-haspopup="true">Who we serve <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#commercial">Commercial</a>
+          <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#municipal">Municipal</a>
+          <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#residential">Residential</a>
+        </div>
+      </div>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?> aria-haspopup="true">Resources <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#videos">Videos</a>
+          <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#blogs">Blog &amp; guides</a>
+        </div>
+      </div>
       <a class="nav__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php echo is_page( 'contact' ) ? ' aria-current="page"' : ''; ?>>Contact</a>
     </nav>
 
@@ -79,10 +103,28 @@
   <a href="<?php echo esc_url( home_url( '/' ) ); ?>"<?php echo is_front_page() ? ' aria-current="page"' : ''; ?>>Home</a>
   <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"<?php echo is_page( 'about' ) ? ' aria-current="page"' : ''; ?>>About</a>
   <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"<?php echo is_page( 'services' ) ? ' aria-current="page"' : ''; ?>>Services</a>
+  <div class="drawer__sub">
+    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#lake-weed-removal">Lake weed removal</a>
+    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#pond-weed-removal">Pond weed removal</a>
+    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#shoreline-weed-removal">Shoreline weed removal</a>
+    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#muck-reduction">Muck reduction</a>
+    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#leaf-debris-removal">Leaf &amp; debris removal</a>
+    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#invasive-weed-removal">Invasive aquatic weed removal</a>
+  </div>
   <a href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>"<?php echo is_page( 'why-mechanical' ) ? ' aria-current="page"' : ''; ?>>Why mechanical</a>
   <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>"<?php echo is_page( 'how-it-works' ) ? ' aria-current="page"' : ''; ?>>How it works</a>
   <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>"<?php echo is_page( 'who-we-serve' ) ? ' aria-current="page"' : ''; ?>>Who we serve</a>
+  <div class="drawer__sub">
+    <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#commercial">Commercial</a>
+    <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#municipal">Municipal</a>
+    <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#residential">Residential</a>
+  </div>
   <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?>>Resources</a>
+  <div class="drawer__sub">
+    <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#videos">Videos</a>
+    <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#blogs">Blog &amp; guides</a>
+  </div>
   <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php echo is_page( 'contact' ) ? ' aria-current="page"' : ''; ?>>Contact</a>
   <a class="btn btn--primary" href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Get a free quote</a>
   <a class="drawer__call" href="tel:+15184417742">(518) 441-7742</a>

@@ -33,7 +33,11 @@ get_header();
   </svg>
   <div class="wrap">
     <div class="serve">
-      <article class="serveCard reveal">
+      <article class="serveCard reveal" id="residential">
+        <figure class="shot shot--serve">
+          <img src="<?php echo awh_img( 'pond-estate-weed.jpg' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
+               alt="A private pond thick with surface weed, with the house on the rise behind it.">
+        </figure>
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5.5 9.6V20h13V9.6"/><path d="M9.5 20v-5h5v5"/></svg>
         </span>
@@ -47,7 +51,11 @@ get_header();
         </ul>
       </article>
 
-      <article class="serveCard reveal">
+      <article class="serveCard reveal" id="commercial">
+        <figure class="shot shot--serve">
+          <img src="<?php echo awh_img( 'crew-full-operation.webp' ); ?>" width="1280" height="960" loading="lazy" decoding="async"
+               alt="A full crew working a commercial pond — harvester, excavator and vacuum truck on the bank.">
+        </figure>
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3.5 9.5h17V20h-17z"/><path d="M2.5 9.5L5 4h14l2.5 5.5z"/><path d="M9.5 20v-6.5h5V20"/></svg>
         </span>
@@ -62,7 +70,11 @@ get_header();
         </ul>
       </article>
 
-      <article class="serveCard reveal">
+      <article class="serveCard reveal" id="municipal">
+        <figure class="shot shot--serve">
+          <img src="<?php echo awh_img( 'lakeside-crew.webp' ); ?>" width="1024" height="540" loading="lazy" decoding="async"
+               alt="Harvested weed staged on a public lakeside access for removal.">
+        </figure>
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M4 21V9h16v12"/><path d="M2.5 9L12 3.5 21.5 9"/><path d="M8 21v-7h3v7M14 14h2.5v7"/></svg>
         </span>

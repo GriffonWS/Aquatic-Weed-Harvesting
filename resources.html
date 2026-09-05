@@ -35,11 +35,35 @@
     <nav class="nav__links" aria-label="Main">
       <a class="nav__link" href="index.html">Home</a>
       <a class="nav__link" href="about.html">About</a>
-      <a class="nav__link" href="services.html">Services</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="services.html" aria-haspopup="true">Services <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+          <a href="services.html#lake-weed-removal">Lake weed removal</a>
+          <a href="services.html#pond-weed-removal">Pond weed removal</a>
+          <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+          <a href="services.html#muck-reduction">Muck reduction</a>
+          <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+          <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
+        </div>
+      </div>
       <a class="nav__link" href="why-mechanical.html">Why mechanical</a>
       <a class="nav__link" href="how-it-works.html">How it works</a>
-      <a class="nav__link" href="who-we-serve.html">Who we serve</a>
-      <a class="nav__link" href="resources.html" aria-current="page">Resources</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="who-we-serve.html" aria-haspopup="true">Who we serve <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="who-we-serve.html#commercial">Commercial</a>
+          <a href="who-we-serve.html#municipal">Municipal</a>
+          <a href="who-we-serve.html#residential">Residential</a>
+        </div>
+      </div>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="resources.html" aria-current="page" aria-haspopup="true">Resources <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="resources.html#videos">Videos</a>
+          <a href="resources.html#blogs">Blog &amp; guides</a>
+        </div>
+      </div>
       <a class="nav__link" href="contact.html">Contact</a>
     </nav>
 
@@ -58,10 +82,28 @@
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
+  <div class="drawer__sub">
+    <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+    <a href="services.html#lake-weed-removal">Lake weed removal</a>
+    <a href="services.html#pond-weed-removal">Pond weed removal</a>
+    <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+    <a href="services.html#muck-reduction">Muck reduction</a>
+    <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+    <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
+  </div>
   <a href="why-mechanical.html">Why mechanical</a>
   <a href="how-it-works.html">How it works</a>
   <a href="who-we-serve.html">Who we serve</a>
+  <div class="drawer__sub">
+    <a href="who-we-serve.html#commercial">Commercial</a>
+    <a href="who-we-serve.html#municipal">Municipal</a>
+    <a href="who-we-serve.html#residential">Residential</a>
+  </div>
   <a href="resources.html" aria-current="page">Resources</a>
+  <div class="drawer__sub">
+    <a href="resources.html#videos">Videos</a>
+    <a href="resources.html#blogs">Blog &amp; guides</a>
+  </div>
   <a href="contact.html">Contact</a>
   <a class="btn btn--primary" href="contact.html#quote">Get a free quote</a>
   <a class="drawer__call" href="tel:+15184417742">(518) 441-7742</a>
@@ -93,20 +135,27 @@
       <!-- VIDEO SLOT — placeholder until the McNamees send footage.
            To go live: replace .res__slot with the YouTube/Vimeo iframe, keep the
            wrapper (it holds the 16:9 ratio and the rounded corner). -->
-      <article class="res__video reveal">
-        <div class="res__slot">
-          <span class="res__play" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>
-          </span>
-          <p class="res__slotP">Harvest footage — coming soon</p>
-        </div>
-        <h3 class="res__videoH">A harvest, start to finish</h3>
-        <p class="res__videoP">One pass across a weeded cove: the cutter going in, the basket filling,
-        and the load coming off at the shore. We're filming this season's jobs — check back, or ask
-        us to send it over when it's cut.</p>
+      <article class="res__video reveal" id="videos">
+        <p class="eyebrow">Videos</p>
+        <!-- Manufacturer footage of the Weedoo work boat, streamed from Weedoo's
+             own server rather than hosted here. The poster is local, so the card
+             still shows the boat if that URL ever moves. Our own job footage
+             replaces this once the McNamees send it. -->
+        <video class="res__player" controls playsinline preload="none"
+               poster="images/weedoo-work-boat-poster.jpg" width="1280" height="720">
+          <source src="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4" type="video/mp4">
+          <p>Your browser can't play this video.
+             <a href="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4">Watch it on weedooboats.com</a>.</p>
+        </video>
+        <h3 class="res__videoH">The work boat, up close</h3>
+        <p class="res__videoP">Thirty seconds on the machine itself — the cutter head, the collection
+        basket and the shoreline reach that lets it work where a full-size harvester can't. Filmed by
+        Weedoo, who build the boat. Footage from our own Northeast jobs goes up as we shoot it
+        this season.</p>
       </article>
 
-      <div class="res__list">
+      <div class="res__list" id="blogs">
+        <p class="eyebrow">Blog &amp; guides</p>
         <a class="res__item reveal" href="why-mechanical.html">
           <span class="res__kind">Guide</span>
           <b class="res__itemH">Why mechanical removal beats spraying</b>
@@ -180,13 +229,13 @@
     </div>
     <div>
       <h4>Services</h4>
-      <a href="services.html">Aquatic weed harvesting</a>
-      <a href="services.html">Lake weed removal</a>
-      <a href="services.html">Pond weed removal</a>
-      <a href="services.html">Shoreline weed removal</a>
-      <a href="services.html">Muck reduction</a>
-      <a href="services.html">Leaf &amp; debris removal</a>
-      <a href="services.html">Invasive aquatic weed removal</a>
+      <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+      <a href="services.html#lake-weed-removal">Lake weed removal</a>
+      <a href="services.html#pond-weed-removal">Pond weed removal</a>
+      <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+      <a href="services.html#muck-reduction">Muck reduction</a>
+      <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+      <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
     </div>
     <div>
       <h4>Company</h4>

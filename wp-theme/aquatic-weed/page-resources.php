@@ -36,20 +36,27 @@ get_header();
       <!-- VIDEO SLOT — placeholder until the McNamees send footage.
            To go live: replace .res__slot with the YouTube/Vimeo iframe, keep the
            wrapper (it holds the 16:9 ratio and the rounded corner). -->
-      <article class="res__video reveal">
-        <div class="res__slot">
-          <span class="res__play" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 5.5l11 6.5-11 6.5z"/></svg>
-          </span>
-          <p class="res__slotP">Harvest footage — coming soon</p>
-        </div>
-        <h3 class="res__videoH">A harvest, start to finish</h3>
-        <p class="res__videoP">One pass across a weeded cove: the cutter going in, the basket filling,
-        and the load coming off at the shore. We're filming this season's jobs — check back, or ask
-        us to send it over when it's cut.</p>
+      <article class="res__video reveal" id="videos">
+        <p class="eyebrow">Videos</p>
+        <!-- Manufacturer footage of the Weedoo work boat, streamed from Weedoo's
+             own server rather than hosted here. The poster is local, so the card
+             still shows the boat if that URL ever moves. Our own job footage
+             replaces this once the McNamees send it. -->
+        <video class="res__player" controls playsinline preload="none"
+               poster="<?php echo awh_img( 'weedoo-work-boat-poster.jpg' ); ?>" width="1280" height="720">
+          <source src="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4" type="video/mp4">
+          <p>Your browser can't play this video.
+             <a href="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4">Watch it on weedooboats.com</a>.</p>
+        </video>
+        <h3 class="res__videoH">The work boat, up close</h3>
+        <p class="res__videoP">Thirty seconds on the machine itself — the cutter head, the collection
+        basket and the shoreline reach that lets it work where a full-size harvester can't. Filmed by
+        Weedoo, who build the boat. Footage from our own Northeast jobs goes up as we shoot it
+        this season.</p>
       </article>
 
-      <div class="res__list">
+      <div class="res__list" id="blogs">
+        <p class="eyebrow">Blog &amp; guides</p>
         <a class="res__item reveal" href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>">
           <span class="res__kind">Guide</span>
           <b class="res__itemH">Why mechanical removal beats spraying</b>

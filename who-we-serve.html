@@ -35,11 +35,35 @@
     <nav class="nav__links" aria-label="Main">
       <a class="nav__link" href="index.html">Home</a>
       <a class="nav__link" href="about.html">About</a>
-      <a class="nav__link" href="services.html">Services</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="services.html" aria-haspopup="true">Services <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+          <a href="services.html#lake-weed-removal">Lake weed removal</a>
+          <a href="services.html#pond-weed-removal">Pond weed removal</a>
+          <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+          <a href="services.html#muck-reduction">Muck reduction</a>
+          <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+          <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
+        </div>
+      </div>
       <a class="nav__link" href="why-mechanical.html">Why mechanical</a>
       <a class="nav__link" href="how-it-works.html">How it works</a>
-      <a class="nav__link" href="who-we-serve.html" aria-current="page">Who we serve</a>
-      <a class="nav__link" href="resources.html">Resources</a>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="who-we-serve.html" aria-current="page" aria-haspopup="true">Who we serve <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="who-we-serve.html#commercial">Commercial</a>
+          <a href="who-we-serve.html#municipal">Municipal</a>
+          <a href="who-we-serve.html#residential">Residential</a>
+        </div>
+      </div>
+      <div class="nav__item">
+        <a class="nav__link nav__link--menu" href="resources.html" aria-haspopup="true">Resources <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav__menu">
+          <a href="resources.html#videos">Videos</a>
+          <a href="resources.html#blogs">Blog &amp; guides</a>
+        </div>
+      </div>
       <a class="nav__link" href="contact.html">Contact</a>
     </nav>
 
@@ -58,10 +82,28 @@
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="services.html">Services</a>
+  <div class="drawer__sub">
+    <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+    <a href="services.html#lake-weed-removal">Lake weed removal</a>
+    <a href="services.html#pond-weed-removal">Pond weed removal</a>
+    <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+    <a href="services.html#muck-reduction">Muck reduction</a>
+    <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+    <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
+  </div>
   <a href="why-mechanical.html">Why mechanical</a>
   <a href="how-it-works.html">How it works</a>
   <a href="who-we-serve.html" aria-current="page">Who we serve</a>
+  <div class="drawer__sub">
+    <a href="who-we-serve.html#commercial">Commercial</a>
+    <a href="who-we-serve.html#municipal">Municipal</a>
+    <a href="who-we-serve.html#residential">Residential</a>
+  </div>
   <a href="resources.html">Resources</a>
+  <div class="drawer__sub">
+    <a href="resources.html#videos">Videos</a>
+    <a href="resources.html#blogs">Blog &amp; guides</a>
+  </div>
   <a href="contact.html">Contact</a>
   <a class="btn btn--primary" href="contact.html#quote">Get a free quote</a>
   <a class="drawer__call" href="tel:+15184417742">(518) 441-7742</a>
@@ -90,7 +132,11 @@
   </svg>
   <div class="wrap">
     <div class="serve">
-      <article class="serveCard reveal">
+      <article class="serveCard reveal" id="residential">
+        <figure class="shot shot--serve">
+          <img src="images/pond-estate-weed.jpg" width="1024" height="768" loading="lazy" decoding="async"
+               alt="A private pond thick with surface weed, with the house on the rise behind it.">
+        </figure>
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5.5 9.6V20h13V9.6"/><path d="M9.5 20v-5h5v5"/></svg>
         </span>
@@ -104,7 +150,11 @@
         </ul>
       </article>
 
-      <article class="serveCard reveal">
+      <article class="serveCard reveal" id="commercial">
+        <figure class="shot shot--serve">
+          <img src="images/crew-full-operation.webp" width="1280" height="960" loading="lazy" decoding="async"
+               alt="A full crew working a commercial pond — harvester, excavator and vacuum truck on the bank.">
+        </figure>
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3.5 9.5h17V20h-17z"/><path d="M2.5 9.5L5 4h14l2.5 5.5z"/><path d="M9.5 20v-6.5h5V20"/></svg>
         </span>
@@ -119,7 +169,11 @@
         </ul>
       </article>
 
-      <article class="serveCard reveal">
+      <article class="serveCard reveal" id="municipal">
+        <figure class="shot shot--serve">
+          <img src="images/lakeside-crew.webp" width="1024" height="540" loading="lazy" decoding="async"
+               alt="Harvested weed staged on a public lakeside access for removal.">
+        </figure>
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M4 21V9h16v12"/><path d="M2.5 9L12 3.5 21.5 9"/><path d="M8 21v-7h3v7M14 14h2.5v7"/></svg>
         </span>
@@ -173,13 +227,13 @@
     </div>
     <div>
       <h4>Services</h4>
-      <a href="services.html">Aquatic weed harvesting</a>
-      <a href="services.html">Lake weed removal</a>
-      <a href="services.html">Pond weed removal</a>
-      <a href="services.html">Shoreline weed removal</a>
-      <a href="services.html">Muck reduction</a>
-      <a href="services.html">Leaf &amp; debris removal</a>
-      <a href="services.html">Invasive aquatic weed removal</a>
+      <a href="services.html#aquatic-weed-harvesting">Aquatic weed harvesting</a>
+      <a href="services.html#lake-weed-removal">Lake weed removal</a>
+      <a href="services.html#pond-weed-removal">Pond weed removal</a>
+      <a href="services.html#shoreline-weed-removal">Shoreline weed removal</a>
+      <a href="services.html#muck-reduction">Muck reduction</a>
+      <a href="services.html#leaf-debris-removal">Leaf &amp; debris removal</a>
+      <a href="services.html#invasive-weed-removal">Invasive aquatic weed removal</a>
     </div>
     <div>
       <h4>Company</h4>

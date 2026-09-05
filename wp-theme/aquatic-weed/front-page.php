@@ -106,19 +106,19 @@ get_header();
       <p class="lead">Drag the slider to see what comes out of the water.</p>
     </div>
 
-    <div class="ba reveal" id="ba">
+    <div class="ba reveal">
       <div class="ba__frame" tabindex="0" role="slider" aria-label="Before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
         <div class="ba__pane ba__pane--after">
-          <img src="<?php echo awh_img( 'after-pond.jpg' ); ?>" width="1900" height="1036" loading="lazy" decoding="async"
-               alt="The same pond after harvesting — open water from the dock to the far shore.">
+          <img src="<?php echo awh_img( 'after-cleaning.webp' ); ?>" width="2048" height="1536" loading="lazy" decoding="async"
+               alt="The same pond after harvesting — open water again, with the harvester working the far edge.">
           <span class="ba__tag ba__tag--right">After</span>
         </div>
-        <div class="ba__pane ba__pane--before" id="baBefore">
-          <img src="<?php echo awh_img( 'before-pond.jpg' ); ?>" width="1900" height="1036" loading="lazy" decoding="async"
-               alt="A pond blanketed in weed and lily pads right up to the dock.">
+        <div class="ba__pane ba__pane--before">
+          <img src="<?php echo awh_img( 'before-cleaning.jpg' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
+               alt="A pond blanketed shore to shore in bright green algae.">
           <span class="ba__tag">Before</span>
         </div>
-        <div class="ba__handle" id="baHandle"><span class="ba__grip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></span></div>
+        <div class="ba__handle"><span class="ba__grip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></span></div>
       </div>
     </div>
   </div>

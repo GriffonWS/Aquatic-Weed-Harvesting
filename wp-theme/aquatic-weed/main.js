@@ -74,10 +74,13 @@
   } // end IntersectionObserver branch
 
   /* ------------------------------------------------------- before / after */
-  const frame  = $('.ba__frame');
-  const before = $('#baBefore');
-  const handle = $('#baHandle');
-  if (frame) {
+  /* Scoped per frame rather than by id, so a page can carry more than one
+     comparison. Each instance keeps its own `dragging` flag, so the global
+     move/end listeners only act on the slider actually being dragged. */
+  $$('.ba__frame').forEach((frame) => {
+    const before = $('.ba__pane--before', frame);
+    const handle = $('.ba__handle', frame);
+    if (!before || !handle) return;
     let dragging = false;
     const set = (pct) => {
       const p = Math.max(0, Math.min(100, pct));
@@ -125,7 +128,7 @@
       }, { threshold: 0.5 });
       nio.observe(frame);
     }
-  }
+  });
 
   /* --------------------------------------------------------------- gallery */
   const lb = $('#lightbox');

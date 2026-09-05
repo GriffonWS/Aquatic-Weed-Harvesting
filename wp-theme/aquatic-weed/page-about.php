@@ -49,6 +49,11 @@ get_header();
         <li class="value"><b>Stewardship, not just tidying.</b><span>Pull the invasives and the water
         chemistry rebalances, oxygen rises, and the fish and frogs come back.</span></li>
       </ul>
+
+      <figure class="shot shot--portrait">
+        <img src="<?php echo awh_img( 'harvesters-sunset.jpg' ); ?>" width="1536" height="2048" loading="lazy" decoding="async"
+             alt="Two harvesters moored at the dock at sunset, at the end of a day's work.">
+      </figure>
     </div>
 
     <aside class="about__people reveal">
