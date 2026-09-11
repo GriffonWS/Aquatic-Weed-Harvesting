@@ -220,6 +220,11 @@ get_header();
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>
 
+    <figure class="urgency__figure reveal">
+      <img src="<?php echo awh_img( 'boat-in-weeds.jpg' ); ?>" width="1400" height="876" loading="lazy" decoding="async"
+        alt="A harvester cutting a lane through a pond covered edge to edge in dense invasive weed.">
+    </figure>
+
     <aside class="notsurface reveal">
       <h3 class="notsurface__h">This is not a surface removal.</h3>
       <p class="notsurface__p">Aquatic weed harvesting is an essential service for maintaining the

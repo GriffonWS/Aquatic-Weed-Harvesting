@@ -91,8 +91,8 @@ get_header();
     </div>
     <div class="boat__figure reveal">
       <figure class="shot shot--feature">
-        <img src="<?php echo awh_img( 'boat-in-weeds.jpg' ); ?>" width="1400" height="876" loading="lazy" decoding="async"
-             alt="The work boat cutting a channel through a pond blanketed in aquatic weed.">
+        <img src="<?php echo awh_img( 'crew-full-operation.webp' ); ?>" width="1280" height="960" loading="lazy" decoding="async"
+             alt="Our work boat holding tight to a weed-choked shoreline while the shore crew hauls the cut weed away.">
       </figure>
       <div class="boat__badge">
         <b>No<br>chemicals</b>

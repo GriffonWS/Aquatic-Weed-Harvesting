@@ -81,7 +81,21 @@ get_header();
 
       <dl class="facts">
         <div><dt>Based in</dt><dd>Craryville, NY — Columbia County, Hudson Valley</dd></div>
-        <div><dt>Working</dt><dd>New York, New Jersey &amp; Pennsylvania</dd></div>
+        <!-- Six states, named rather than left as "the Northeast". Confirm the
+             list with the McNamees before launch — the footer, contact and
+             who-we-serve copy still say New York, New Jersey and Pennsylvania. -->
+        <div class="facts__row--wide"><dt>Working</dt>
+          <dd>
+            <ul class="states">
+              <li class="state"><b>NY</b> New York</li>
+              <li class="state"><b>NJ</b> New Jersey</li>
+              <li class="state"><b>PA</b> Pennsylvania</li>
+              <li class="state"><b>CT</b> Connecticut</li>
+              <li class="state"><b>MA</b> Massachusetts</li>
+              <li class="state"><b>VT</b> Vermont</li>
+            </ul>
+          </dd>
+        </div>
         <div><dt>Method</dt><dd>Mechanical harvesting only — no herbicides, ever</dd></div>
         <div><dt>Season</dt><dd>Spring through fall; book early for water chestnut</dd></div>
       </dl>
