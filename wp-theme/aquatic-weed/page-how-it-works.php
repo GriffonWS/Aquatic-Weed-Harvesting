@@ -16,11 +16,11 @@ get_header();
 <section class="phero on-dark">
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>How it works</b></p>
-    <h1 class="phero__title">Three steps,<br>start to <em>finish</em>.</h1>
+    <h1 class="phero__title">How mechanical aquatic<br>weed removal <em>works</em>.</h1>
     <p class="phero__lead">Send a photo or we come out and look. The work boat launches from your shoreline, cuts and collects, and the biomass leaves with us — most residential frontages are a one- or two-day job. Below: the three steps, the boat, and the four attachments it carries.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">(518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">+1 (518) 441-7742</a>
     </div>
   </div>
 </section>
@@ -36,7 +36,7 @@ get_header();
       <li class="step reveal">
         <div class="step__num">1</div>
         <div class="step__body">
-          <h3>We look at the water</h3>
+          <h3>Water assessment and weed identification</h3>
           <p>Send photos and a rough idea of the area, or we come out. We identify what's actually
           growing — the plan for water chestnut is not the plan for lily pads — and give you a flat quote.</p>
         </div>
@@ -48,7 +48,7 @@ get_header();
       <li class="step reveal">
         <div class="step__num">2</div>
         <div class="step__body">
-          <h3>We harvest</h3>
+          <h3>Mechanical cutting and collection</h3>
           <p>The work boat launches from your shoreline or the nearest access. It cuts, collects, and shuttles
           full baskets to a staging point on shore. Most residential frontages are a one- or two-day job.</p>
         </div>
@@ -60,7 +60,7 @@ get_header();
       <li class="step reveal">
         <div class="step__num">3</div>
         <div class="step__body">
-          <h3>It leaves with us</h3>
+          <h3>Complete vegetation removal</h3>
           <p>Biomass is loaded out and hauled away — not piled at your treeline. You get open water,
           a clean shoreline, and no nutrient load going back into the lake.</p>
         </div>
@@ -105,7 +105,7 @@ get_header();
 <!-- ============ EQUIPMENT ============ -->
 <!-- The tool detail the Services page only summarises: same boat, four
      quick-change attachments, and which one a job calls for. Text-only by
-     design until the McNamees send photos of their own machine — the
+     design until the owners send photos of their own machine — the
      .svc__media slots and their styling are retained for that. -->
 <section class="section section--wavetop" id="equipment">
   <svg class="wavetop" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
@@ -131,9 +131,9 @@ get_header();
         <span class="svc__num">01</span>
         <div class="svc__main">
           <h3 class="svc__title">Cutter</h3>
-          <p class="svc__text">The one that does most of the work. The cutter shears vegetation at the
-          root crown while the onboard basket collects it, so the cuttings never drift back into your
-          cove or wash up on the next property. Ideal for milfoil, hydrilla and water chestnut mats.</p>
+          <p class="svc__text">The one that does most of the work. The onboard collection basket captures
+          cut vegetation immediately, helping prevent loose fragments from drifting into nearby water or
+          neighboring properties. Ideal for milfoil, hydrilla, and water chestnut mats.</p>
         </div>
         <ul class="svc__list">
           <li>Cuts down to a depth of 5 feet</li>
@@ -190,7 +190,7 @@ get_header();
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>(518) 441-7742</b><em>or (518) 755-2770</em></span>
+        <span><b>+1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

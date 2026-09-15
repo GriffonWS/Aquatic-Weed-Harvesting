@@ -189,7 +189,7 @@
     // WordPress supplies window.AWH. Without it we're running as a plain static
     // file (local preview), so fall back to the old optimistic behaviour.
     if (!window.AWH || !AWH.ajaxUrl) {
-      setTimeout(() => done("Thanks — that's through. Jim will be in touch shortly.", true), 700);
+      setTimeout(() => done("Thanks — that's through. Troy will be in touch shortly.", true), 700);
       return;
     }
 
@@ -202,12 +202,12 @@
       .then(res => {
         const msg = (res && res.data && res.data.message) || '';
         if (res && res.success) {
-          done(msg || "Thanks — that's through. Jim will be in touch shortly.", true);
+          done(msg || "Thanks — that's through. Troy will be in touch shortly.", true);
         } else {
-          done(msg || 'Something went wrong — please call (518) 441-7742.', false);
+          done(msg || 'Something went wrong — please call +1 (518) 441-7742.', false);
         }
       })
-      .catch(() => done('Something went wrong — please call (518) 441-7742.', false));
+      .catch(() => done('Something went wrong — please call +1 (518) 441-7742.', false));
   });
   $$('.field__input', form || document).forEach(i => {
     i.addEventListener('input', () => {

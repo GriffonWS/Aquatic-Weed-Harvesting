@@ -17,11 +17,12 @@ get_header();
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>About us</b></p>
     <h1 class="phero__title">A family business,<br>run off <em>one boat</em>.</h1>
-    <p class="phero__lead">Aquatic Weed Harvesting LLC is a family-run operation based in Craryville,
-    New York, working lakes, ponds and riverfronts across the Hudson Valley and the wider Northeast.</p>
+    <p class="phero__lead">Aquatic Weed Harvesting LLC is a family-run operation based in Henning,
+    Minnesota, working lakes, ponds and riverfronts across west-central Minnesota and the wider
+    Upper Midwest.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">(518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">+1 (518) 441-7742</a>
     </div>
   </div>
 </section>
@@ -59,40 +60,28 @@ get_header();
     <aside class="about__people reveal">
       <h3 class="about__peopleH">Who you'll be talking to</h3>
 
-      <!-- Roles inferred from the rack card and the existing footer numbers —
-           worth a one-line confirmation from the McNamees before launch. -->
+      <!-- One number for the business, so one card here. Roles inferred from the
+           rack card — worth a one-line confirmation from the owners before launch. -->
       <a class="person" href="tel:+15184417742">
-        <span class="person__ini" aria-hidden="true">JM</span>
+        <span class="person__ini" aria-hidden="true">T</span>
         <span class="person__txt">
-          <b>Jim McNamee</b>
+          <b>Troy</b>
           <em>Estimates, scheduling and the man on the boat</em>
-          <span class="person__num">(518) 441-7742</span>
-        </span>
-      </a>
-
-      <a class="person" href="tel:+15187552770">
-        <span class="person__ini" aria-hidden="true">KM</span>
-        <span class="person__txt">
-          <b>Kathy McNamee</b>
-          <em>Office, questions and everything on paper</em>
-          <span class="person__num">(518) 755-2770</span>
+          <span class="person__num">+1 (518) 441-7742</span>
         </span>
       </a>
 
       <dl class="facts">
-        <div><dt>Based in</dt><dd>Craryville, NY — Columbia County, Hudson Valley</dd></div>
-        <!-- Six states, named rather than left as "the Northeast". Confirm the
-             list with the McNamees before launch — the footer, contact and
-             who-we-serve copy still say New York, New Jersey and Pennsylvania. -->
+        <div><dt>Based in</dt><dd>Henning, MN — Otter Tail County, west-central Minnesota</dd></div>
+        <!-- Three states, named rather than left as "the Upper Midwest", and
+             matching the footer, contact and who-we-serve copy. Worth confirming
+             with the owners before launch if they travel further than this. -->
         <div class="facts__row--wide"><dt>Working</dt>
           <dd>
             <ul class="states">
-              <li class="state"><b>NY</b> New York</li>
-              <li class="state"><b>NJ</b> New Jersey</li>
-              <li class="state"><b>PA</b> Pennsylvania</li>
-              <li class="state"><b>CT</b> Connecticut</li>
-              <li class="state"><b>MA</b> Massachusetts</li>
-              <li class="state"><b>VT</b> Vermont</li>
+              <li class="state"><b>MN</b> Minnesota</li>
+              <li class="state"><b>ND</b> North Dakota</li>
+              <li class="state"><b>WI</b> Wisconsin</li>
             </ul>
           </dd>
         </div>
@@ -116,7 +105,7 @@ get_header();
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>(518) 441-7742</b><em>or (518) 755-2770</em></span>
+        <span><b>+1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

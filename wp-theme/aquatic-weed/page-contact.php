@@ -17,29 +17,29 @@ get_header();
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Contact us</b></p>
     <h1 class="phero__title">Send us a photo<br>of your <em>water</em>.</h1>
-    <p class="phero__lead">That’s all we need to start. Fill in the form and Jim gets back to you, or skip the form and call — no answering service, just the two people who run the company.</p>
+    <p class="phero__lead">That’s all we need to start. Fill in the form and Troy gets back to you, or skip the form and call — no answering service, just the people who run the company.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">(518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">+1 (518) 441-7742</a>
     </div>
   </div>
 </section>
 
 <!-- ============ QUOTE ============ -->
-<section class="section section--quote on-dark" id="quote">
+<section class="section section--quote" id="quote">
   <div class="wrap quote-wrap">
     <div class="quote-copy reveal">
       <a class="quote-call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>(518) 441-7742</b><em>or (518) 755-2770</em></span>
+        <span><b>+1 (518) 441-7742</b></span>
       </a>
       <a class="quote-mail" href="mailto:jim@wedowaterweeds.com">jim@wedowaterweeds.com</a>
 
       <div class="minis">
         <div class="mini">
           <h3 class="mini__h">Where we work</h3>
-          <p class="mini__p">Based in the Hudson Valley, working throughout the Northeast — New York,
-          New Jersey and Pennsylvania. Private ponds, lake associations, campgrounds, golf courses
+          <p class="mini__p">Based in west-central Minnesota, working throughout the Upper Midwest — Minnesota,
+          North Dakota and Wisconsin. Private ponds, lake associations, campgrounds, golf courses
           and municipal waterbodies. Ask us about your waterway wherever it is.</p>
         </div>
         <div class="mini">
@@ -114,7 +114,7 @@ get_header();
       </div>
 
       <button class="btn btn--primary btn--lg btn--block" type="submit">Send my request</button>
-      <p class="form__ok" id="formOk" hidden>Thanks — that's through. Jim will be in touch shortly.</p>
+      <p class="form__ok" id="formOk" hidden>Thanks — that's through. Troy will be in touch shortly.</p>
     </form>
   </div>
 </section>
@@ -127,8 +127,8 @@ get_header();
     <div class="section__head section__head--center reveal">
       <p class="eyebrow">Contact us</p>
       <h2 class="h2">Or just pick up<br>the phone.</h2>
-      <p class="lead">No answering service and no call centre — these are the two people who run the
-      company. If we're on the water, leave a message and you'll get a call back the same day.</p>
+      <p class="lead">No answering service and no call centre — one number, answered by the people who
+      run the company. If we're on the water, leave a message and you'll get a call back the same day.</p>
     </div>
 
     <div class="contact">
@@ -137,17 +137,8 @@ get_header();
           <svg viewBox="0 0 24 24"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
         </span>
         <span class="ccard__k">Estimates &amp; scheduling</span>
-        <b class="ccard__v">(518) 441-7742</b>
-        <span class="ccard__m">Jim McNamee</span>
-      </a>
-
-      <a class="ccard reveal" href="tel:+15187552770">
-        <span class="ccard__ico" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        </span>
-        <span class="ccard__k">Office &amp; questions</span>
-        <b class="ccard__v">(518) 755-2770</b>
-        <span class="ccard__m">Kathy McNamee</span>
+        <b class="ccard__v">+1 (518) 441-7742</b>
+        <span class="ccard__m">Troy</span>
       </a>
 
       <a class="ccard reveal" href="mailto:jim@wedowaterweeds.com">
@@ -164,8 +155,8 @@ get_header();
           <svg viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
         </span>
         <span class="ccard__k">Mail &amp; service area</span>
-        <b class="ccard__v ccard__v--addr">PO Box 39<br>Craryville, NY 12521</b>
-        <span class="ccard__m">Serving NY, NJ &amp; PA</span>
+        <b class="ccard__v ccard__v--addr">49398 Leaf River Loop<br>Henning, MN 56551</b>
+        <span class="ccard__m">Serving MN, ND &amp; WI</span>
       </div>
     </div>
   </div>

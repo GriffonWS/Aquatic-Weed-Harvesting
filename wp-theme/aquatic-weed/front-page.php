@@ -24,7 +24,7 @@ get_header();
   <div class="hero__glow" aria-hidden="true"></div>
 
   <div class="hero__inner">
-    <p class="hero__eyebrow"><span class="dot"></span> Aquatic Weed Harvesting LLC &middot; Based in the Hudson Valley</p>
+    <p class="hero__eyebrow"><span class="dot"></span> Aquatic Weed Harvesting LLC &middot; Based in west-central Minnesota</p>
     <h1 class="hero__title">
       <span class="line"><span>Got</span></span>
       <span class="line"><span>Lake <em>Weeds</em>?</span></span>
@@ -67,7 +67,7 @@ get_header();
 </div>
 
 <!-- ============ MISSION ============
-     Verbatim from the back of the client's rack card — Kathy asked for this
+     Verbatim from the back of the client's rack card — the owners asked for this
      statement specifically. Do not paraphrase or tighten it; the only change
      from the printed card is "Hornwort" for the card's "Hornwart" elsewhere
      on the page. -->
@@ -80,16 +80,16 @@ get_header();
 
     <div class="mission__body reveal">
       <p class="mission__p"><strong>Aquatic Weed Harvesting</strong> values our natural resources and
-      strives to improve your lake, pond or riverfront. When removing invasive weeds, the water's
-      chemistry returns to normal and the oxygen levels increase, improving the overall health of the
+      strives to improve your lake, pond or riverfront. Removing excessive invasive vegetation can
+      support healthier oxygen levels, improved water conditions, and better habitat for native
       aquatic life. This can be seen immediately with the response of fish, frogs, and other species.
       Your living ecosystem requires a <em>long term health plan</em>. Together we can form an
       environmental stewardship for sustaining your waterway while enhancing the aesthetic beauty and
       value of your property.</p>
 
-      <p class="mission__p">Conservation and sustainable practices need to be implemented to protect
-      our natural environment. We thank responsible people like you who seek solutions to preserve
-      our natural resources.</p>
+      <p class="mission__p">We mechanically cut, collect, and remove unwanted aquatic vegetation
+      without herbicides. Every project is planned around the waterbody, the species present, and
+      the way the property is used.</p>
 
       <p class="mission__join">Join us to win the fight to clean invasive aquatic vegetation from
       our waterways.</p>
@@ -209,7 +209,7 @@ get_header();
   <div class="wrap urgency">
     <div class="urgency__copy reveal">
       <p class="eyebrow">Why now</p>
-      <h2 class="h2">Time is now<br>to harvest.</h2>
+      <h2 class="h2">Remove invasive weeds<br>before they spread.</h2>
       <p class="urgency__lead">Our waterways face accelerating invasive pressure as seeds and root
       fragments spread through boat traffic, wildlife and currents. Invasive plants like water
       chestnut, milfoil, phragmites and hydrilla establish dense mats that deplete oxygen, block
@@ -237,6 +237,37 @@ get_header();
   </div>
 </section>
 
+<!-- ============ ROOT RAKE ============
+     Client-supplied Weedoo photo of the root rake attachment. Runs on the
+     same two-column feature layout as the boat block on How it works; the
+     copy is the manufacturer's description, trimmed to our voice. -->
+<section class="section section--boat" id="root-rake">
+  <div class="wrap boat">
+    <div class="boat__copy reveal">
+      <p class="eyebrow">The equipment</p>
+      <h2 class="h2">A root rake for<br>the shoreline.</h2>
+      <p class="lead">Designed specifically for cattail and other emergent shoreline vegetation
+      removal, this durable and versatile root rake is a valuable time saver. It attaches with
+      Weedoo's quick-change system, so we go from marine bucket to root rake in a matter of
+      seconds.</p>
+      <ul class="boat__specs">
+        <li class="spec"><b>Cattails &amp; emergents</b><span>Built for growth rooted at the
+        shoreline</span></li>
+        <li class="spec"><b>2 ft steel fingers</b><span>All-steel, for rocks and sunken
+        debris</span></li>
+        <li class="spec"><b>Changed on the water</b><span>Bucket to rake in seconds</span></li>
+        <li class="spec"><b>Restoration work</b><span>A good fit for shoreline projects</span></li>
+      </ul>
+    </div>
+    <div class="boat__figure reveal">
+      <figure class="shot shot--wide">
+        <img src="<?php echo awh_img( 'machine.png' ); ?>" width="768" height="432" loading="lazy" decoding="async"
+          alt="The root rake attachment mounted on the work boat, its curved steel fingers raised clear of the water.">
+      </figure>
+    </div>
+  </div>
+</section>
+
 
 <!-- ============ CTA ============ -->
 <section class="section section--cta on-dark">
@@ -250,7 +281,7 @@ get_header();
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>(518) 441-7742</b><em>or (518) 755-2770</em></span>
+        <span><b>+1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

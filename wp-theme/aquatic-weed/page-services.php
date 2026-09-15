@@ -22,7 +22,7 @@ get_header();
     bottom and feed next year’s growth.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">(518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">+1 (518) 441-7742</a>
     </div>
   </div>
 </section>
@@ -35,7 +35,7 @@ get_header();
   </svg>
   <div class="wrap">
     <!-- The seven services people actually search for, as the page's headline
-         content. All seven now carry the McNamees' own job photos, reused from
+         content. All seven now carry the owners' own job photos, reused from
          How it works, Who we serve and the home page — the stock and AI
          equipment shots that used to sit here were pulled because they weren't
          the client's boat. Two are stand-ins worth replacing when better
@@ -183,7 +183,7 @@ get_header();
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>(518) 441-7742</b><em>or (518) 755-2770</em></span>
+        <span><b>+1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

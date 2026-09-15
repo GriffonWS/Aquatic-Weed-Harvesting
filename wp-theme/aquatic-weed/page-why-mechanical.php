@@ -20,7 +20,7 @@ get_header();
     <p class="phero__lead">Chemical treatment controls the symptoms, not the cause of the nuisance plant problem. Herbicides are a short-term remedy to a longer-term problem. Mechanical harvesting allows for precision weed removal and prevents the build-up of biomass and muck.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">(518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">+1 (518) 441-7742</a>
     </div>
   </div>
 </section>
@@ -34,8 +34,8 @@ get_header();
         <ul class="cmp__list">
           <li>Doesn't remove the plant — it sinks it. The weed dies off and drops to the bottom.</li>
           <li>That dead biomass becomes muck, which fuels more weed growth next season.</li>
-          <li>Milfoil fragments can regenerate, so spraying often accelerates the infestation —
-          essentially replanting the weed at the bottom of the lake.</li>
+          <li>Eurasian watermilfoil can spread through surviving plant fragments. Any removal method
+          must carefully collect loose fragments to reduce the risk of further spread.</li>
           <li>Limits use of the water for a period of time after treatment.</li>
           <li>Introduces chemicals, like glyphosate, into ecosystems where fish, birds, pets and
           people recreate.</li>
@@ -73,7 +73,7 @@ get_header();
     </div>
 
     <!-- The milfoil worked example, reduced to a headline and the photo. The
-         prose that used to sit here (Kathy's second sheet) made the same three
+         prose that used to sit here (the second rack-card sheet) made the same three
          points as the ✕/✓ lists above — sinks rather than removes, muck feeds
          next season, fragments regenerate — so the block now lands the line and
          shows the plant instead of arguing it twice. -->
@@ -115,7 +115,7 @@ get_header();
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>(518) 441-7742</b><em>or (518) 755-2770</em></span>
+        <span><b>+1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

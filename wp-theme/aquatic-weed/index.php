@@ -42,7 +42,7 @@ get_header();
 		<p class="eyebrow">Not found</p>
 		<h2 class="h2">That page isn't here.</h2>
 		<p class="lead">Head back to the <a href="<?php echo esc_url( home_url( '/' ) ); ?>">main page</a>,
-		or call us on <a href="tel:+15184417742">(518) 441-7742</a>.</p>
+		or call us on <a href="tel:+15184417742">+1 (518) 441-7742</a>.</p>
 	  </div>
 	<?php endif; ?>
 

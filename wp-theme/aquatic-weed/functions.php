@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWH_VERSION', '2.2.0' );
+define( 'AWH_VERSION', '2.3.0' );
 
 /* ============================================================== theme setup */
 
@@ -71,7 +71,7 @@ function awh_img( $file ) {
  */
 function awh_document_title( $title ) {
 	if ( is_front_page() ) {
-		return 'Aquatic Weed Harvesting LLC — Got Lake Weeds? | Hudson Valley, NY';
+		return 'Aquatic Weed Harvesting LLC — Got Lake Weeds? | Henning, MN';
 	}
 	return $title;
 }
@@ -223,12 +223,12 @@ function awh_handle_quote() {
 
 	if ( ! $sent ) {
 		wp_send_json_error(
-			array( 'message' => 'We could not send that just now — please call (518) 441-7742.' ),
+			array( 'message' => 'We could not send that just now — please call +1 (518) 441-7742.' ),
 			500
 		);
 	}
 
-	wp_send_json_success( array( 'message' => "Thanks — that's through. Jim will be in touch shortly." ) );
+	wp_send_json_success( array( 'message' => "Thanks — that's through. Troy will be in touch shortly." ) );
 }
 add_action( 'wp_ajax_awh_quote', 'awh_handle_quote' );
 add_action( 'wp_ajax_nopriv_awh_quote', 'awh_handle_quote' );

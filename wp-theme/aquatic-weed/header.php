@@ -19,10 +19,10 @@
  * block — otherwise the page ships two of each tag.
  */
 ?>
-<meta name="description" content="Eco-friendly preservation for lake &amp; pond weed maintenance. We mechanically cut, collect and haul away milfoil, water chestnut, hydrilla, lily pads and cattails — no chemicals. Based in the Hudson Valley, serving New York, New Jersey and Pennsylvania.">
+<meta name="description" content="Eco-friendly preservation for lake &amp; pond weed maintenance. We mechanically cut, collect and haul away milfoil, water chestnut, hydrilla, lily pads and cattails — no chemicals. Based in west-central Minnesota, serving Minnesota, North Dakota and Wisconsin.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Got Lake Weeds? — Aquatic Weed Harvesting LLC">
-<meta property="og:description" content="Eco-friendly preservation for lake &amp; pond weed maintenance. Mechanical harvesting, no chemicals. Based in the Hudson Valley, serving the Northeast.">
+<meta property="og:description" content="Eco-friendly preservation for lake &amp; pond weed maintenance. Mechanical harvesting, no chemicals. Based in west-central Minnesota, serving the Upper Midwest.">
 <meta property="og:image" content="<?php echo awh_img( 'hero-harvesting.jpg' ); ?>">
 <meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>">
 <meta name="twitter:card" content="summary_large_image">
@@ -91,7 +91,7 @@
     <div class="nav__actions">
       <a class="nav__phone" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span>(518) 441-7742</span>
+        <span>+1 (518) 441-7742</span>
       </a>
       <a class="btn btn--primary" href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Free Quote</a>
       <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -127,5 +127,5 @@
   </div>
   <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php echo is_page( 'contact' ) ? ' aria-current="page"' : ''; ?>>Contact</a>
   <a class="btn btn--primary" href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Get a free quote</a>
-  <a class="drawer__call" href="tel:+15184417742">(518) 441-7742</a>
+  <a class="drawer__call" href="tel:+15184417742">+1 (518) 441-7742</a>
 </div>
