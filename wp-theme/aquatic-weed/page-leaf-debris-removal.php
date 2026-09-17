@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leaf &amp; Debris Removal — Mechanical Lake and Pond Surface Cleanup | Aquatic Weed Harvesting LLC</title>
-<meta name="description" content="Mechanical leaf and debris removal for lakes and ponds — floating leaf mats, plant material, branches and storm debris collected from the water before they sink. Spring, fall and post-storm cleanup.">
-<link rel="icon" type="image/png" href="images/logo-256.png">
-<link rel="apple-touch-icon" href="images/logo-256.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leaf &amp; Debris Removal — Mechanical Lake and Pond Surface Cleanup">
-<meta property="og:description" content="Mechanical leaf and debris removal for lakes and ponds — floating leaf mats, plant material, branches and storm debris collected from the water before they sink.">
-<meta property="og:image" content="images/hero-harvesting.jpg">
-<meta property="og:url" content="https://wedowaterweeds.com/leaf-debris-removal.html">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0d221c">
-<meta name="color-scheme" content="dark">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<?php
+/**
+ * Template Name: Leaf and Debris Removal
+ *
+ * Renders for the Page with slug "leaf-debris-removal"; awh_create_pages() creates it.
+ * Content mirrors the approved static leaf-debris-removal.html.
+ *
+ * @package aquatic-weed
+ */
+
+get_header();
+?>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,107 +44,18 @@
   ]
 }
 </script>
-</head>
-<body>
-
-<a class="skip" href="#main">Skip to content</a>
-
-<!-- ============ NAV ============ -->
-<header class="nav" id="nav">
-  <div class="nav__inner">
-    <a class="nav__logo" href="index.html" aria-label="Aquatic Weed Harvesting home">
-      <img src="images/Got_Lake_Weeds_Logo-removebg-preview.png" width="500" height="500"
-           alt="Got Lake Weeds? — Aquatic Weed Harvesting LLC">
-    </a>
-
-    <nav class="nav__links" aria-label="Main">
-      <a class="nav__link" href="index.html">Home</a>
-      <a class="nav__link" href="about.html">About</a>
-      <div class="nav__item">
-        <a class="nav__link nav__link--menu" href="services.html" aria-haspopup="true">Services <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
-        <div class="nav__menu">
-          <a href="aquatic-weed-harvesting.html">Aquatic weed harvesting</a>
-          <a href="lake-weed-removal.html">Lake weed removal</a>
-          <a href="pond-weed-removal.html">Pond weed removal</a>
-          <a href="shoreline-weed-removal.html">Shoreline weed removal</a>
-          <a href="muck-removal.html">Muck reduction</a>
-          <a href="leaf-debris-removal.html" aria-current="page">Leaf &amp; debris removal</a>
-          <a href="invasive-weed-control.html">Invasive aquatic weed removal</a>
-        </div>
-      </div>
-      <a class="nav__link" href="why-mechanical.html">Why mechanical</a>
-      <a class="nav__link" href="how-it-works.html">How it works</a>
-      <div class="nav__item">
-        <a class="nav__link nav__link--menu" href="who-we-serve.html" aria-haspopup="true">Who we serve <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
-        <div class="nav__menu">
-          <a href="commercial-weed-management.html">Commercial</a>
-          <a href="municipal-weed-management.html">Municipal</a>
-          <a href="residential-weed-removal.html">Residential</a>
-        </div>
-      </div>
-      <div class="nav__item">
-        <a class="nav__link nav__link--menu" href="resources.html" aria-haspopup="true">Resources <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
-        <div class="nav__menu">
-          <a href="resources.html#videos">Videos</a>
-          <a href="resources.html#blogs">Blog &amp; guides</a>
-        </div>
-      </div>
-      <a class="nav__link" href="contact.html">Contact</a>
-    </nav>
-
-    <div class="nav__actions">
-      <a class="nav__phone" href="tel:+15184417742">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span>+1 (518) 441-7742</span>
-      </a>
-      <a class="btn btn--primary" href="contact.html#quote">Free Quote</a>
-      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</header>
-
-<div class="drawer on-dark" id="drawer" hidden>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <div class="drawer__sub">
-    <a href="aquatic-weed-harvesting.html">Aquatic weed harvesting</a>
-    <a href="lake-weed-removal.html">Lake weed removal</a>
-    <a href="pond-weed-removal.html">Pond weed removal</a>
-    <a href="shoreline-weed-removal.html">Shoreline weed removal</a>
-    <a href="muck-removal.html">Muck reduction</a>
-    <a href="leaf-debris-removal.html" aria-current="page">Leaf &amp; debris removal</a>
-    <a href="invasive-weed-control.html">Invasive aquatic weed removal</a>
-  </div>
-  <a href="why-mechanical.html">Why mechanical</a>
-  <a href="how-it-works.html">How it works</a>
-  <a href="who-we-serve.html">Who we serve</a>
-  <div class="drawer__sub">
-    <a href="commercial-weed-management.html">Commercial</a>
-    <a href="municipal-weed-management.html">Municipal</a>
-    <a href="residential-weed-removal.html">Residential</a>
-  </div>
-  <a href="resources.html">Resources</a>
-  <div class="drawer__sub">
-    <a href="resources.html#videos">Videos</a>
-    <a href="resources.html#blogs">Blog &amp; guides</a>
-  </div>
-  <a href="contact.html">Contact</a>
-  <a class="btn btn--primary" href="contact.html#quote">Get a free quote</a>
-  <a class="drawer__call" href="tel:+15184417742">+1 (518) 441-7742</a>
-</div>
 
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
 <section class="shero on-dark">
   <figure class="shero__panel">
-    <img src="images/lakeside-crew.webp" width="1024" height="540" loading="eager" decoding="async" fetchpriority="high"
+    <img src="<?php echo awh_img( 'lakeside-crew.webp' ); ?>" width="1024" height="540" loading="eager" decoding="async" fetchpriority="high"
       alt="Material lifted out of the water and piled on the concrete ramp, ready to be hauled away.">
   </figure>
 
   <div class="shero__inner">
-    <p class="phero__crumb"><a href="index.html">Home</a> <i>/</i> <a href="services.html">Services</a> <i>/</i> <b>Leaf &amp; debris removal</b></p>
+    <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Leaf &amp; debris removal</b></p>
     <h1 class="shero__title">Mechanical Leaf and <em>Debris Removal</em></h1>
     <p class="shero__lead">Leaves and debris often gather around docks, shorelines, coves, and other
     protected areas. If left in place, organic material can sink, decompose, and contribute to
@@ -162,7 +65,7 @@
     handle larger branches or downed wood.</p>
 
     <div class="shero__cta">
-      <a class="btn btn--primary btn--lg" href="contact.html#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
     </div>
 
@@ -275,7 +178,7 @@
 
     <div class="kit">
       <figure class="kit__media reveal">
-        <img src="images/machine.png" width="768" height="432" loading="lazy" decoding="async"
+        <img src="<?php echo awh_img( 'machine.png' ); ?>" width="768" height="432" loading="lazy" decoding="async"
              alt="A quick-change attachment mounted on the work boat, operator at the controls.">
       </figure>
 
@@ -388,63 +291,12 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
         <span><b>+1 (518) 441-7742</b><em>jim@wedowaterweeds.com</em></span>
       </a>
-      <a class="btn btn--primary btn--lg btn--block" href="contact.html#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer on-dark">
-  <div class="wrap footer__grid">
-    <div class="footer__brand">
-      <img class="footer__logo" src="images/logo-256.png" width="256" height="256" loading="lazy"
-           alt="Got Lake Weeds? — Aquatic Weed Harvesting LLC">
-      <p class="footer__blurb">Aquatic Weed Harvesting LLC — mechanical aquatic vegetation and debris
-      removal for lakes and ponds. Based in west-central Minnesota, serving the Upper Midwest: Minnesota,
-      North Dakota and Wisconsin.</p>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <a href="aquatic-weed-harvesting.html">Aquatic weed harvesting</a>
-      <a href="lake-weed-removal.html">Lake weed removal</a>
-      <a href="pond-weed-removal.html">Pond weed removal</a>
-      <a href="shoreline-weed-removal.html">Shoreline weed removal</a>
-      <a href="muck-removal.html">Muck reduction</a>
-      <a href="leaf-debris-removal.html" aria-current="page">Leaf &amp; debris removal</a>
-      <a href="invasive-weed-control.html">Invasive aquatic weed removal</a>
-    </div>
-    <div>
-      <h4>Company</h4>
-      <a href="about.html">About us</a>
-      <a href="who-we-serve.html">Who we serve</a>
-      <a href="why-mechanical.html">Why mechanical</a>
-      <a href="how-it-works.html">How it works</a>
-      <a href="index.html#weeds">What we remove</a>
-      <a href="how-it-works.html#boat">The boat</a>
-      <a href="resources.html">Resources</a>
-      <a href="contact.html#quote">Free quote</a>
-    </div>
-    <div>
-      <h4>Get in touch</h4>
-      <a href="tel:+15184417742">Troy — +1 (518) 441-7742</a>
-      <a href="mailto:jim@wedowaterweeds.com">jim@wedowaterweeds.com</a>
-      <span>49398 Leaf River Loop, Henning, MN 56551</span>
-    </div>
-  </div>
-  <div class="wrap footer__bar">
-    <span>© <span id="year">2026</span> Aquatic Weed Harvesting LLC. All rights reserved.</span>
-    <span>wedowaterweeds.com</span>
-  </div>
-</footer>
-
-<!-- sticky mobile bar -->
-<div class="mobilebar on-dark">
-  <a href="tel:+15184417742" class="mobilebar__call">Call now</a>
-  <a href="contact.html#quote" class="mobilebar__quote">Free quote</a>
-</div>
-
-<script src="main.js"></script>
-</body>
-</html>
+<?php
+get_footer();

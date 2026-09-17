@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWH_VERSION', '2.3.0' );
+define( 'AWH_VERSION', '2.5.0' );
 
 /* ============================================================== theme setup */
 
@@ -88,13 +88,25 @@ add_filter( 'pre_get_document_title', 'awh_document_title', 5 );
  */
 function awh_create_pages() {
 	$pages = array(
-		'about'          => 'About',
-		'services'       => 'Services',
-		'why-mechanical' => 'Why mechanical',
-		'how-it-works'   => 'How it works',
-		'who-we-serve'   => 'Who we serve',
-		'resources'      => 'Resources',
-		'contact'        => 'Contact',
+		'about'                    => 'About',
+		'services'                 => 'Services',
+		'why-mechanical'           => 'Why mechanical',
+		'how-it-works'             => 'How it works',
+		'who-we-serve'             => 'Who we serve',
+		'resources'                => 'Resources',
+		'contact'                  => 'Contact',
+		// One page per service, each with its own page-{slug}.php template.
+		'aquatic-weed-harvesting'  => 'Aquatic weed harvesting',
+		'lake-weed-removal'        => 'Lake weed removal',
+		'pond-weed-removal'        => 'Pond weed removal',
+		'shoreline-weed-removal'   => 'Shoreline weed removal',
+		'muck-removal'             => 'Muck removal',
+		'leaf-debris-removal'      => 'Leaf and debris removal',
+		'invasive-weed-control'    => 'Invasive aquatic weed control',
+		// One page per audience under Who we serve.
+		'residential-weed-removal'   => 'Residential',
+		'commercial-weed-management' => 'Commercial',
+		'municipal-weed-management'  => 'Municipal',
 	);
 
 	foreach ( $pages as $slug => $title ) {

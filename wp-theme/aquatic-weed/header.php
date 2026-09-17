@@ -59,13 +59,13 @@
       <div class="nav__item">
         <a class="nav__link nav__link--menu" href="<?php echo esc_url( home_url( '/services/' ) ); ?>"<?php echo is_page( 'services' ) ? ' aria-current="page"' : ''; ?> aria-haspopup="true">Services <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
         <div class="nav__menu">
-          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#aquatic-weed-harvesting">Aquatic weed harvesting</a>
-          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#lake-weed-removal">Lake weed removal</a>
-          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#pond-weed-removal">Pond weed removal</a>
-          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#shoreline-weed-removal">Shoreline weed removal</a>
-          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#muck-reduction">Muck reduction</a>
-          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#leaf-debris-removal">Leaf &amp; debris removal</a>
-          <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#invasive-weed-removal">Invasive aquatic weed removal</a>
+          <a href="<?php echo esc_url( home_url( '/aquatic-weed-harvesting/' ) ); ?>"<?php echo is_page( 'aquatic-weed-harvesting' ) ? ' aria-current="page"' : ''; ?>>Aquatic weed harvesting</a>
+          <a href="<?php echo esc_url( home_url( '/lake-weed-removal/' ) ); ?>"<?php echo is_page( 'lake-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Lake weed removal</a>
+          <a href="<?php echo esc_url( home_url( '/pond-weed-removal/' ) ); ?>"<?php echo is_page( 'pond-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Pond weed removal</a>
+          <a href="<?php echo esc_url( home_url( '/shoreline-weed-removal/' ) ); ?>"<?php echo is_page( 'shoreline-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Shoreline weed removal</a>
+          <a href="<?php echo esc_url( home_url( '/muck-removal/' ) ); ?>"<?php echo is_page( 'muck-removal' ) ? ' aria-current="page"' : ''; ?>>Muck reduction</a>
+          <a href="<?php echo esc_url( home_url( '/leaf-debris-removal/' ) ); ?>"<?php echo is_page( 'leaf-debris-removal' ) ? ' aria-current="page"' : ''; ?>>Leaf &amp; debris removal</a>
+          <a href="<?php echo esc_url( home_url( '/invasive-weed-control/' ) ); ?>"<?php echo is_page( 'invasive-weed-control' ) ? ' aria-current="page"' : ''; ?>>Invasive aquatic weed removal</a>
         </div>
       </div>
       <a class="nav__link" href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>"<?php echo is_page( 'why-mechanical' ) ? ' aria-current="page"' : ''; ?>>Why mechanical</a>
@@ -73,9 +73,9 @@
       <div class="nav__item">
         <a class="nav__link nav__link--menu" href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>"<?php echo is_page( 'who-we-serve' ) ? ' aria-current="page"' : ''; ?> aria-haspopup="true">Who we serve <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
         <div class="nav__menu">
-          <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#commercial">Commercial</a>
-          <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#municipal">Municipal</a>
-          <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#residential">Residential</a>
+          <a href="<?php echo esc_url( home_url( '/commercial-weed-management/' ) ); ?>"<?php echo is_page( 'commercial-weed-management' ) ? ' aria-current="page"' : ''; ?>>Commercial</a>
+          <a href="<?php echo esc_url( home_url( '/municipal-weed-management/' ) ); ?>"<?php echo is_page( 'municipal-weed-management' ) ? ' aria-current="page"' : ''; ?>>Municipal</a>
+          <a href="<?php echo esc_url( home_url( '/residential-weed-removal/' ) ); ?>"<?php echo is_page( 'residential-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Residential</a>
         </div>
       </div>
       <div class="nav__item">
@@ -104,21 +104,21 @@
   <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"<?php echo is_page( 'about' ) ? ' aria-current="page"' : ''; ?>>About</a>
   <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>"<?php echo is_page( 'services' ) ? ' aria-current="page"' : ''; ?>>Services</a>
   <div class="drawer__sub">
-    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#aquatic-weed-harvesting">Aquatic weed harvesting</a>
-    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#lake-weed-removal">Lake weed removal</a>
-    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#pond-weed-removal">Pond weed removal</a>
-    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#shoreline-weed-removal">Shoreline weed removal</a>
-    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#muck-reduction">Muck reduction</a>
-    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#leaf-debris-removal">Leaf &amp; debris removal</a>
-    <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>#invasive-weed-removal">Invasive aquatic weed removal</a>
+    <a href="<?php echo esc_url( home_url( '/aquatic-weed-harvesting/' ) ); ?>"<?php echo is_page( 'aquatic-weed-harvesting' ) ? ' aria-current="page"' : ''; ?>>Aquatic weed harvesting</a>
+    <a href="<?php echo esc_url( home_url( '/lake-weed-removal/' ) ); ?>"<?php echo is_page( 'lake-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Lake weed removal</a>
+    <a href="<?php echo esc_url( home_url( '/pond-weed-removal/' ) ); ?>"<?php echo is_page( 'pond-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Pond weed removal</a>
+    <a href="<?php echo esc_url( home_url( '/shoreline-weed-removal/' ) ); ?>"<?php echo is_page( 'shoreline-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Shoreline weed removal</a>
+    <a href="<?php echo esc_url( home_url( '/muck-removal/' ) ); ?>"<?php echo is_page( 'muck-removal' ) ? ' aria-current="page"' : ''; ?>>Muck reduction</a>
+    <a href="<?php echo esc_url( home_url( '/leaf-debris-removal/' ) ); ?>"<?php echo is_page( 'leaf-debris-removal' ) ? ' aria-current="page"' : ''; ?>>Leaf &amp; debris removal</a>
+    <a href="<?php echo esc_url( home_url( '/invasive-weed-control/' ) ); ?>"<?php echo is_page( 'invasive-weed-control' ) ? ' aria-current="page"' : ''; ?>>Invasive aquatic weed removal</a>
   </div>
   <a href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>"<?php echo is_page( 'why-mechanical' ) ? ' aria-current="page"' : ''; ?>>Why mechanical</a>
   <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>"<?php echo is_page( 'how-it-works' ) ? ' aria-current="page"' : ''; ?>>How it works</a>
   <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>"<?php echo is_page( 'who-we-serve' ) ? ' aria-current="page"' : ''; ?>>Who we serve</a>
   <div class="drawer__sub">
-    <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#commercial">Commercial</a>
-    <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#municipal">Municipal</a>
-    <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>#residential">Residential</a>
+    <a href="<?php echo esc_url( home_url( '/commercial-weed-management/' ) ); ?>"<?php echo is_page( 'commercial-weed-management' ) ? ' aria-current="page"' : ''; ?>>Commercial</a>
+    <a href="<?php echo esc_url( home_url( '/municipal-weed-management/' ) ); ?>"<?php echo is_page( 'municipal-weed-management' ) ? ' aria-current="page"' : ''; ?>>Municipal</a>
+    <a href="<?php echo esc_url( home_url( '/residential-weed-removal/' ) ); ?>"<?php echo is_page( 'residential-weed-removal' ) ? ' aria-current="page"' : ''; ?>>Residential</a>
   </div>
   <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?>>Resources</a>
   <div class="drawer__sub">
