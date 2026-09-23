@@ -83,7 +83,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">When to schedule</p>
-        <h2 class="h2">Seasonal lake leaf removal service.</h2>
+        <h2 class="h2">Seasonal lake leaf removal service</h2>
         <p class="lead">Wind and currents can push large amounts of fallen leaves into coves, dock
         areas, and shallow shorelines. These natural collection points may become difficult to clean
         from land.</p>
@@ -129,7 +129,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">What we collect</p>
-      <h2 class="h2">Floating and submerged debris cleanup.</h2>
+      <h2 class="h2">Floating and submerged debris cleanup</h2>
     </div>
 
     <div class="svcs svcs--text">
@@ -171,7 +171,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">The right equipment for debris removal.</h2>
+      <h2 class="h2">The right equipment for debris removal</h2>
       <p class="lead">Different types of debris require different tools. Our work boat uses
       interchangeable attachments to collect surface material and manage heavier obstacles.</p>
     </div>
@@ -229,7 +229,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Leaf and debris removal questions.</h2>
+      <h2 class="h2">Leaf and debris removal questions</h2>
     </div>
 
     <div class="faq">
@@ -281,7 +281,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Clear the leaves and debris from your water.</h2>
+      <h2 class="cta__h">Clear the leaves and debris from your water</h2>
       <p class="cta__p">Send us photos of the affected lake, pond, or shoreline. We will review the
       material, access conditions, and project scope before recommending the appropriate cleanup
       approach.</p>

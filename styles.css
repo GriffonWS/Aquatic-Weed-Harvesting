@@ -47,7 +47,7 @@
   --r-sm:10px; --r:16px; --r-lg:26px; --r-xl:36px;
   --pad:clamp(18px,4vw,40px);
   --sec:clamp(72px,10vw,140px);
-  --max:1240px;
+  --max:1320px;
 
   --font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --display:"Sora","Inter",system-ui,sans-serif;
@@ -270,7 +270,7 @@ em{font-style:normal}
    ========================================================================== */
 .hero{
   position:relative;min-height:100svh;display:flex;align-items:center;
-  padding:172px 0 190px;overflow:hidden;
+  padding:150px 0 130px;overflow:hidden;
   background:
     radial-gradient(120% 90% at 80% 0%,var(--deep-2) 0%,transparent 60%),
     radial-gradient(90% 70% at 10% 100%,rgba(33,116,152,.22) 0%,transparent 60%),
@@ -301,18 +301,18 @@ em{font-style:normal}
 .hero__inner{position:relative;z-index:2;width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
 
 .hero__eyebrow{
-  display:inline-flex;align-items:center;gap:10px;margin:0 0 26px;
+  display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;
   padding:8px 16px 8px 12px;border:1px solid var(--line);border-radius:999px;
   background:var(--card);backdrop-filter:blur(8px);
   font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--txt-dim);
   animation:up .8s var(--ease) both;
 }
-.dot{width:7px;height:7px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px rgba(248,152,26,.18);animation:pulse 2.4s infinite}
-@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(248,152,26,0)}}
-
+/* sized for a full sentence, not the old two-word punchline — each .line is
+   still meant to render as one row, since .line clips overflow for the
+   reveal animation */
 .hero__title{
-  font:800 clamp(52px,11.5vw,148px)/.9 var(--display);
-  letter-spacing:-.055em;margin:0;
+  font:800 clamp(34px,5.6vw,78px)/1.05 var(--display);
+  letter-spacing:-.03em;margin:0;max-width:20ch;
 }
 .hero__title .line{display:block;overflow:hidden;padding-bottom:.06em}
 .hero__title .line>span{display:block;animation:up 1s var(--ease) both}
@@ -328,17 +328,19 @@ em{font-style:normal}
 @keyframes up{from{opacity:0;transform:translateY(105%)}}
 
 .hero__lead{
-  max-width:52ch;margin:26px 0 0;font-size:clamp(16px,1.7vw,19.5px);color:var(--txt-dim);
+  max-width:52ch;margin:18px 0 0;font-size:clamp(15.5px,1.6vw,18.5px);color:var(--txt-dim);
   animation:up .9s .22s var(--ease) both;
 }
+/* two paragraphs sit closer to each other than the title-to-lead gap above them */
+.hero__lead+.hero__lead{margin-top:12px}
 .hero__lead strong{color:var(--txt)}
-.hero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;animation:up .9s .32s var(--ease) both}
+.hero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px;animation:up .9s .32s var(--ease) both}
 .hero__cta .btn--primary:hover svg{transform:translateX(4px)}
 .hero__cta .btn svg{transition:transform .35s var(--ease)}
 
 .hero__stats{
   display:flex;flex-wrap:wrap;gap:clamp(20px,5vw,64px);
-  list-style:none;margin:clamp(48px,7vw,84px) 0 0;padding:0;
+  list-style:none;margin:clamp(34px,5vw,56px) 0 0;padding:0;
   animation:up .9s .42s var(--ease) both;
 }
 .stat{display:flex;flex-direction:column;gap:6px;position:relative;padding-left:20px}
@@ -561,6 +563,10 @@ em{font-style:normal}
 }
 .svc:hover .svc__link svg,.serveCard:hover .svc__link svg{transform:translateX(4px)}
 .svc__list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:11px;position:relative;z-index:2}
+/* standalone use outside a card — bigger type, roomier gaps, a readable measure */
+.svc__list--lg{max-width:60ch;gap:18px}
+.svc__list--lg li{font-size:19px;padding-left:32px}
+.svc__list--lg li::before{width:17px;height:10px;border-width:2.5px}
 .svc__list li{padding-left:26px;position:relative;font-size:14.5px;color:var(--txt-dim)}
 .svc__list li::before{
   content:"";position:absolute;left:0;top:.5em;width:14px;height:8px;
@@ -622,7 +628,7 @@ em{font-style:normal}
   width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;
   stroke-linecap:round;stroke-linejoin:round;transition:transform .35s var(--ease);
 }
-.offer:hover .offer__link svg{transform:translateX(4px)}
+.offer:hover .offer__link svg,.offer__link:hover svg{transform:translateX(4px)}
 
 /* ==========================================================================
    PROCESS
@@ -951,7 +957,7 @@ em{font-style:normal}
   color:var(--txt);margin:0;text-wrap:balance;
 }
 .mission__p{
-  color:var(--txt-dim);font-size:clamp(15.5px,1.5vw,17px);line-height:1.72;
+  color:var(--txt-dim);font-size:clamp(17px,1.7vw,19px);line-height:1.72;
   margin:0 0 20px;max-width:60ch;
 }
 .mission__p strong{color:var(--txt);font-weight:600}
@@ -961,6 +967,12 @@ em{font-style:normal}
   font:700 clamp(18px,2vw,25px)/1.32 var(--display);letter-spacing:-.024em;
   color:var(--txt);max-width:26ch;text-wrap:balance;
 }
+/* the CTA link that closes the mission statement — same rule-above treatment
+   as .mission__join, since it's replacing that closing line here */
+.mission__body .offer__link{margin:26px 0 0;padding-top:24px;border-top:1px solid var(--line);font-size:16.5px}
+
+/* a single centred button under a card grid — e.g. the homepage services teaser */
+.section__cta{text-align:center;margin-top:clamp(30px,3.6vw,44px)}
 
 /* ==========================================================================
    MECHANICAL VS CHEMICAL

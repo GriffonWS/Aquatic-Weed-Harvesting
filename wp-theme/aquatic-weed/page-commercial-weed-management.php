@@ -55,7 +55,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Commercial services</p>
-      <h2 class="h2">Weed management built around your property.</h2>
+      <h2 class="h2">Weed management built around your property</h2>
     </div>
 
     <div class="svcs">
@@ -116,7 +116,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">How we plan the work</p>
-        <h2 class="h2">A clear plan with minimal disruption.</h2>
+        <h2 class="h2">A clear plan with minimal disruption</h2>
         <p class="lead">Every commercial project begins with an assessment of the vegetation, affected
         areas, property access, and operating schedule. We define the priority treatment zones and
         select the appropriate equipment before work begins.</p>
@@ -139,7 +139,7 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <h2 class="cta__h">Discuss your property.</h2>
+      <h2 class="cta__h">Discuss your property</h2>
       <p class="cta__p">Send us photos of the pond, lake, marina, or affected shoreline. We will review
       the conditions and recommend an appropriate mechanical removal plan.</p>
     </div>

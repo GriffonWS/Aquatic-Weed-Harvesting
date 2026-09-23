@@ -75,7 +75,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">What muck is</p>
-        <h2 class="h2">Beyond surface weeds: targeting deep-rooted sediment.</h2>
+        <h2 class="h2">Beyond surface weeds: targeting deep-rooted sediment</h2>
         <p class="lead">Lake and pond muck forms as aquatic plants, algae, and leaves decompose on
         the waterbed. Over time, this soft sediment reduces water depth, creates murky bottom
         conditions, and hinders full access to docks, shorelines, and swimming areas.</p>
@@ -127,7 +127,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Where we work</p>
-      <h2 class="h2">Targeted lake and pond muck reduction service.</h2>
+      <h2 class="h2">Targeted lake and pond muck reduction service</h2>
       <p class="lead">Muck does not accumulate evenly across an entire waterbody. Wind, currents,
       surrounding trees, aquatic vegetation, and shoreline conditions often concentrate organic
       material into coves, dock areas, shallow corners, and protected shorelines in both lakes and
@@ -157,7 +157,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">How mechanical muck removal works.</h2>
+      <h2 class="h2">How mechanical muck removal works</h2>
     </div>
 
     <ol class="flow flow--4">
@@ -221,7 +221,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Mechanical, not chemical</p>
-      <h2 class="h2">Physical removal without chemical treatments.</h2>
+      <h2 class="h2">Physical removal without chemical treatments</h2>
       <p class="lead">Chemical and biological muck treatments are intended to accelerate
       decomposition, but they do not physically extract the accumulated material from the
       waterbody.</p>
@@ -269,7 +269,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Muck removal questions.</h2>
+      <h2 class="h2">Muck removal questions</h2>
     </div>
 
     <div class="faq">
@@ -313,7 +313,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free initial assessment</p>
-      <h2 class="cta__h">Find out what it takes to remove the muck.</h2>
+      <h2 class="cta__h">Find out what it takes to remove the muck</h2>
       <p class="cta__p">Send us photos and basic information about your lake or pond. We will review
       the affected area, discuss the removal options, and provide a no-obligation estimate.</p>
     </div>

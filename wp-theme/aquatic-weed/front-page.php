@@ -24,7 +24,7 @@ get_header();
   <div class="hero__glow" aria-hidden="true"></div>
 
   <div class="hero__inner">
-    <p class="hero__eyebrow"><span class="dot"></span> Aquatic Weed Harvesting LLC &middot; Based in west-central Minnesota</p>
+    <p class="hero__eyebrow">Aquatic Weed Harvesting LLC &middot; Based in west-central Minnesota</p>
     <h1 class="hero__title">
       <span class="line"><span>Got</span></span>
       <span class="line"><span>Lake <em>Weeds</em>?</span></span>

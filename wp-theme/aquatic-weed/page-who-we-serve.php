@@ -75,7 +75,7 @@ get_header();
   </svg>
   <div class="wrap">
     <div class="section__head reveal">
-      <h2 class="h2">Different properties. Different priorities.</h2>
+      <h2 class="h2">Different properties<br>Different priorities</h2>
       <p class="lead">A private pond, busy marina, and public beach may face similar aquatic vegetation problems, but each requires a different approach.</p>
       <p class="lead">Access, scheduling, treatment areas, documentation, and public use all influence how the work should be planned. We tailor the project around the property, the vegetation, and the people who depend on the water.</p>
     </div>
@@ -164,7 +164,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">How we work</p>
-        <h2 class="h2">Our streamlined process.</h2>
+        <h2 class="h2">Our streamlined process</h2>
       </div>
 
       <ol class="approach__list">
@@ -217,7 +217,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Who we serve FAQs.</h2>
+      <h2 class="h2">Who we serve FAQs</h2>
     </div>
 
     <div class="faq">
@@ -263,7 +263,7 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <h2 class="cta__h">Tell us about your waterfront.</h2>
+      <h2 class="cta__h">Tell us about your waterfront</h2>
       <p class="cta__p">From private ponds and commercial properties to community lakes and municipal
       sites, we assist in crafting a customized mechanical removal plan adapted to your waterbody.</p>
       <p class="cta__p">Send us photos and basic project details to get started.</p>

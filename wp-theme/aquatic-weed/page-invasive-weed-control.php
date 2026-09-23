@@ -80,7 +80,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">Who we work with</p>
-        <h2 class="h2">Invasive weed management for public and community waterbodies.</h2>
+        <h2 class="h2">Invasive weed management for public and community waterbodies</h2>
       </div>
 
       <ul class="approach__list">
@@ -143,7 +143,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">What we control</p>
-      <h2 class="h2">Invasive aquatic vegetation we control.</h2>
+      <h2 class="h2">Invasive aquatic vegetation we control</h2>
     </div>
 
     <div class="wfront wfront--4">
@@ -264,7 +264,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Before work begins</p>
-      <h2 class="h2">A clear scope for every project.</h2>
+      <h2 class="h2">A clear scope for every project</h2>
       <p class="lead">Municipal and association projects often involve public-use requirements and
       strict budget constraints. Before work begins, we establish a clear project scope that
       defines:</p>
@@ -288,7 +288,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Invasive aquatic weed control questions.</h2>
+      <h2 class="h2">Invasive aquatic weed control questions</h2>
     </div>
 
     <div class="faq">
@@ -340,7 +340,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Site assessment</p>
-      <h2 class="cta__h">Build a clear plan for your waterbody.</h2>
+      <h2 class="cta__h">Build a clear plan for your waterbody</h2>
       <p class="cta__p">Tell us about the invasive vegetation, affected areas, public-use
       requirements, and seasonal priorities. We will review the project and recommend an appropriate
       mechanical harvesting approach.</p>

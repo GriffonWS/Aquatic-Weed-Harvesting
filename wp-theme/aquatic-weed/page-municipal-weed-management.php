@@ -55,7 +55,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Public and community projects</p>
-      <h2 class="h2">Planned around public and community use.</h2>
+      <h2 class="h2">Planned around public and community use</h2>
     </div>
 
     <div class="svcs">
@@ -115,7 +115,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Project planning and coordination</p>
-      <h2 class="h2">Tailored project scope for every waterbody.</h2>
+      <h2 class="h2">Tailored project scope for every waterbody</h2>
       <p class="lead">Municipal and association projects may involve permits, budgets, public
       schedules, and several stakeholders. We review these requirements before defining the removal
       area and project schedule.</p>
@@ -143,7 +143,7 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <h2 class="cta__h">Discuss your waterbody.</h2>
+      <h2 class="cta__h">Discuss your waterbody</h2>
       <p class="cta__p">Send us photos, maps, or basic project details. We will review the affected
       areas and recommend an appropriate mechanical harvesting plan.</p>
     </div>

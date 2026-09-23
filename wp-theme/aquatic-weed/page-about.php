@@ -3,6 +3,7 @@
  * Template Name: About
  *
  * Renders for the Page with slug "about"; awh_create_pages() creates it.
+ * Content mirrors the approved static about.html.
  *
  * @package aquatic-weed
  */
@@ -16,7 +17,7 @@ get_header();
 <section class="phero on-dark">
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>About us</b></p>
-    <h1 class="phero__title">A family business,<br>run off <em>one boat</em>.</h1>
+    <h1 class="phero__title">A family business,<br>run off <em>one boat</em></h1>
     <p class="phero__lead">Aquatic Weed Harvesting LLC is a family-run operation based in Henning,
     Minnesota, working lakes, ponds and riverfronts across west-central Minnesota and the wider
     Upper Midwest.</p>
@@ -98,7 +99,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Send us a photo of your water.</h2>
+      <h2 class="cta__h">Send us a photo of your water</h2>
       <p class="cta__p">That's all we need to start. We'll tell you what's growing, what it takes to
       clear it and what it costs — no charge, no obligation.</p>
     </div>

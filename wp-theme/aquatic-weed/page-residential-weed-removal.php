@@ -57,7 +57,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Residential services</p>
-      <h2 class="h2">Focused on the areas you use most.</h2>
+      <h2 class="h2">Focused on the areas you use most</h2>
     </div>
 
     <div class="svcs">
@@ -117,7 +117,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">Get an accurate quote</p>
-        <h2 class="h2">Show us what is growing.</h2>
+        <h2 class="h2">Show us what is growing</h2>
         <p class="lead">To help us prepare an accurate recommendation and quote, send us photos of the
         affected water and shoreline. Our team will evaluate the vegetation density, depth, and access
         to determine the ideal mechanical strategy.</p>

@@ -69,7 +69,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Why it matters</p>
-      <h2 class="h2">Reclaim access to your shoreline.</h2>
+      <h2 class="h2">Reclaim access to your shoreline</h2>
       <p class="lead">Heavy vegetation can block waterfront views, restrict access, crowd docks, and
       make shoreline maintenance difficult. Soft banks and shallow water can also prevent
       conventional land-based or full-size harvesting equipment from reaching the problem.</p>
@@ -84,7 +84,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">What we clear</p>
-      <h2 class="h2">Targeted shoreline growth and debris.</h2>
+      <h2 class="h2">Targeted shoreline growth and debris</h2>
     </div>
 
     <div class="wfront wfront--5">
@@ -150,7 +150,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">Specialized equipment for difficult shorelines.</h2>
+      <h2 class="h2">Specialized equipment for difficult shorelines</h2>
       <p class="lead">Shoreline projects often involve more than one type of vegetation.
       Interchangeable attachments allow the work boat to adapt without bringing several separate
       machines to the property.</p>
@@ -207,7 +207,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">How shoreline weed removal works.</h2>
+      <h2 class="h2">How shoreline weed removal works</h2>
     </div>
 
     <ol class="flow flow--4">
@@ -268,7 +268,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">Working from the water</p>
-        <h2 class="h2">Reach areas land equipment cannot.</h2>
+        <h2 class="h2">Reach areas land equipment cannot</h2>
         <p class="lead">Land-based equipment may damage soft banks or struggle to reach vegetation
         growing beyond the waterline. Working from a compact boat provides direct access to shallow
         growth, submerged plants, and shoreline obstacles.</p>
@@ -301,7 +301,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Who we help</p>
-      <h2 class="h2">Shoreline removal for different waterfronts.</h2>
+      <h2 class="h2">Shoreline removal for different waterfronts</h2>
     </div>
 
     <ul class="offers offers--3">
@@ -320,7 +320,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Shoreline weed removal questions.</h2>
+      <h2 class="h2">Shoreline weed removal questions</h2>
     </div>
 
     <div class="faq">
@@ -356,7 +356,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free initial review</p>
-      <h2 class="cta__h">Show us your shoreline.</h2>
+      <h2 class="cta__h">Show us your shoreline</h2>
       <p class="cta__p">Send us photos of the overgrown area. We will review the vegetation, access
       conditions, and project scope before recommending the appropriate removal approach.</p>
     </div>

@@ -74,7 +74,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">What it gives you back</p>
-        <h2 class="h2">A more usable pond without herbicide application.</h2>
+        <h2 class="h2">A more usable pond without herbicide application</h2>
       </div>
 
       <ul class="approach__list">
@@ -121,7 +121,7 @@ get_header();
     <div class="section__head section__head--split reveal">
       <div>
         <p class="eyebrow">What we handle</p>
-        <h2 class="h2">Common pond vegetation we handle.</h2>
+        <h2 class="h2">Common pond vegetation we handle</h2>
       </div>
       <p class="lead">Different pond problems require different tools. Our work boat can be
       configured to manage submerged, rooted, emergent, and floating growth.</p>
@@ -190,7 +190,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">Equipment matched to the pond.</h2>
+      <h2 class="h2">Equipment matched to the pond</h2>
       <p class="lead">Ponds can contain several types of vegetation in a relatively small area. We
       utilize interchangeable attachments to tailor our removal approach to the specific vegetation
       present.</p>
@@ -247,7 +247,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">How pond weed removal works.</h2>
+      <h2 class="h2">How pond weed removal works</h2>
     </div>
 
     <ol class="flow flow--4">
@@ -307,7 +307,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Pond weed removal questions.</h2>
+      <h2 class="h2">Pond weed removal questions</h2>
     </div>
 
     <div class="faq">
@@ -359,7 +359,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free pond assessment</p>
-      <h2 class="cta__h">Show us what is growing.</h2>
+      <h2 class="cta__h">Show us what is growing</h2>
       <p class="cta__p">Send us photos of your pond and the areas you want cleared. We will review
       the vegetation, explain the recommended removal approach, and provide a no-obligation
       estimate.</p>

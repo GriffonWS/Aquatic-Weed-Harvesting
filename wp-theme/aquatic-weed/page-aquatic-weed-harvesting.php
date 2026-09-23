@@ -87,7 +87,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">Built for difficult water</p>
-        <h2 class="h2">One adaptable system for challenging waterfronts.</h2>
+        <h2 class="h2">One adaptable system for challenging waterfronts</h2>
         <p class="lead">Every body of water presents different vegetation, depths, obstacles and
         access conditions. Our work boat uses interchangeable attachments, so the removal method can
         be matched to the conditions rather than forcing every project into the same process.</p>
@@ -130,7 +130,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">From assessment to removal.</h2>
+      <h2 class="h2">From assessment to removal</h2>
     </div>
 
     <ol class="flow">
@@ -181,7 +181,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">One boat. Four specialized tools.</h2>
+      <h2 class="h2">One boat Four specialized tools</h2>
       <p class="lead">The same shallow-draft work boat handles every service. Interchangeable
       attachments allow the equipment to cut submerged vegetation, collect heavier growth, skim
       floating material, and remove branches or logs.
@@ -238,7 +238,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Every waterfront</p>
-      <h2 class="h2">Chemical-free removal for every type of waterfront.</h2>
+      <h2 class="h2">Chemical-free removal for every type of waterfront</h2>
     </div>
 
     <div class="wfront">
@@ -289,7 +289,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Aquatic weed removal questions.</h2>
+      <h2 class="h2">Aquatic weed removal questions</h2>
     </div>
 
     <div class="faq">
@@ -339,7 +339,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Send us a photo of your water.</h2>
+      <h2 class="cta__h">Send us a photo of your water</h2>
       <p class="cta__p">We'll review what's growing, explain the recommended removal approach, and
       provide a no-obligation estimate.</p>
     </div>

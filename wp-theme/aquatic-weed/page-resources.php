@@ -3,6 +3,7 @@
  * Template Name: Resources
  *
  * Renders for the Page with slug "resources"; awh_create_pages() creates it.
+ * Content mirrors the approved static resources.html.
  *
  * @package aquatic-weed
  */
@@ -16,7 +17,7 @@ get_header();
 <section class="phero on-dark">
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Resources</b></p>
-    <h1 class="phero__title">Aquatic weed removal<br>videos and <em>guides</em>.</h1>
+    <h1 class="phero__title">Aquatic weed removal<br>videos and <em>guides</em></h1>
     <p class="phero__lead">See mechanical aquatic weed removal in action and learn how invasive vegetation affects lakes, ponds, and shorelines.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
@@ -43,7 +44,7 @@ get_header();
              still shows the boat if that URL ever moves. Our own job footage
              replaces this once the owners send it. -->
         <video class="res__player" controls playsinline preload="none"
-               poster="<?php echo awh_img( 'weedoo-work-boat-poster.jpg' ); ?>" width="1280" height="720">
+               poster="images/weedoo-work-boat-poster.jpg" width="1280" height="720">
           <source src="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4" type="video/mp4">
           <p>Your browser can't play this video.
              <a href="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4">Watch it on weedooboats.com</a>.</p>
@@ -101,7 +102,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Send us a photo of your water.</h2>
+      <h2 class="cta__h">Send us a photo of your water</h2>
       <p class="cta__p">That's all we need to start. We'll tell you what's growing, what it takes to
       clear it and what it costs — no charge, no obligation.</p>
     </div>

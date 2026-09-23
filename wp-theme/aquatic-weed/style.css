@@ -3,7 +3,7 @@ Theme Name: Aquatic Weed Harvesting
 Theme URI: https://wedowaterweeds.com/
 Author: Griffon Web Studios
 Description: Multi-page theme for Aquatic Weed Harvesting LLC — mechanical aquatic weed and debris removal, based in Henning, MN. Converted from the approved static build.
-Version: 2.5.0
+Version: 2.5.2
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -321,9 +321,6 @@ em{font-style:normal}
   font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--txt-dim);
   animation:up .8s var(--ease) both;
 }
-.dot{width:7px;height:7px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 4px rgba(248,152,26,.18);animation:pulse 2.4s infinite}
-@keyframes pulse{50%{box-shadow:0 0 0 9px rgba(248,152,26,0)}}
-
 .hero__title{
   font:800 clamp(52px,11.5vw,148px)/.9 var(--display);
   letter-spacing:-.055em;margin:0;

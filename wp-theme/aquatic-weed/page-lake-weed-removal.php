@@ -82,7 +82,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">What we clear</p>
-        <h2 class="h2">Complete aquatic cleaning solutions for any waterfront.</h2>
+        <h2 class="h2">Complete aquatic cleaning solutions for any waterfront</h2>
         <p class="lead">Aquatic growth can block docks, crowd swimming areas, restrict boat access,
         and overwhelm shallow shorelines. Our adaptable workboat uses specialized attachments for
         lake swim area clearing and to address any vegetation or debris affecting your property.</p>
@@ -158,7 +158,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">Built for shallow and difficult water.</h2>
+      <h2 class="h2">Built for shallow and difficult water</h2>
       <p class="lead">Large aquatic harvesters need sufficient depth, open water, and suitable
       launch access. Many waterfront problems occur under opposite conditions.</p>
     </div>
@@ -204,7 +204,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">A straightforward removal process.</h2>
+      <h2 class="h2">A straightforward removal process</h2>
     </div>
 
     <ol class="flow flow--4">
@@ -263,7 +263,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Frequently asked questions.</h2>
+      <h2 class="h2">Frequently asked questions</h2>
     </div>
 
     <div class="faq">

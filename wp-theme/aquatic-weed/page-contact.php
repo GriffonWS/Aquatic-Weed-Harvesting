@@ -3,6 +3,7 @@
  * Template Name: Contact
  *
  * Renders for the Page with slug "contact"; awh_create_pages() creates it.
+ * Content mirrors the approved static contact.html.
  *
  * @package aquatic-weed
  */
@@ -16,7 +17,7 @@ get_header();
 <section class="phero on-dark">
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Contact us</b></p>
-    <h1 class="phero__title">Send us a photo<br>of your <em>water</em>.</h1>
+    <h1 class="phero__title">Send us a photo<br>of your <em>water</em></h1>
     <p class="phero__lead">That’s all we need to start. Fill in the form and Troy gets back to you, or skip the form and call — no answering service, just the people who run the company.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
@@ -95,24 +96,19 @@ get_header();
       </div>
       <fieldset class="chips">
         <legend class="field__label">What's growing? (pick any)</legend>
-        <label class="chip"><input type="checkbox" name="weed[]" value="Milfoil"><span>Milfoil</span></label>
-        <label class="chip"><input type="checkbox" name="weed[]" value="Water chestnut"><span>Water chestnut</span></label>
-        <label class="chip"><input type="checkbox" name="weed[]" value="Hydrilla"><span>Hydrilla</span></label>
-        <label class="chip"><input type="checkbox" name="weed[]" value="Lily pads"><span>Lily pads</span></label>
-        <label class="chip"><input type="checkbox" name="weed[]" value="Cattails"><span>Cattails</span></label>
-        <label class="chip"><input type="checkbox" name="weed[]" value="Coontail"><span>Coontail</span></label>
-        <label class="chip"><input type="checkbox" name="weed[]" value="Algae"><span>Algae</span></label>
-        <label class="chip"><input type="checkbox" name="weed[]" value="No idea"><span>No idea</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="Milfoil"><span>Milfoil</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="Water chestnut"><span>Water chestnut</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="Hydrilla"><span>Hydrilla</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="Lily pads"><span>Lily pads</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="Cattails"><span>Cattails</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="Coontail"><span>Coontail</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="Algae"><span>Algae</span></label>
+        <label class="chip"><input type="checkbox" name="weed" value="No idea"><span>No idea</span></label>
       </fieldset>
       <label class="field">
         <span class="field__label">Anything else</span>
         <textarea class="field__input" name="notes" rows="3" placeholder="Dock in the way, access notes, when you'd like it done…"></textarea>
       </label>
-      <?php // Honeypot — hidden from people, filled in by bots. ?>
-      <div class="hp" aria-hidden="true">
-        <label>Website<input type="text" name="awh_url" tabindex="-1" autocomplete="off"></label>
-      </div>
-
       <button class="btn btn--primary btn--lg btn--block" type="submit">Send my request</button>
       <p class="form__ok" id="formOk" hidden>Thanks — that's through. Troy will be in touch shortly.</p>
     </form>
@@ -126,7 +122,7 @@ get_header();
   <div class="wrap">
     <div class="section__head section__head--center reveal">
       <p class="eyebrow">Contact us</p>
-      <h2 class="h2">Or just pick up<br>the phone.</h2>
+      <h2 class="h2">Or just pick up<br>the phone</h2>
       <p class="lead">No answering service and no call centre — one number, answered by the people who
       run the company. If we're on the water, leave a message and you'll get a call back the same day.</p>
     </div>
