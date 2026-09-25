@@ -168,16 +168,16 @@
     if (!ok) { $('.field.is-bad .field__input', form)?.focus(); return; }
 
     const btn = $('button[type="submit"]', form);
+    const label = btn.textContent;
     const okMsg = $('#formOk');
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
     const done = (message, success) => {
       btn.disabled = false;
-      btn.textContent = 'Send my request';
+      btn.textContent = label;
       if (success) {
         form.reset();
-        $$('.chip input:checked', form).forEach(c => (c.checked = false));
       }
       if (okMsg) {
         okMsg.textContent = message;

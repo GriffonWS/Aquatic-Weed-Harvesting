@@ -19,10 +19,10 @@
  * block — otherwise the page ships two of each tag.
  */
 ?>
-<meta name="description" content="Eco-friendly preservation for lake &amp; pond weed maintenance. We mechanically cut, collect and haul away milfoil, water chestnut, hydrilla, lily pads and cattails — no chemicals. Based in west-central Minnesota, serving Minnesota, North Dakota and Wisconsin.">
+<meta name="description" content="Aquatic Weed Harvesting LLC provides mechanical lake weed removal, pond cleaning, shoreline clearing, muck removal, and debris cleanup across New York, New Jersey, and Pennsylvania.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Got Lake Weeds? — Aquatic Weed Harvesting LLC">
-<meta property="og:description" content="Eco-friendly preservation for lake &amp; pond weed maintenance. Mechanical harvesting, no chemicals. Based in west-central Minnesota, serving the Upper Midwest.">
+<meta property="og:title" content="Aquatic Weed Removal in NY, NJ &amp; PA | Aquatic Weed Harvesting LLC">
+<meta property="og:description" content="Aquatic Weed Harvesting LLC provides mechanical lake weed removal, pond cleaning, shoreline clearing, muck removal, and debris cleanup across New York, New Jersey, and Pennsylvania.">
 <meta property="og:image" content="<?php echo awh_img( 'hero-harvesting.jpg' ); ?>">
 <meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>">
 <meta name="twitter:card" content="summary_large_image">

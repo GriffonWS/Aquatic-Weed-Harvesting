@@ -24,7 +24,7 @@ get_header();
     {
       "@type": "Question",
       "name": "Can you work around docks?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The compact work boat is designed to navigate shallow and restricted waterfront areas, including areas around docks and other obstacles." }
+      "acceptedAnswer": { "@type": "Answer", "text": "The compact workboat is designed to navigate shallow and restricted waterfront areas, including areas around docks and other obstacles." }
     },
     {
       "@type": "Question",
@@ -47,9 +47,7 @@ get_header();
   <div class="shero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Shoreline weed removal</b></p>
     <h1 class="shero__title">Clear Overgrown Shorelines From the <em>Water Side</em></h1>
-    <p class="shero__lead">Clear cattails, lily pads, submerged weeds, and overhanging branches from
-    hard-to-reach shorelines. Our specialized work boat approaches the shoreline from the water,
-    reducing the need to operate heavy equipment on soft or unstable banks.</p>
+    <p class="shero__lead">Clear cattails, lily pads, submerged weeds, and overhanging branches from hard-to-reach shorelines. Our specialized workboat approaches the shoreline from the water, reducing the need to operate heavy equipment on soft or unstable banks.</p>
 
     <div class="shero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
@@ -57,7 +55,7 @@ get_header();
     </div>
 
     <ul class="shero__specs">
-      <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Mechanical vegetation removal</li>
+      <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Sustainable mechanical vegetation removal</li>
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Designed for shallow shoreline areas</li>
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>No herbicide application</li>
     </ul>
@@ -69,12 +67,11 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Why it matters</p>
-      <h2 class="h2">Reclaim access to your shoreline</h2>
+      <h2 class="h2">Reclaim Access to Your Shoreline</h2>
       <p class="lead">Heavy vegetation can block waterfront views, restrict access, crowd docks, and
       make shoreline maintenance difficult. Soft banks and shallow water can also prevent
       conventional land-based or full-size harvesting equipment from reaching the problem.</p>
-      <p class="lead">Our compact work boat uses specialized attachments to cut, lift, and collect
-      unwanted vegetation while operating from the water.</p>
+      <p class="lead">Our workboat uses five quick-change attachments to cut, lift, collect, and remove unwanted vegetation while operating from the water.</p>
     </div>
   </div>
 </section>
@@ -84,7 +81,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">What we clear</p>
-      <h2 class="h2">Targeted shoreline growth and debris</h2>
+      <h2 class="h2">Targeted Shoreline Growth and Debris</h2>
     </div>
 
     <div class="wfront wfront--5">
@@ -93,8 +90,7 @@ get_header();
              alt="A dense cattail stand along a soft shoreline edge.">
         <div class="wfrontCard__body">
           <h3 class="wfrontCard__h">Cattails</h3>
-          <p class="wfrontCard__p">The root-rake attachment lifts heavy cattail growth from shallow
-          water where site conditions allow.</p>
+          <p class="wfrontCard__p">The root rake uses 2-foot steel fingers to clear cattails, emergent shoreline growth, underwater rocks, and debris where site conditions allow.</p>
         </div>
       </article>
 
@@ -133,15 +129,13 @@ get_header();
              alt="Material lifted out of the water and piled on the ramp, ready to be hauled away.">
         <div class="wfrontCard__body">
           <h3 class="wfrontCard__h">Branches and small trees</h3>
-          <p class="wfrontCard__p">Cut low-hanging branches, small trees, and downed wood from the
-          water using a hydraulic pole saw.</p>
+          <p class="wfrontCard__p">Cut tree branches, small trees, and downed logs in the water using a hydraulic pole saw.</p>
         </div>
       </article>
     </div>
 
-    <p class="serve__note reveal">Not sure what is growing? Send us a clear photo of the shoreline
-    for an initial review.
-    <a class="offer__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Send us a photo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
+    <p class="serve__note reveal">Not sure what is growing? Tell us about the shoreline and include photos if available for an initial review.
+    <a class="offer__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Discuss Your Shoreline Project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
   </div>
 </section>
 
@@ -150,10 +144,8 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">Specialized equipment for difficult shorelines</h2>
-      <p class="lead">Shoreline projects often involve more than one type of vegetation.
-      Interchangeable attachments allow the work boat to adapt without bringing several separate
-      machines to the property.</p>
+      <h2 class="h2">Specialized Equipment for Difficult Shorelines</h2>
+      <p class="lead">Shoreline projects often involve more than one type of vegetation. Interchangeable attachments allow the work boat to adapt without bringing several separate machines to the property.</p>
     </div>
 
     <div class="kit">
@@ -166,33 +158,36 @@ get_header();
         <li class="kit__row reveal">
           <span class="kit__tag">01</span>
           <div>
-            <h3 class="kit__h">Root rake</h3>
-            <p class="kit__p">Lifts cattails and heavier rooted vegetation from shallow shoreline
-            areas.</p>
+            <h3 class="kit__h">Underwater Cutter</h3>
+            <p class="kit__p">Cuts submerged and emergent aquatic vegetation up to 5 feet below the surface.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">02</span>
           <div>
-            <h3 class="kit__h">Underwater cutter</h3>
-            <p class="kit__p">Cuts submerged and emergent aquatic vegetation affecting waterfront
-            access.</p>
+            <h3 class="kit__h">Vegetation Bucket / Front-End Loader</h3>
+            <p class="kit__p">Scoops and removes vegetation from depths up to 3 feet.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">03</span>
           <div>
-            <h3 class="kit__h">Skimmer attachment</h3>
-            <p class="kit__p">Collects floating vegetation, algae, leaves, and fine surface
-            material.</p>
+            <h3 class="kit__h">Skimmer Attachment</h3>
+            <p class="kit__p">Collects algae and other fine material floating on or just below the surface.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">04</span>
           <div>
-            <h3 class="kit__h">Hydraulic pole saw</h3>
-            <p class="kit__p">Cuts obstructing branches, small trees, and downed logs while working
-            from the water.</p>
+            <h3 class="kit__h">Root Rake</h3>
+            <p class="kit__p">Clears shoreline growth, underwater rocks, and debris with 2-foot steel fingers.</p>
+          </div>
+        </li>
+        <li class="kit__row reveal">
+          <span class="kit__tag">05</span>
+          <div>
+            <h3 class="kit__h">Hydraulic Pole Saw</h3>
+            <p class="kit__p">Cuts tree branches, small trees, and downed logs in the water.</p>
           </div>
         </li>
       </ul>
@@ -207,7 +202,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">How shoreline weed removal works</h2>
+      <h2 class="h2">How Shoreline Weed Removal Works</h2>
     </div>
 
     <ol class="flow flow--4">
@@ -218,8 +213,7 @@ get_header();
         </figure>
         <div class="flow__bar"><span class="flow__n">1</span><span class="flow__rule"></span></div>
         <h3 class="flow__h">Show us the shoreline</h3>
-        <p class="flow__p">Send photos showing the vegetation, affected area, water depth, nearby
-        docks, and available property access.</p>
+        <p class="flow__p">Share details about the vegetation, affected area, water depth, nearby docks, and property access. Include photos if available.</p>
       </li>
 
       <li class="flow__step reveal">
@@ -268,7 +262,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">Working from the water</p>
-        <h2 class="h2">Reach areas land equipment cannot</h2>
+        <h2 class="h2">Reach Areas Land Equipment Cannot</h2>
         <p class="lead">Land-based equipment may damage soft banks or struggle to reach vegetation
         growing beyond the waterline. Working from a compact boat provides direct access to shallow
         growth, submerged plants, and shoreline obstacles.</p>
@@ -301,7 +295,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Who we help</p>
-      <h2 class="h2">Shoreline removal for different waterfronts</h2>
+      <h2 class="h2">Shoreline Removal for Different Waterfronts</h2>
     </div>
 
     <ul class="offers offers--3">
@@ -320,7 +314,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Shoreline weed removal questions</h2>
+      <h2 class="h2">Shoreline Weed Removal Questions</h2>
     </div>
 
     <div class="faq">
@@ -336,8 +330,7 @@ get_header();
         <summary class="faq__q">Can you work around docks?
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
         </summary>
-        <p class="faq__a">The compact work boat is designed to navigate shallow and restricted
-        waterfront areas, including areas around docks and other obstacles.</p>
+        <p class="faq__a">The compact workboat is designed to navigate shallow and restricted waterfront areas, including areas around docks and other obstacles.</p>
       </details>
 
       <details class="faq__item reveal">
@@ -356,9 +349,8 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free initial review</p>
-      <h2 class="cta__h">Show us your shoreline</h2>
-      <p class="cta__p">Send us photos of the overgrown area. We will review the vegetation, access
-      conditions, and project scope before recommending the appropriate removal approach.</p>
+      <h2 class="cta__h">Get a Clear Plan for Your Shoreline</h2>
+      <p class="cta__p">Tell us about the shoreline areas you want cleared. We will review the vegetation, access conditions, and project scope before recommending the most suitable removal approach.</p>
     </div>
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">

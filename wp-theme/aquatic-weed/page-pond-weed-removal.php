@@ -74,7 +74,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">What it gives you back</p>
-        <h2 class="h2">A more usable pond without herbicide application</h2>
+        <h2 class="h2">More Than Surface-Level Pond Weed Removal</h2>
       </div>
 
       <ul class="approach__list">
@@ -121,10 +121,9 @@ get_header();
     <div class="section__head section__head--split reveal">
       <div>
         <p class="eyebrow">What we handle</p>
-        <h2 class="h2">Common pond vegetation we handle</h2>
+        <h2 class="h2">Common Pond Vegetation We Handle</h2>
       </div>
-      <p class="lead">Different pond problems require different tools. Our work boat can be
-      configured to manage submerged, rooted, emergent, and floating growth.</p>
+      <p class="lead">Different pond problems require different tools. Our workboat uses five quick-change attachments to manage submerged, rooted, emergent, and floating growth.</p>
     </div>
 
     <div class="wfront wfront--5">
@@ -153,8 +152,7 @@ get_header();
              alt="A dense cattail stand along a soft shoreline edge.">
         <div class="wfrontCard__body">
           <h3 class="wfrontCard__h">Cattails</h3>
-          <p class="wfrontCard__p">Use the root-rake attachment to lift and remove heavy cattail
-          growth from shallow areas.</p>
+          <p class="wfrontCard__p">Use the root rake’s 2-foot steel fingers to remove cattails, emergent shoreline vegetation, underwater rocks, and other debris where conditions allow.</p>
         </div>
       </article>
 
@@ -173,15 +171,13 @@ get_header();
              alt="A water chestnut rosette floating on open water, spiked seed visible at the edge.">
         <div class="wfrontCard__body">
           <h3 class="wfrontCard__h">Invasive aquatic plants</h3>
-          <p class="wfrontCard__p">Target species such as Eurasian watermilfoil, hydrilla, and water
-          chestnut are suitable for mechanical removal.</p>
+          <p class="wfrontCard__p">Mechanical removal can target invasive plants such as Eurasian watermilfoil, hydrilla, water chestnut, and phragmites before dense growth restricts access, navigation, and recreation.</p>
         </div>
       </article>
     </div>
 
-    <p class="serve__note reveal">Not sure what is growing? Send us a clear photo of the affected
-    area, and we will help identify the vegetation.
-    <a class="offer__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Send us a photo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
+    <p class="serve__note reveal">Not sure what is growing? Tell us what you are seeing and include a clear photo if available. We will help identify the vegetation and recommend the appropriate next step.
+    <a class="offer__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Find the Right Removal Approach <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
   </div>
 </section>
 
@@ -190,7 +186,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">Equipment matched to the pond</h2>
+      <h2 class="h2">Equipment Matched to the Pond</h2>
       <p class="lead">Ponds can contain several types of vegetation in a relatively small area. We
       utilize interchangeable attachments to tailor our removal approach to the specific vegetation
       present.</p>
@@ -206,33 +202,36 @@ get_header();
         <li class="kit__row reveal">
           <span class="kit__tag">01</span>
           <div>
-            <h3 class="kit__h">High-speed underwater cutter</h3>
-            <p class="kit__p">Cuts submerged aquatic vegetation while the work boat moves through
-            the affected area.</p>
+            <h3 class="kit__h">High-Speed Underwater Cutter</h3>
+            <p class="kit__p">Cuts submerged aquatic vegetation up to 5 feet below the surface.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">02</span>
           <div>
-            <h3 class="kit__h">Root rake</h3>
-            <p class="kit__p">Lifts cattails and heavier-rooted vegetation from shallow pond
-            areas.</p>
+            <h3 class="kit__h">Vegetation Bucket / Front-End Loader</h3>
+            <p class="kit__p">Scoops and removes vegetation from depths up to 3 feet.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">03</span>
           <div>
-            <h3 class="kit__h">Skimmer attachment</h3>
-            <p class="kit__p">Collects algae, duckweed, and other small material floating on the
-            surface.</p>
+            <h3 class="kit__h">Root Rake</h3>
+            <p class="kit__p">Clears shoreline growth, underwater rocks, and debris with 2-foot steel fingers.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">04</span>
           <div>
-            <h3 class="kit__h">Hydraulic pole saw</h3>
-            <p class="kit__p">Cuts low-hanging branches, small trees, and drowned wood obstructing
-            the water or shoreline.</p>
+            <h3 class="kit__h">Skimmer Attachment</h3>
+            <p class="kit__p">Collects algae and other fine material floating on or just below the surface.</p>
+          </div>
+        </li>
+        <li class="kit__row reveal">
+          <span class="kit__tag">05</span>
+          <div>
+            <h3 class="kit__h">Hydraulic Pole Saw</h3>
+            <p class="kit__p">Cuts tree branches, small trees, and downed logs in the water.</p>
           </div>
         </li>
       </ul>
@@ -247,7 +246,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">How pond weed removal works</h2>
+      <h2 class="h2">How Pond Weed Removal Works</h2>
     </div>
 
     <ol class="flow flow--4">
@@ -258,8 +257,7 @@ get_header();
         </figure>
         <div class="flow__bar"><span class="flow__n">1</span><span class="flow__rule"></span></div>
         <h3 class="flow__h">Show us the pond</h3>
-        <p class="flow__p">Send photos of the vegetation, affected area, shoreline, and available
-        access. Include the pond's approximate size if known.</p>
+        <p class="flow__p">Share the pond’s approximate size, affected areas, shoreline access, and any known vegetation. Photos are helpful when available.</p>
       </li>
 
       <li class="flow__step reveal">
@@ -291,8 +289,7 @@ get_header();
         </figure>
         <div class="flow__bar"><span class="flow__n">4</span><span class="flow__rule"></span></div>
         <h3 class="flow__h">Remove the growth</h3>
-        <p class="flow__p">The work boat mechanically cuts, lifts, or collects the unwanted
-        vegetation and removes the collected material from the water.</p>
+        <p class="flow__p">The workboat mechanically cuts, lifts, or collects unwanted vegetation and removes the collected biomass from the water.</p>
       </li>
     </ol>
   </div>
@@ -307,7 +304,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Pond weed removal questions</h2>
+      <h2 class="h2">Pond Weed Removal Questions</h2>
     </div>
 
     <div class="faq">
@@ -359,7 +356,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free pond assessment</p>
-      <h2 class="cta__h">Show us what is growing</h2>
+      <h2 class="cta__h">Show Us What Is Growing</h2>
       <p class="cta__p">Send us photos of your pond and the areas you want cleared. We will review
       the vegetation, explain the recommended removal approach, and provide a no-obligation
       estimate.</p>

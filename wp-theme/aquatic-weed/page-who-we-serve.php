@@ -51,8 +51,8 @@ get_header();
 <section class="phero on-dark">
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Who we serve</b></p>
-    <h1 class="phero__title">Aquatic Weed Removal for Every Type of <em>Waterfront</em></h1>
-    <p class="phero__lead">From private docks and community lakes to public beaches and commercial properties, we provide mechanical vegetation and debris removal services tailored to how the waterbody is used.</p>
+    <h1 class="phero__title">Aquatic Weed Removal for Private, Commercial, and Public <em>Waterways</em></h1>
+    <p class="phero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC provides mechanical weed, shoreline, muck, and debris removal for residential, commercial, association, and municipal waterbodies across New York, New Jersey, and Pennsylvania.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
@@ -75,9 +75,9 @@ get_header();
   </svg>
   <div class="wrap">
     <div class="section__head reveal">
-      <h2 class="h2">Different properties<br>Different priorities</h2>
-      <p class="lead">A private pond, busy marina, and public beach may face similar aquatic vegetation problems, but each requires a different approach.</p>
-      <p class="lead">Access, scheduling, treatment areas, documentation, and public use all influence how the work should be planned. We tailor the project around the property, the vegetation, and the people who depend on the water.</p>
+      <h2 class="h2">Different Properties<br>Different Priorities</h2>
+      <p class="lead">A private pond, commercial marina, and public beach may face similar aquatic vegetation problems, but each property has different access, scheduling, and maintenance requirements.</p>
+      <p class="lead">We plan every project around how the waterbody is used, which areas need attention, and what equipment is appropriate for the vegetation and site conditions.</p>
     </div>
 
     <div class="serve">
@@ -89,9 +89,9 @@ get_header();
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5.5 9.6V20h13V9.6"/><path d="M9.5 20v-5h5v5"/></svg>
         </span>
-        <h3 class="serveCard__h">Residential</h3>
+        <h3 class="serveCard__h">Residential Waterfronts</h3>
         <div class="serveCard__p">
-          <p>Dense weeds, lily pads, cattails, and floating debris can block docks, restrict swimming, interfere with fishing, and make the shoreline less enjoyable.</p>
+          <p>Dense weeds, lily pads, cattails, and floating debris can restrict access to private docks, swimming areas, fishing spots, and shorelines.</p>
           <p>We focus on the areas you use most and recommend a suitable removal plan based on the vegetation, access, and water conditions.</p>
         </div>
         <ul class="serveCard__list">
@@ -100,7 +100,6 @@ get_header();
           <li>Docks and boat approaches</li>
           <li>Swimming and fishing areas</li>
           <li>Shorelines and shallow coves</li>
-          <li>Branch and debris removal</li>
         </ul>
         <a class="svc__link" href="<?php echo esc_url( home_url( '/residential-weed-removal/' ) ); ?>">Residential waterfront details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       </article>
@@ -113,17 +112,17 @@ get_header();
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3.5 9.5h17V20h-17z"/><path d="M2.5 9.5L5 4h14l2.5 5.5z"/><path d="M9.5 20v-6.5h5V20"/></svg>
         </span>
-        <h3 class="serveCard__h">Commercial</h3>
+        <h3 class="serveCard__h">Commercial &amp; Association Properties</h3>
         <div class="serveCard__p">
-          <p>For campgrounds, marinas, resorts, golf courses, and associations, water quality affects access, appearance, and the visitor experience.</p>
-          <p>We coordinate work around operating schedules and focus on the waterfront areas that have the greatest impact on guests, residents, and members.</p>
+          <p>Aquatic vegetation can affect property appearance, guest access, boating, and shared recreational areas.</p>
+          <p>We coordinate commercial projects around operating schedules and focus on the waterfront areas that have the greatest impact on guests, residents, and members.</p>
         </div>
         <ul class="serveCard__list">
-          <li>Campgrounds and marinas</li>
-          <li>Golf courses and resorts</li>
-          <li>Lake and homeowner associations</li>
-          <li>Residential communities</li>
-          <li>Shared beaches and docks</li>
+          <li>Marinas &amp; campgrounds</li>
+          <li>Golf courses &amp; resorts</li>
+          <li>Lake &amp; homeowner associations</li>
+          <li>Shared beaches &amp; docks</li>
+          <li>Commercial ponds &amp; retention sites</li>
           <li>Recreational waterfronts</li>
         </ul>
         <a class="svc__link" href="<?php echo esc_url( home_url( '/commercial-weed-management/' ) ); ?>">Commercial property details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
@@ -137,18 +136,16 @@ get_header();
         <span class="serveCard__ico" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M4 21V9h16v12"/><path d="M2.5 9L12 3.5 21.5 9"/><path d="M8 21v-7h3v7M14 14h2.5v7"/></svg>
         </span>
-        <h3 class="serveCard__h">Municipal</h3>
+        <h3 class="serveCard__h">Municipal &amp; Public Waterways</h3>
         <div class="serveCard__p">
-          <p>Public lakes, beaches, launches, and parks require clear project scopes, coordinated scheduling, and attention to water use.</p>
-          <p>We provide targeted mechanical vegetation removal for municipalities, parks departments, and other public organizations managing invasive or excessive aquatic growth.</p>
+          <p>Public beaches, boat launches, and municipal parks require coordinated scheduling, defined treatment areas, and careful attention to permits and public access.</p>
+          <p>We deliver targeted vegetation management for towns, park departments, and conservation organizations dealing with excessive or invasive growth.</p>
         </div>
         <ul class="serveCard__list">
           <li>Public beaches</li>
           <li>Municipal lakes and ponds</li>
           <li>Boat launches and access channels</li>
           <li>Parks and recreational waterbodies</li>
-          <li>Invasive vegetation management</li>
-          <li>Shoreline and debris cleanup</li>
         </ul>
         <a class="svc__link" href="<?php echo esc_url( home_url( '/municipal-weed-management/' ) ); ?>">Municipal project details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       </article>
@@ -164,42 +161,42 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">How we work</p>
-        <h2 class="h2">Our streamlined process</h2>
+        <h2 class="h2">Our Streamlined Process</h2>
       </div>
 
       <ol class="approach__list">
         <li class="approach__item reveal">
           <span class="approach__n">01</span>
           <div>
-            <h3 class="approach__h">Comprehensive initial assessment</h3>
+            <h3 class="approach__h">Comprehensive Initial Assessment</h3>
             <p class="approach__p">We analyze site photos, target vegetation, access points, and specific site usage to map out an effective removal strategy tailored to your waterway.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">02</span>
           <div>
-            <h3 class="approach__h">Targeted priority mapping</h3>
+            <h3 class="approach__h">Targeted Priority Mapping</h3>
             <p class="approach__p">We focus execution directly where it matters most—clearing high-impact zones around docks, swimming areas, high-traffic channels, and shorelines.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">03</span>
           <div>
-            <h3 class="approach__h">Purpose-built equipment deployment</h3>
+            <h3 class="approach__h">Purpose-Built Equipment Deployment</h3>
             <p class="approach__p">Using specialized workboats with versatile attachments, we efficiently tackle dense submerged weeds, stubborn rooted vegetation, and floating debris.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">04</span>
           <div>
-            <h3 class="approach__h">Clean mechanical removal</h3>
+            <h3 class="approach__h">Clean Mechanical Removal</h3>
             <p class="approach__p">Vegetation and organic debris are physically harvested and extracted without chemicals, restoring immediate usability and clarity to your water.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">05</span>
           <div>
-            <h3 class="approach__h">Expert guidance</h3>
+            <h3 class="approach__h">Expert Guidance</h3>
             <p class="approach__p">Transparency comes first. If mechanical harvesting isn't the ideal solution for your specific water conditions, we'll explain why and point you in the right direction.</p>
           </div>
         </li>
@@ -217,7 +214,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Who we serve FAQs</h2>
+      <h2 class="h2">Who We Serve FAQs</h2>
     </div>
 
     <div class="faq">
@@ -263,7 +260,7 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <h2 class="cta__h">Tell us about your waterfront</h2>
+      <h2 class="cta__h">Tell Us About Your Waterfront</h2>
       <p class="cta__p">From private ponds and commercial properties to community lakes and municipal
       sites, we assist in crafting a customized mechanical removal plan adapted to your waterbody.</p>
       <p class="cta__p">Send us photos and basic project details to get started.</p>

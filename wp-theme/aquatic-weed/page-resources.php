@@ -14,14 +14,23 @@ get_header();
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
-<section class="phero on-dark">
-  <div class="wrap phero__inner">
-    <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Resources</b></p>
-    <h1 class="phero__title">Aquatic weed removal<br>videos and <em>guides</em></h1>
-    <p class="phero__lead">See mechanical aquatic weed removal in action and learn how invasive vegetation affects lakes, ponds, and shorelines.</p>
-    <div class="phero__cta">
-      <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">+1 (518) 441-7742</a>
+<section class="xhero on-dark">
+  <div class="wrap">
+    <div class="xhero__grid">
+      <div class="xhero__copy">
+        <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Resources</b></p>
+        <h1 class="xhero__title">Aquatic Weed Removal Videos and <em>Guides</em></h1>
+        <p class="xhero__lead">Explore videos and helpful guides on mechanical aquatic weed removal for lake, pond, and shoreline owners across New York, New Jersey, and Pennsylvania. Learn how harvesting works, identify common aquatic plants, and understand which removal approach may fit your waterbody.</p>
+        <div class="xhero__cta">
+          <a class="btn btn--primary btn--lg" href="#blogs">Explore Insights <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
+        </div>
+      </div>
+
+      <figure class="xhero__media reveal">
+        <img src="<?php echo awh_img( 'harvester-shoreline.webp' ); ?>" width="1024" height="768" fetchpriority="high" decoding="async"
+          alt="The work boat delivering cut vegetation to the shoreline for removal.">
+      </figure>
     </div>
   </div>
 </section>
@@ -44,55 +53,68 @@ get_header();
              still shows the boat if that URL ever moves. Our own job footage
              replaces this once the owners send it. -->
         <video class="res__player" controls playsinline preload="none"
-               poster="images/weedoo-work-boat-poster.jpg" width="1280" height="720">
+               poster="<?php echo awh_img( 'weedoo-work-boat-poster.jpg' ); ?>" width="1280" height="720">
           <source src="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4" type="video/mp4">
           <p>Your browser can't play this video.
              <a href="https://weedooboats.com/wp-content/uploads/2025/11/Copy-of-Weedoo-Turbo-2_25-Storyboarder1-1.mp4">Watch it on weedooboats.com</a>.</p>
         </video>
-        <h3 class="res__videoH">Mechanical harvester equipment demonstration</h3>
-        <p class="res__videoP">See the compact work boat and mechanical harvesting equipment used to
-        cut, collect, and remove aquatic vegetation from shallow water. Filmed by Weedoo, who built
-        the boat. Footage from our own Upper Midwest jobs goes up as we shoot it this season.</p>
+        <h3 class="res__videoH">Mechanical Harvester Equipment Demonstration</h3>
+        <p class="res__videoP">See how a specialized workboat cuts, collects, and removes aquatic
+        vegetation from shallow, hard-to-access waters. The demonstration highlights the mechanical
+        process and equipment used to manage submerged weeds, floating material, and shoreline growth.</p>
+        <p class="res__videoP">Project footage showcases operations across lakes, ponds, and shorelines
+        in New York, New Jersey, and Pennsylvania.</p>
       </article>
 
       <div class="res__list" id="blogs">
-        <p class="eyebrow">Blog &amp; guides</p>
+        <p class="eyebrow">Blog and Guides</p>
         <a class="res__item reveal" href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>">
-          <span class="res__kind">Guide</span>
-          <b class="res__itemH">Why mechanical removal beats spraying</b>
-          <span class="res__itemP">What actually happens to a weed after it's sprayed — and where
-          all that biomass ends up.</span>
+          <b class="res__itemH">Why Choose Mechanical Removal?</b>
+          <span class="res__itemP">Learn how mechanical harvesting differs from chemical treatment and why physically removing plant material matters.</span>
+          <span class="res__cta">Explore Mechanical Removal</span>
           <span class="res__go" aria-hidden="true">→</span>
         </a>
         <a class="res__item reveal" href="<?php echo esc_url( home_url( '/' ) ); ?>#weeds">
-          <span class="res__kind">Section</span>
-          <b class="res__itemH">See common aquatic weeds</b>
-          <span class="res__itemP">Milfoil, water chestnut, hydrilla, cattails, lily pads and
-          coontail — how to tell what you're looking at.</span>
+          <b class="res__itemH">Identify Common Aquatic Weeds</b>
+          <span class="res__itemP">Learn to recognize Eurasian watermilfoil, water chestnut, hydrilla, cattails, lily pads, coontail, and other common aquatic growth.</span>
+          <span class="res__cta">See Common Aquatic Weeds</span>
           <span class="res__go" aria-hidden="true">→</span>
         </a>
         <a class="res__item reveal" href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>">
-          <span class="res__kind">Guide</span>
-          <b class="res__itemH">What a harvest day looks like</b>
-          <span class="res__itemP">From the photo you send us to the last basket going off your
-          shoreline.</span>
+          <b class="res__itemH">What Happens on Harvest Day?</b>
+          <span class="res__itemP">Follow the process from the initial assessment and equipment setup to vegetation collection and final removal.</span>
+          <span class="res__cta">See How Harvesting Works</span>
           <span class="res__go" aria-hidden="true">→</span>
         </a>
-        <a class="res__item reveal" href="<?php echo esc_url( home_url( '/' ) ); ?>#serve">
-          <span class="res__kind">Section</span>
-          <b class="res__itemH">Explore association and municipal services</b>
-          <span class="res__itemP">How scheduling, access and documentation work when the water
-          isn't one person's.</span>
+        <a class="res__item reveal" href="<?php echo esc_url( home_url( '/municipal-weed-management/' ) ); ?>">
+          <b class="res__itemH">Association and Municipal Projects</b>
+          <span class="res__itemP">Learn how treatment areas, scheduling, equipment access, documentation, and public-use requirements are managed for shared waterbodies.</span>
+          <span class="res__cta">Explore Association and Municipal Services</span>
           <span class="res__go" aria-hidden="true">→</span>
         </a>
       </div>
     </div>
+  </div>
+</section>
 
-    <p class="res__note reveal">
-      <b>New state laws</b> require properly cleaning boats, trailers and waders to limit the spread
-      of aquatic invasive species — worth passing on to anyone launching on your water.
-      Want a written guide on a specific weed? <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Ask us</a> and we'll put one up.
-    </p>
+<!-- ============ INVASIVE SPECIES ============ -->
+<section class="section section--rule" id="invasive">
+  <div class="wrap boat">
+    <div class="boat__copy reveal">
+      <h2 class="h2">Help Prevent the Spread of Invasive Species</h2>
+      <p class="lead">Cleaning boats, trailers, anchors, fishing equipment, and waders before moving
+      between waterbodies can help prevent the spread of invasive plants.</p>
+      <p class="lead">Requirements vary by state. Check the current guidance from the appropriate New
+      York, New Jersey, or Pennsylvania natural-resources agency before launching or transporting
+      equipment.</p>
+      <p class="lead">Looking for information about a specific aquatic plant?
+      <a class="text-link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Contact us</a> for identification
+      help and removal guidance.</p>
+    </div>
+    <figure class="shot shot--wide reveal">
+      <img src="<?php echo awh_img( 'weed-milfoil.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
+        alt="Eurasian watermilfoil, an invasive aquatic plant that spreads from fragments carried between waterbodies.">
+    </figure>
   </div>
 </section>
 
@@ -101,17 +123,18 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Send us a photo of your water</h2>
-      <p class="cta__p">That's all we need to start. We'll tell you what's growing, what it takes to
-      clear it and what it costs — no charge, no obligation.</p>
+      <p class="eyebrow">Free Estimate</p>
+      <h2 class="cta__h">Find the Right Approach for Your Waterbody</h2>
+      <p class="cta__p">Not sure what is growing or which removal method is appropriate? Tell us about
+      the affected area and how it is interfering with your property. We will review the details,
+      explain the recommended removal approach, and provide a no-obligation estimate.</p>
     </div>
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>+1 (518) 441-7742</b></span>
+        <span><b>Call +1 (518) 441-7742</b></span>
       </a>
-      <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>

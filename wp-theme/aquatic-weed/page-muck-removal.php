@@ -64,7 +64,7 @@ get_header();
     <ul class="shero__specs">
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Physical removal of existing muck</li>
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Targeted lake and pond treatment</li>
-      <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>No chemical muck treatments</li>
+      <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Sustainable removal without chemical muck treatments</li>
     </ul>
   </div>
 </section>
@@ -75,13 +75,9 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">What muck is</p>
-        <h2 class="h2">Beyond surface weeds: targeting deep-rooted sediment</h2>
-        <p class="lead">Lake and pond muck forms as aquatic plants, algae, and leaves decompose on
-        the waterbed. Over time, this soft sediment reduces water depth, creates murky bottom
-        conditions, and hinders full access to docks, shorelines, and swimming areas.</p>
-        <p class="lead">Our lake muck removal service physically extracts this organic sediment from
-        targeted zones. When paired with aquatic weed and debris removal, it effectively treats
-        existing buildup while curbing future accumulation.</p>
+        <h2 class="h2">Organic Sediment Removal for Lakes and Ponds</h2>
+        <p class="lead">Lake and pond muck forms as aquatic vegetation, algae, leaves, and other biomass settle and decompose on the bottom. Over time, this soft organic sediment can reduce water depth, create unstable bottom conditions, and restrict access around docks, shorelines, and swimming areas.</p>
+        <p class="lead">This service goes beyond surface weed removal. We physically extract accumulated organic sediment from targeted areas and can pair the work with aquatic vegetation and debris removal to address both existing buildup and the material contributing to future accumulation.</p>
       </div>
 
       <ul class="approach__list">
@@ -127,7 +123,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Where we work</p>
-      <h2 class="h2">Targeted lake and pond muck reduction service</h2>
+      <h2 class="h2">Targeted Lake and Pond Muck Reduction Service</h2>
       <p class="lead">Muck does not accumulate evenly across an entire waterbody. Wind, currents,
       surrounding trees, aquatic vegetation, and shoreline conditions often concentrate organic
       material into coves, dock areas, shallow corners, and protected shorelines in both lakes and
@@ -157,7 +153,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The process</p>
-      <h2 class="h2">How mechanical muck removal works</h2>
+      <h2 class="h2">How Mechanical Muck Removal Works</h2>
     </div>
 
     <ol class="flow flow--4">
@@ -206,8 +202,8 @@ get_header();
       </li>
     </ol>
 
-    <p class="reveal" style="margin-top:clamp(24px,3vw,34px)">
-      <a class="offer__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Ask about your waterbody <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+    <p class="flow__cta reveal">
+      <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Ask About Your Waterbody <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </p>
   </div>
 </section>
@@ -219,12 +215,18 @@ get_header();
     <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z"/>
   </svg>
   <div class="wrap">
-    <div class="section__head reveal">
-      <p class="eyebrow">Mechanical, not chemical</p>
-      <h2 class="h2">Physical removal without chemical treatments</h2>
-      <p class="lead">Chemical and biological muck treatments are intended to accelerate
-      decomposition, but they do not physically extract the accumulated material from the
-      waterbody.</p>
+    <div class="section__head section__head--split reveal">
+      <div>
+        <p class="eyebrow">Mechanical, not chemical</p>
+        <h2 class="h2">Sustainable Physical Removal Without Chemical Treatments</h2>
+      </div>
+      <div class="subhead__body">
+        <p class="lead">Chemical and biological muck treatments are intended to accelerate
+        decomposition, but they do not physically extract the accumulated material from the
+        waterbody.</p>
+        <p class="lead">Mechanical lake muck removal lifts the sediment from the bottom and
+        removes it from the treated area.</p>
+      </div>
     </div>
 
     <div class="kit">
@@ -234,9 +236,6 @@ get_header();
       </figure>
 
       <div>
-        <p class="lead reveal" style="margin-top:0">Mechanical lake muck removal lifts the sediment
-        from the bottom and removes it from the treated area.</p>
-
         <ul class="kit__list">
           <li class="kit__row reveal">
             <span class="kit__tag">01</span>
@@ -269,7 +268,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Muck removal questions</h2>
+      <h2 class="h2">Muck Removal Questions</h2>
     </div>
 
     <div class="faq">
@@ -313,7 +312,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free initial assessment</p>
-      <h2 class="cta__h">Find out what it takes to remove the muck</h2>
+      <h2 class="cta__h">Find Out What It Takes to Remove the Muck</h2>
       <p class="cta__p">Send us photos and basic information about your lake or pond. We will review
       the affected area, discuss the removal options, and provide a no-obligation estimate.</p>
     </div>

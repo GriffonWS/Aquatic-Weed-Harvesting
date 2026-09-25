@@ -38,7 +38,7 @@ get_header();
       <h2 class="subhead__h">A Mechanical Solution for Every Part of the Waterfront</h2>
       <div class="subhead__body">
         <p class="subhead__p">Whether the problem is below the surface, along the shoreline, or collecting around your dock, we use the right attachment to remove it.</p>
-        <p class="subhead__p">From invasive weed removal to seasonal debris cleanup, every service is completed mechanically. The collected vegetation and debris are removed and hauled away from the property.</p>
+        <p class="subhead__p">From invasive weed removal to seasonal debris cleanup, every service uses a sustainable, environmentally responsible mechanical approach. We collect the vegetation and debris and haul the removed material away from the property without applying herbicides.</p>
       </div>
     </div>
 
@@ -98,9 +98,9 @@ get_header();
         </figure>
         <span class="svc__num">04</span>
         <h3 class="svc__title">Shoreline Weed Removal</h3>
-        <p class="svc__text">Remove cattails, phragmites, and overgrowth from the water's edge to reduce the need to work from unstable or difficult banks.</p>
+        <p class="svc__text">Remove cattails, phragmites, and other emergent shoreline vegetation from the water's edge using equipment designed for difficult or unstable banks.</p>
         <ul class="svc__list">
-          <li>Cut and root-ball removal</li>
+          <li>Root rake with 2-foot steel fingers</li>
           <li>Brush cut from the water side</li>
         </ul>
         <a class="svc__link" href="<?php echo esc_url( home_url( '/shoreline-weed-removal/' ) ); ?>">Shoreline weed removal details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
@@ -113,10 +113,10 @@ get_header();
         </figure>
         <span class="svc__num">05</span>
         <h3 class="svc__title">Muck Reduction Support</h3>
-        <p class="svc__text">Remove excess vegetation before it dies and settles to help reduce the amount of organic material contributing to bottom buildup.</p>
+        <p class="svc__text">Remove excessive vegetation and organic biomass before it dies and settles, helping reduce the material that contributes to future bottom buildup.</p>
         <ul class="svc__list">
-          <li>Removes the nutrient load, not just the weed</li>
-          <li>Firmer bottom season over season</li>
+          <li>Removes vegetation and biomass before decomposition</li>
+          <li>Supports ongoing lake and pond maintenance</li>
         </ul>
         <a class="svc__link" href="<?php echo esc_url( home_url( '/muck-removal/' ) ); ?>">Muck removal details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       </article>
@@ -157,15 +157,16 @@ get_header();
       <h2 class="subhead__h">Specialized Equipment for Shallow and Difficult Water</h2>
       <div class="subhead__body">
         <p class="subhead__p">Our compact work boat can operate around docks, moorings, narrow shorelines, and shallow areas. Interchangeable tools allow us to adapt the equipment to the vegetation, debris, and access conditions present.</p>
-        <p class="subhead__p"><a class="offer__link" href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>#equipment">See how the equipment works <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
+        <p class="subhead__cta"><a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>#equipment">See How the Equipment Works <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
 
-    <ul class="offers">
+    <ul class="offers offers--5">
       <li class="spec reveal"><b>Cutter</b><span>Shears vegetation to 5 feet and baskets the cuttings as it cuts</span></li>
       <li class="spec reveal"><b>Vegetation bucket</b><span>Scoops root-bound growth and cattail root balls to 3 feet</span></li>
       <li class="spec reveal"><b>Skimmer bucket</b><span>Lifts algae and fine floating material off the surface</span></li>
-      <li class="spec reveal"><b>Hydraulic pole saw</b><span>Branches, small trees and downed logs, worked from the water</span></li>
+      <li class="spec reveal"><b>Root rake</b><span>Uses 2-foot steel fingers to clear shoreline growth, rocks, and debris.</span></li>
+      <li class="spec reveal"><b>Hydraulic pole saw</b><span>Branches, small trees, and downed logs worked from the water</span></li>
     </ul>
   </div>
 </section>

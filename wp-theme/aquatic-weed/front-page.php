@@ -1,10 +1,6 @@
 <?php
 /**
- * Front page — the single-page site.
- *
- * Content is intentionally hard-coded rather than pulled from the editor: the
- * client sends copy changes by email and does not maintain the site. If that
- * changes, ACF is the drop-in — the section markup is already grouped for it.
+ * Front page. Content mirrors the approved static index.html.
  *
  * @package aquatic-weed
  */
@@ -14,281 +10,412 @@ get_header();
 
 <main id="main">
 
-<!-- ============ HERO ============ -->
-<section class="hero on-dark">
-  <div class="hero__photo" aria-hidden="true">
-    <img src="<?php echo awh_img( 'hero-harvesting.jpg' ); ?>" width="1600" height="1066" fetchpriority="high"
-         alt="" decoding="async">
-  </div>
-  <canvas class="hero__canvas" id="ripple" aria-hidden="true"></canvas>
-  <div class="hero__glow" aria-hidden="true"></div>
+    <!-- ============ HERO ============ -->
+    <section class="hero on-dark">
+      <div class="hero__photo" aria-hidden="true">
+        <img src="<?php echo awh_img( 'hero-harvesting.jpg' ); ?>" width="1600" height="1066" fetchpriority="high" alt="" decoding="async">
+      </div>
+      <canvas class="hero__canvas" id="ripple" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
 
-  <div class="hero__inner">
-    <p class="hero__eyebrow">Aquatic Weed Harvesting LLC &middot; Based in west-central Minnesota</p>
-    <h1 class="hero__title">
-      <span class="line"><span>Got</span></span>
-      <span class="line"><span>Lake <em>Weeds</em>?</span></span>
-    </h1>
-    <p class="hero__lead">
-      We cut them, collect them, and haul them off your shoreline — mechanically,
-      with <strong>zero chemicals</strong>. Our work boat gets into the shallow,
-      windy water the big harvesters can't touch.
-    </p>
-    <div class="hero__cta">
-      <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="<?php echo esc_url( home_url( '/' ) ); ?>#before-after">See the difference</a>
-    </div>
-
-    <ul class="hero__stats">
-      <li class="stat"><b class="stat__num" data-count="0">0</b><span class="stat__label">Chemicals used<br>on your water</span></li>
-      <li class="stat"><b class="stat__num" data-count="5" data-suffix=" ft">5 ft</b><span class="stat__label">Cutting depth<br>below the surface</span></li>
-      <li class="stat"><b class="stat__num" data-count="4">4</b><span class="stat__label">Quick-change<br>attachments</span></li>
-    </ul>
-  </div>
-
-  <svg class="hero__waves" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
-    <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z"/>
-    <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z"/>
-  </svg>
-
-  <a class="hero__scroll" href="<?php echo esc_url( home_url( '/services/' ) ); ?>" aria-label="Scroll down"><span></span></a>
-</section>
-
-<!-- ============ MARQUEE ============ -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee__track">
-    <span>Eurasian Watermilfoil</span><i>&#10022;</i><span>Water Chestnut</span><i>&#10022;</i><span>Hydrilla</span><i>&#10022;</i>
-    <span>Lily Pads</span><i>&#10022;</i><span>Cattails</span><i>&#10022;</i><span>Coontail</span><i>&#10022;</i>
-    <span>Filamentous Algae</span><i>&#10022;</i><span>Downed Branches</span><i>&#10022;</i>
-    <span>Eurasian Watermilfoil</span><i>&#10022;</i><span>Water Chestnut</span><i>&#10022;</i><span>Hydrilla</span><i>&#10022;</i>
-    <span>Lily Pads</span><i>&#10022;</i><span>Cattails</span><i>&#10022;</i><span>Coontail</span><i>&#10022;</i>
-    <span>Filamentous Algae</span><i>&#10022;</i><span>Downed Branches</span><i>&#10022;</i>
-  </div>
-</div>
-
-<!-- ============ MISSION ============
-     Verbatim from the back of the client's rack card — the owners asked for this
-     statement specifically. Do not paraphrase or tighten it; the only change
-     from the printed card is "Hornwort" for the card's "Hornwart" elsewhere
-     on the page. -->
-<section class="mission">
-  <div class="wrap mission__inner">
-    <div class="mission__aside reveal">
-      <p class="mission__tag">Our commitment</p>
-      <p class="mission__slogan">Eco-friendly preservation for lake &amp; pond weed maintenance.</p>
-    </div>
-
-    <div class="mission__body reveal">
-      <p class="mission__p"><strong>Aquatic Weed Harvesting</strong> values our natural resources and
-      strives to improve your lake, pond or riverfront. Removing excessive invasive vegetation can
-      support healthier oxygen levels, improved water conditions, and better habitat for native
-      aquatic life. This can be seen immediately with the response of fish, frogs, and other species.
-      Your living ecosystem requires a <em>long term health plan</em>. Together we can form an
-      environmental stewardship for sustaining your waterway while enhancing the aesthetic beauty and
-      value of your property.</p>
-
-      <p class="mission__p">We mechanically cut, collect, and remove unwanted aquatic vegetation
-      without herbicides. Every project is planned around the waterbody, the species present, and
-      the way the property is used.</p>
-
-      <p class="mission__join">Join us to win the fight to clean invasive aquatic vegetation from
-      our waterways.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BEFORE / AFTER ============ -->
-<section class="section" id="before-after">
-  <div class="wrap">
-    <div class="section__head section__head--center reveal">
-      <p class="eyebrow">Before &amp; after</p>
-      <h2 class="h2">Same pond.<br>Same week.</h2>
-      <p class="lead">Drag the slider to see what comes out of the water.</p>
-    </div>
-
-    <div class="ba reveal">
-      <div class="ba__frame" tabindex="0" role="slider" aria-label="Before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-        <div class="ba__pane ba__pane--after">
-          <img src="<?php echo awh_img( 'after-cleaning.webp' ); ?>" width="2048" height="1536" loading="lazy" decoding="async"
-               alt="The same pond after harvesting — open water again, with the harvester working the far edge.">
-          <span class="ba__tag ba__tag--right">After</span>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Aquatic Weed Harvesting LLC · Based in the Hudson Valley</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Lake and Pond Weed Removal</span></span>
+          <span class="line"><span>Across the <em>Northeast</em></span></span>
+        </h1>
+        <p class="hero__lead">
+          Aquatic Weed Harvesting LLC provides mechanical aquatic weed harvesting, lake weed removal, pond weed removal, shoreline clearing, muck removal, and floating debris cleanup across New York, New Jersey, and Pennsylvania.
+        </p>
+        <p class="hero__lead">
+          We use sustainable, environmentally responsible mechanical methods to cut, collect, and remove unwanted aquatic vegetation without using herbicides, helping homeowners, businesses, lake associations, and municipalities reclaim overgrown bodies of water.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path d="M5 12h13M13 6l6 6-6 6" />
+            </svg></a>
+          <a class="btn btn--ghost btn--lg" href="<?php echo esc_url( home_url( '/' ) ); ?>#before-after">See the Difference</a>
         </div>
-        <div class="ba__pane ba__pane--before">
-          <img src="<?php echo awh_img( 'before-cleaning.jpg' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
-               alt="A pond blanketed shore to shore in bright green algae.">
-          <span class="ba__tag">Before</span>
-        </div>
-        <div class="ba__handle"><span class="ba__grip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></span></div>
+
+        <ul class="hero__stats">
+          <li class="stat"><b class="stat__num" data-count="0">0</b><span class="stat__label">Chemicals used<br>on your
+              water</span></li>
+          <li class="stat"><b class="stat__num" data-count="5" data-suffix=" ft">5 ft</b><span
+              class="stat__label">Cutting depth<br>below the surface</span></li>
+          <li class="stat"><b class="stat__num" data-count="4">4</b><span
+              class="stat__label">Quick-change<br>attachments</span></li>
+        </ul>
+      </div>
+
+      <svg class="hero__waves" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+        <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z" />
+        <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z" />
+      </svg>
+
+      <a class="hero__scroll" href="<?php echo esc_url( home_url( '/services/' ) ); ?>" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Eurasian Watermilfoil</span><i>✦</i><span>Water Chestnut</span><i>✦</i><span>Hydrilla</span><i>✦</i>
+        <span>Lily Pads</span><i>✦</i><span>Cattails</span><i>✦</i><span>Coontail</span><i>✦</i>
+        <span>Filamentous Algae</span><i>✦</i><span>Downed Branches</span><i>✦</i>
+        <span>Eurasian Watermilfoil</span><i>✦</i><span>Water Chestnut</span><i>✦</i><span>Hydrilla</span><i>✦</i>
+        <span>Lily Pads</span><i>✦</i><span>Cattails</span><i>✦</i><span>Coontail</span><i>✦</i>
+        <span>Filamentous Algae</span><i>✦</i><span>Downed Branches</span><i>✦</i>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ WEEDS ============ -->
-<section class="section section--rule" id="weeds">
-  <div class="wrap">
-    <div class="section__head reveal">
-      <p class="eyebrow">What we remove</p>
-      <h2 class="h2">What we pull out of your water.</h2>
-    </div>
+    <!-- ============ WHY PROPERTY OWNERS CHOOSE US ============ -->
+    <section class="section" id="why-choose-us">
+      <div class="wrap boat">
+        <div class="boat__copy reveal">
+          <h2 class="h2">Why Property Owners Choose Us</h2>
 
-    <div class="weeds">
-      <article class="weed reveal" data-tag="Invasive">
-        <figure class="weed__art">
-          <img src="<?php echo awh_img( 'weed-milfoil.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
-               alt="Eurasian watermilfoil in a dense underwater canopy, feathery leaf whorls on reddish stems breaking the lake surface.">
+          <ul class="svc__list svc__list--lg">
+            <li>Specialized aquatic vegetation removal</li>
+            <li>Residential, commercial, and municipal projects</li>
+            <li>Vegetation collected and removed from the water</li>
+            <li>Based in the Hudson Valley and serving New York, New Jersey, and Pennsylvania</li>
+          </ul>
+        </div>
+
+        <figure class="shot shot--feature reveal">
+          <img src="<?php echo awh_img( 'cleanlake.webp' ); ?>" width="2048" height="1536" loading="lazy" decoding="async"
+            alt="A calm, clear lake at sunset, the shoreline reflected in open water after removal.">
         </figure>
-        <h3 class="weed__name">Eurasian Watermilfoil</h3>
-        <p class="weed__desc">Feathery, dense, and it spreads from a single broken fragment. Forms mats
-        thick enough to stop a propeller. The reason most people call us.</p>
-      </article>
+      </div>
+    </section>
 
-      <article class="weed reveal" data-tag="Invasive">
-        <figure class="weed__art">
-          <img src="<?php echo awh_img( 'weed-chestnut.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
-               alt="A floating water chestnut rosette of toothed triangular leaves on still water, with a spiked seed nut on the shore beside it.">
-        </figure>
-        <h3 class="weed__name">Water Chestnut</h3>
-        <p class="weed__desc">Floating rosettes that blanket the surface and drop spiked nuts on your beach.
-        Timing matters — we target it before the seed drops.</p>
-      </article>
+    <!-- ============ MISSION ============ -->
+    <section class="mission">
+      <div class="wrap mission__inner">
+        <div class="mission__aside reveal">
+          <p class="mission__tag">Aquatic Weed Harvesting LLC</p>
+          <p class="mission__slogan">Focused Exclusively on Clearing Lakes, Ponds, and Shorelines</p>
+        </div>
 
-      <article class="weed reveal" data-tag="Invasive">
-        <figure class="weed__art">
-          <img src="<?php echo awh_img( 'weed-hydrilla.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
-               alt="Dense strands of hydrilla growing up from the lake bed through sunlit green water.">
-        </figure>
-        <h3 class="weed__name">Hydrilla</h3>
-        <p class="weed__desc">Aggressive, fast, and regulated in New York. Grows from tubers, so mechanical
-        removal is about staying ahead of it every season.</p>
-      </article>
+        <div class="mission__body reveal">
+          <p class="mission__p">Aquatic weed removal is not an add-on service for us. It is the focus of our business.</p>
 
-      <article class="weed reveal" data-tag="Nuisance">
-        <figure class="weed__art">
-          <img src="<?php echo awh_img( 'weed-lily.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
-               alt="Water lily pads covering a pond surface, with a single white flower open among them.">
-        </figure>
-        <h3 class="weed__name">Lily Pads</h3>
-        <p class="weed__desc">Thick enough to stop a canoe and tangle a swimmer. We clear swim lanes and
-        dock approaches, and leave the rest as habitat if you want it.</p>
-      </article>
+          <p class="mission__p">We manage submerged weeds, rooted vegetation, invasive aquatic plants, muck, leaves, algae, branches, and floating debris. Each project is planned around the waterbody, the affected area, and how the property needs to use the water.</p>
 
-      <article class="weed reveal" data-tag="Nuisance">
-        <figure class="weed__art">
-          <img src="<?php echo awh_img( 'weed-cattail.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
-               alt="Cattails standing in the shallows at a pond's edge, brown seed heads above an exposed mass of roots.">
-        </figure>
-        <h3 class="weed__name">Cattails</h3>
-        <p class="weed__desc">Root-bound and stubborn. This is a bucket job, not a cutting job — we take the
-        root ball so it doesn't march further into the pond.</p>
-      </article>
+          <p class="mission__p">Our work goes beyond surface clearing. By removing excessive aquatic vegetation and biomass from the water, we help restore access, improve visibility, and support healthier waterway conditions.</p>
 
-      <article class="weed reveal" data-tag="Surface">
-        <figure class="weed__art">
-          <img src="<?php echo awh_img( 'weed-algae.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
-               alt="A pond surface carpeted in bright green duckweed and stringy filamentous algae, seen from directly above.">
-        </figure>
-        <h3 class="weed__name">Algae &amp; Duckweed</h3>
-        <p class="weed__desc">Surface scum that shows up on the windward shore. Skimmed off the top and
-        removed before it turns your waterfront green.</p>
-      </article>
-    </div>
+          <a class="offer__link" href="<?php echo esc_url( home_url( '/about/' ) ); ?>">Learn About Our Company <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
 
-    <!-- No photography for these yet, so they run as a line rather than as
-         cards with a placeholder image in them. -->
-    <p class="weeds__also reveal">
-      <b>Also on our waters:</b> Coontail (Hornwort), Phragmites, Curly-leaf Pondweed and general
-      nuisance growth — plus the leaves, brush and downed logs that come with a wooded shoreline.
-      Not sure what you've got? That's normal. Send a photo and we'll identify it.
-    </p>
-  </div>
-</section>
+    <!-- ============ SERVICES ============ -->
+    <section class="section section--band on-dark" id="home-services">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Mechanical Aquatic Vegetation Management</p>
+          <h2 class="h2">Complete Weed and Debris Removal Services</h2>
+        </div>
 
-<!-- ============ WHY NOW ============ -->
-<section class="section section--urgency on-dark" id="urgency">
-  <div class="wrap urgency">
-    <div class="urgency__copy reveal">
-      <p class="eyebrow">Why now</p>
-      <h2 class="h2">Remove invasive weeds<br>before they spread.</h2>
-      <p class="urgency__lead">Our waterways face accelerating invasive pressure as seeds and root
-      fragments spread through boat traffic, wildlife and currents. Invasive plants like water
-      chestnut, milfoil, phragmites and hydrilla establish dense mats that deplete oxygen, block
-      navigation, prohibit swimming and eliminate habitat for native species.</p>
-      <p class="urgency__lead">Harvest mechanically before your invasive coverage expands and
-      closes your waterway.</p>
-      <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an estimate
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-    </div>
+        <div class="svcs">
+          <article class="svc svc--wide reveal">
+            <span class="svc__num">01</span>
+            <figure class="svc__media">
+              <img src="<?php echo awh_img( 'crew-full-operation.webp' ); ?>" width="1280" height="960" loading="lazy" decoding="async"
+                alt="The work boat, excavator and haul truck running as one operation on the bank.">
+            </figure>
+            <div class="svc__main">
+              <h3 class="svc__title">Aquatic Weed Harvesting</h3>
+              <p class="svc__text">Cut and collect dense aquatic vegetation from lakes, ponds, coves, and shared waterways.</p>
+            </div>
+          </article>
 
-    <figure class="urgency__figure reveal">
-      <img src="<?php echo awh_img( 'boat-in-weeds.jpg' ); ?>" width="1400" height="876" loading="lazy" decoding="async"
-        alt="A harvester cutting a lane through a pond covered edge to edge in dense invasive weed.">
-    </figure>
+          <article class="svc reveal">
+            <figure class="svc__media">
+              <img src="<?php echo awh_img( 'lake-ramp-weed.webp' ); ?>" width="1024" height="498" loading="lazy" decoding="async"
+                alt="A lake covered bank to bank in weed, seen from the launch ramp.">
+            </figure>
+            <span class="svc__num">02</span>
+            <h3 class="svc__title">Lake Weed Removal</h3>
+            <p class="svc__text">Clear weeds from docks, swimming areas, boat lanes, shorelines, and other high-use lakefront areas.</p>
+          </article>
 
-    <aside class="notsurface reveal">
-      <h3 class="notsurface__h">This is not a surface removal.</h3>
-      <p class="notsurface__p">Aquatic weed harvesting is an essential service for maintaining the
-      beauty, health and visibility of your waterway. Removing excessive aquatic vegetation and
-      biomass helps improve water clarity, restores natural balance to the ecosystem and makes
-      waterways safer.</p>
-      <p class="notsurface__note">New state laws require properly cleaning boats, trailers and
-      waders to limit the spread of aquatic invasive species.</p>
-    </aside>
-  </div>
-</section>
+          <article class="svc reveal">
+            <figure class="svc__media">
+              <img src="<?php echo awh_img( 'pond-estate-weed.jpg' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
+                alt="A private estate pond under a full mat of duckweed and algae.">
+            </figure>
+            <span class="svc__num">03</span>
+            <h3 class="svc__title">Pond Weed Removal</h3>
+            <p class="svc__text">Remove lily pads, cattails, algae, and unwanted growth from private, farm, community, and commercial ponds.</p>
+          </article>
 
-<!-- ============ ROOT RAKE ============
-     Client-supplied Weedoo photo of the root rake attachment. Runs on the
-     same two-column feature layout as the boat block on How it works; the
-     copy is the manufacturer's description, trimmed to our voice. -->
-<section class="section section--boat" id="root-rake">
-  <div class="wrap boat">
-    <div class="boat__copy reveal">
-      <p class="eyebrow">The equipment</p>
-      <h2 class="h2">A root rake for<br>the shoreline.</h2>
-      <p class="lead">Designed specifically for cattail and other emergent shoreline vegetation
-      removal, this durable and versatile root rake is a valuable time saver. It attaches with
-      Weedoo's quick-change system, so we go from marine bucket to root rake in a matter of
-      seconds.</p>
-      <ul class="boat__specs">
-        <li class="spec"><b>Cattails &amp; emergents</b><span>Built for growth rooted at the
-        shoreline</span></li>
-        <li class="spec"><b>2 ft steel fingers</b><span>All-steel, for rocks and sunken
-        debris</span></li>
-        <li class="spec"><b>Changed on the water</b><span>Bucket to rake in seconds</span></li>
-        <li class="spec"><b>Restoration work</b><span>A good fit for shoreline projects</span></li>
-      </ul>
-    </div>
-    <div class="boat__figure reveal">
-      <figure class="shot shot--wide">
-        <img src="<?php echo awh_img( 'machine.png' ); ?>" width="768" height="432" loading="lazy" decoding="async"
-          alt="The root rake attachment mounted on the work boat, its curved steel fingers raised clear of the water.">
-      </figure>
-    </div>
-  </div>
-</section>
+          <article class="svc reveal">
+            <figure class="svc__media">
+              <img src="<?php echo awh_img( 'harvester-shoreline.webp' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
+                alt="Cut vegetation lifted out at the waterline onto the bank.">
+            </figure>
+            <span class="svc__num">04</span>
+            <h3 class="svc__title">Shoreline Weed Removal</h3>
+            <p class="svc__text">Clear overgrown waterfront areas, cattails, rooted vegetation, brush, and qualifying branches.</p>
+          </article>
+
+          <article class="svc reveal">
+            <figure class="svc__media">
+              <img src="<?php echo awh_img( 'conveyor-load.jpg' ); ?>" width="2048" height="1536" loading="lazy" decoding="async"
+                alt="A full load of decomposing weed on the boat's conveyor, on its way off the water.">
+            </figure>
+            <span class="svc__num">05</span>
+            <h3 class="svc__title">Lake Muck Removal</h3>
+            <p class="svc__text">Physically remove accumulated organic sediment from selected docks, shorelines, swimming areas, and shallow sections.</p>
+          </article>
+
+          <article class="svc reveal">
+            <figure class="svc__media">
+              <img src="<?php echo awh_img( 'lakeside-crew.webp' ); ?>" width="1024" height="540" loading="lazy" decoding="async"
+                alt="Material lifted out of the lake and piled on the concrete ramp, ready to be hauled away.">
+            </figure>
+            <span class="svc__num">06</span>
+            <h3 class="svc__title">Leaf and Debris Removal</h3>
+            <p class="svc__text">Collect floating leaves, organic material, branches, logs, and storm debris from lakes and ponds.</p>
+          </article>
+
+          <article class="svc reveal">
+            <figure class="svc__media">
+              <img src="<?php echo awh_img( 'weedoo-work-boat-poster.jpg' ); ?>" width="1400" height="786" loading="lazy" decoding="async"
+                alt="The shallow-draft work boat staged at the water's edge with its attachment fitted.">
+            </figure>
+            <span class="svc__num">07</span>
+            <h3 class="svc__title">Invasive Aquatic Weed Control</h3>
+            <p class="svc__text">Control Eurasian watermilfoil, water chestnut, phragmites, hydrilla, and other invasive plants before dense growth restricts navigation, swimming, and native habitat.</p>
+          </article>
+        </div>
+
+        <p class="section__cta reveal">
+          <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Explore All Services <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / AFTER ============ -->
+    <section class="section" id="before-after">
+      <div class="wrap">
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow">Before &amp; after</p>
+          <h2 class="h2">Same pond<br>Same week</h2>
+          <p class="lead">Drag the slider to see what comes out of the water.</p>
+        </div>
+
+        <div class="ba reveal">
+          <div class="ba__frame" tabindex="0" role="slider" aria-label="Before and after comparison" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="50">
+            <div class="ba__pane ba__pane--after">
+              <img src="<?php echo awh_img( 'after-cleaning.webp' ); ?>" width="2048" height="1536" loading="lazy" decoding="async"
+                alt="The same pond after harvesting — open water again, with the harvester working the far edge.">
+              <span class="ba__tag ba__tag--right">After</span>
+            </div>
+            <div class="ba__pane ba__pane--before">
+              <img src="<?php echo awh_img( 'before-cleaning.jpg' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
+                alt="A pond blanketed shore to shore in bright green algae.">
+              <span class="ba__tag">Before</span>
+            </div>
+            <div class="ba__handle"><span class="ba__grip"><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 6l-4 6 4 6M15 6l4 6-4 6" />
+                </svg></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WEEDS ============ -->
+    <section class="section section--rule" id="weeds">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Physical Removal Without Herbicide Application</p>
+          <h2 class="h2">What We Pull Out of Your Water</h2>
+        </div>
+
+        <div class="weeds">
+          <article class="weed reveal" data-tag="Invasive">
+            <figure class="weed__art">
+              <img src="<?php echo awh_img( 'weed-milfoil.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
+                alt="Eurasian watermilfoil in a dense underwater canopy, feathery leaf whorls on reddish stems breaking the lake surface.">
+            </figure>
+            <h3 class="weed__name">Eurasian Watermilfoil</h3>
+            <p class="weed__desc">Dense, feathery vegetation that propagates easily from small floating
+              fragments. It quickly creates thick mats capable of choking boat propellers, making it
+              the primary reason property owners reach out to us.</p>
+          </article>
+
+          <article class="weed reveal" data-tag="Invasive">
+            <figure class="weed__art">
+              <img src="<?php echo awh_img( 'weed-chestnut.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
+                alt="A floating water chestnut rosette of toothed triangular leaves on still water, with a spiked seed nut on the shore beside it.">
+            </figure>
+            <h3 class="weed__name">Water Chestnut</h3>
+            <p class="weed__desc">Dense floating clusters that crowd the water's surface and deposit
+              sharp nutlets along shorelines. Prompt action is critical, so we perform mechanical
+              extraction prior to seed release.</p>
+          </article>
+
+          <article class="weed reveal" data-tag="Invasive">
+            <figure class="weed__art">
+              <img src="<?php echo awh_img( 'weed-hydrilla.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
+                alt="Dense strands of hydrilla growing up from the lake bed through sunlit green water.">
+            </figure>
+            <h3 class="weed__name">Hydrilla</h3>
+            <p class="weed__desc">Rapid-spreading and strictly managed throughout New York State. Because it regenerates from underground tubers, ongoing seasonal mechanical harvesting is required to keep it fully under control.</p>
+          </article>
+
+          <article class="weed reveal" data-tag="Nuisance">
+            <figure class="weed__art">
+              <img src="<?php echo awh_img( 'weed-lily.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
+                alt="Water lily pads covering a pond surface, with a single white flower open among them.">
+            </figure>
+            <h3 class="weed__name">Lily Pads</h3>
+            <p class="weed__desc">Dense growths that snare swimmers and immobilize small watercraft. We
+              open up dock areas and navigation channels while preserving designated sections for
+              aquatic life upon request.</p>
+          </article>
+
+          <article class="weed reveal" data-tag="Nuisance">
+            <figure class="weed__art">
+              <img src="<?php echo awh_img( 'weed-cattail.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
+                alt="Cattails standing in the shallows at a pond's edge, brown seed heads above an exposed mass of roots.">
+            </figure>
+            <h3 class="weed__name">Cattails</h3>
+            <p class="weed__desc">Dense, deeply rooted growth requires specialized equipment. Rather
+              than simple cutting, we excavate the full root system to prevent further expansion
+              across your waterbody.</p>
+          </article>
+
+          <article class="weed reveal" data-tag="Surface">
+            <figure class="weed__art">
+              <img src="<?php echo awh_img( 'weed-algae.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
+                alt="A pond surface carpeted in bright green duckweed and stringy filamentous algae, seen from directly above.">
+            </figure>
+            <h3 class="weed__name">Algae &amp; Duckweed</h3>
+            <p class="weed__desc">Floating film that gathers along shoreline areas. We skim and
+              extract it from the water before it darkens your waterfront.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO WE SERVE ============ -->
+    <section class="section section--rule" id="who-we-serve-home">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Aquatic Weed Removal for Every Waterfront</p>
+          <h2 class="h2">One Specialist for Private, Commercial, and Public Water</h2>
+        </div>
+
+        <ul class="offers offers--3">
+          <li class="offer reveal">
+            <h3 class="offer__h">Residential Waterfronts</h3>
+            <p class="offer__p">Private lakefront weed control, lake dock weed cleaning, residential
+              pond cleaning, shoreline clearing, and swimming-area maintenance.</p>
+          </li>
+          <li class="offer reveal">
+            <h3 class="offer__h">Commercial Properties</h3>
+            <p class="offer__p">HOA pond maintenance, golf course pond weed management, marina weed
+              removal, campground waterfront cleanup, and resort lake maintenance.</p>
+          </li>
+          <li class="offer reveal">
+            <h3 class="offer__h">Municipal and Community Waterways</h3>
+            <p class="offer__p">Municipal lake weed management, public beach weed removal,
+              boat-launch clearing, and lake association weed harvesting.</p>
+          </li>
+        </ul>
+
+        <p class="section__cta reveal">
+          <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>">Find Services for Your Property <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section section--band on-dark" id="why-choose-us">
+      <div class="wrap">
+        <div class="approach">
+          <div class="approach__aside reveal">
+            <p class="eyebrow">Experience and Approach</p>
+            <h2 class="h2">Why Choose Aquatic Weed Harvesting LLC?</h2>
+          </div>
+
+          <ul class="approach__list">
+            <li class="approach__item reveal">
+              <span class="approach__n">01</span>
+              <div>
+                <h3 class="approach__h">Aquatic Removal Specialists</h3>
+                <p class="approach__p">Our work is centered on lakes, ponds, shorelines, and aquatic
+                  vegetation. We understand the equipment, access challenges, and seasonal timing
+                  involved.</p>
+              </div>
+            </li>
+            <li class="approach__item reveal">
+              <span class="approach__n">02</span>
+              <div>
+                <h3 class="approach__h">Service Matched to the Problem</h3>
+                <p class="approach__p">We select the removal method based on the vegetation, sediment,
+                  debris, water depth, and treatment area.</p>
+              </div>
+            </li>
+            <li class="approach__item reveal">
+              <span class="approach__n">03</span>
+              <div>
+                <h3 class="approach__h">Clear Project Scope</h3>
+                <p class="approach__p">You know which areas will be treated, how we'll remove the
+                  material, and what results to expect.</p>
+              </div>
+            </li>
+            <li class="approach__item reveal">
+              <span class="approach__n">04</span>
+              <div>
+                <h3 class="approach__h">Maintenance Guidance</h3>
+                <p class="approach__p">We explain when one-time removal may be appropriate and when
+                  seasonal maintenance is more realistic.</p>
+              </div>
+            </li>
+            <li class="approach__item reveal">
+              <span class="approach__n">05</span>
+              <div>
+                <h3 class="approach__h">Regional Service</h3>
+                <p class="approach__p">Based in the Hudson Valley, we serve residential, commercial, association, and municipal projects throughout New York, New Jersey, and Pennsylvania.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
 
-<!-- ============ CTA ============ -->
-<section class="section section--cta on-dark">
-  <div class="wrap cta">
-    <div class="cta__copy reveal">
-      <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Send us a photo of your water.</h2>
-      <p class="cta__p">That’s all we need to start. We’ll tell you what’s growing, what it takes to
-      clear it and what it costs — no charge, no obligation.</p>
-    </div>
-    <div class="cta__side reveal">
-      <a class="cta__call" href="tel:+15184417742">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>+1 (518) 441-7742</b></span>
-      </a>
-      <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Get a free quote <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
+    <!-- ============ CTA ============ -->
+    <section class="section section--cta on-dark">
+      <div class="wrap cta">
+        <div class="cta__copy reveal">
+          <p class="eyebrow">Free Project Review</p>
+          <h2 class="cta__h">Reclaim Your Lake, Pond, or Shoreline</h2>
+          <p class="cta__p">Tell us what is growing, where the problem is located, and how it is
+            affecting your property. We will recommend the appropriate removal service and provide a
+            no-obligation estimate.</p>
+        </div>
+        <div class="cta__side reveal">
+          <a class="cta__call" href="tel:+15184417742">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z" />
+            </svg>
+            <span><b>Call +1 (518) 441-7742</b></span>
+          </a>
+          <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg
+              viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h13M13 6l6 6-6 6" />
+            </svg></a>
+        </div>
+      </div>
+    </section>
 
-</main>
+  </main>
 
 <?php
 get_footer();

@@ -31,8 +31,8 @@ get_header();
 
       <ul class="rhero__chips">
         <li class="rhero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Work scheduled around property operations</li>
-        <li class="rhero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Targeted removal in priority areas</li>
-        <li class="rhero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Seasonal maintenance available</li>
+        <li class="rhero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Targeted removal in high-use areas</li>
+        <li class="rhero__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Collected vegetation and biomass removed from the water</li>
       </ul>
     </div>
 
@@ -45,7 +45,7 @@ get_header();
         <img src="<?php echo awh_img( 'weedoo-work-boat-poster.jpg' ); ?>" width="1400" height="786" loading="eager" decoding="async"
           alt="The shallow-draft work boat staged at the water's edge.">
       </figure>
-      <span class="rhero__tag">Commercial aquatic vegetation management</span>
+      <span class="rhero__tag">Commercial Aquatic Weed Removal in New York, New Jersey, and Pennsylvania</span>
     </div>
   </div>
 </section>
@@ -55,7 +55,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Commercial services</p>
-      <h2 class="h2">Weed management built around your property</h2>
+      <h2 class="h2">Aquatic Weed Management for Commercial Properties</h2>
     </div>
 
     <div class="svcs">
@@ -65,9 +65,7 @@ get_header();
             alt="A community pond blanketed in algae along its shoreline.">
         </figure>
         <h3 class="svc__title">HOA pond maintenance service</h3>
-        <p class="svc__text">Community ponds and shared waterfronts need consistent care to remain
-        accessible and presentable. We help HOAs manage excessive weeds, cattails, algae, leaves, and
-        floating debris around common areas.</p>
+        <p class="svc__text">Community ponds and shared waterfronts need consistent care to remain accessible and presentable. We help HOAs manage excessive weeds, cattails, algae, leaves, and floating debris around common areas.</p>
         <ul class="svc__list">
           <li>Community ponds and shorelines</li>
           <li>Shared docks and swimming areas</li>
@@ -81,12 +79,10 @@ get_header();
             alt="Lily pads spreading across the surface of an ornamental pond.">
         </figure>
         <h3 class="svc__title">Golf course pond weed management</h3>
-        <p class="svc__text">Overgrown ponds can affect course appearance, drainage areas, and the
-        experience of members and guests. Our mechanical removal process targets unwanted growth while
-        working around course schedules and priority areas.</p>
+        <p class="svc__text">Overgrown ponds can affect course appearance, drainage areas, and the experience of members and guests. Our mechanical removal process targets unwanted growth while working around course schedules and priority areas.</p>
         <ul class="svc__list">
           <li>Course and ornamental ponds</li>
-          <li>Shoreline vegetation and algae</li>
+          <li>Shoreline vegetation and floating algae</li>
           <li>Scheduling around play and events</li>
         </ul>
       </article>
@@ -97,9 +93,7 @@ get_header();
             alt="Weed growth spreading out from a boat launch into open water.">
         </figure>
         <h3 class="svc__title">Marina weed removal company</h3>
-        <p class="svc__text">Dense aquatic vegetation can restrict slips, launch areas, fuel docks, and
-        navigation routes. We remove weeds and floating debris from high-use marina areas to help keep
-        the water safer and more accessible.</p>
+        <p class="svc__text">Dense aquatic vegetation can restrict boat slips, launch areas, fuel docks, and navigation routes. We remove weeds and floating debris from high-use marina areas to help keep the water safer and more accessible.</p>
         <ul class="svc__list">
           <li>Boat slips and dock approaches</li>
           <li>Launch areas and navigation lanes</li>
@@ -140,8 +134,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <h2 class="cta__h">Discuss your property</h2>
-      <p class="cta__p">Send us photos of the pond, lake, marina, or affected shoreline. We will review
-      the conditions and recommend an appropriate mechanical removal plan.</p>
+      <p class="cta__p">Tell us how aquatic vegetation or debris is affecting your property, guests, residents, or operations. We will review the conditions, identify the priority areas, and recommend a mechanical removal plan that fits your schedule.</p>
     </div>
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">

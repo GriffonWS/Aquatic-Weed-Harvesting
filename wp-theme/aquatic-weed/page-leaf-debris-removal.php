@@ -24,7 +24,7 @@ get_header();
     {
       "@type": "Question",
       "name": "Can you remove debris from shallow water?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The compact work boat is designed to access shallow and confined areas where full-size equipment may have difficulty operating." }
+      "acceptedAnswer": { "@type": "Answer", "text": "The workboat is designed to access shallow and confined areas where full-size equipment may have difficulty operating." }
     },
     {
       "@type": "Question",
@@ -56,13 +56,11 @@ get_header();
 
   <div class="shero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Leaf &amp; debris removal</b></p>
-    <h1 class="shero__title">Mechanical Leaf and <em>Debris Removal</em></h1>
+    <h1 class="shero__title">Lake Leaf Removal and Pond <em>Debris Cleanup</em></h1>
     <p class="shero__lead">Leaves and debris often gather around docks, shorelines, coves, and other
     protected areas. If left in place, organic material can sink, decompose, and contribute to
     bottom buildup.</p>
-    <p class="shero__lead">Our mechanical cleanup service removes floating material from the water
-    before it becomes harder to reach. Different attachments let us collect fine surface debris and
-    handle larger branches or downed wood.</p>
+    <p class="shero__lead">Our sustainable mechanical cleanup service collects floating material before it becomes harder to reach. Quick-change attachments allow us to remove fine surface debris, heavier plant material, branches, and downed wood without chemical treatment.</p>
 
     <div class="shero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
@@ -83,7 +81,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">When to schedule</p>
-        <h2 class="h2">Seasonal lake leaf removal service</h2>
+        <h2 class="h2">Seasonal Lake Leaf Removal Service</h2>
         <p class="lead">Wind and currents can push large amounts of fallen leaves into coves, dock
         areas, and shallow shorelines. These natural collection points may become difficult to clean
         from land.</p>
@@ -129,7 +127,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">What we collect</p>
-      <h2 class="h2">Floating and submerged debris cleanup</h2>
+      <h2 class="h2">Floating and Submerged Debris Cleanup</h2>
     </div>
 
     <div class="svcs svcs--text">
@@ -152,8 +150,7 @@ get_header();
       <article class="svc reveal">
         <span class="svc__num">03</span>
         <h3 class="svc__title">Branches and small trees</h3>
-        <p class="svc__text">Cut or lift low-hanging branches, small trees, and woody material
-        obstructing the water.</p>
+        <p class="svc__text">Cut or lift low-hanging branches, small trees, and other woody material that obstruct the water.</p>
       </article>
 
       <article class="svc reveal">
@@ -171,9 +168,8 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The equipment</p>
-      <h2 class="h2">The right equipment for debris removal</h2>
-      <p class="lead">Different types of debris require different tools. Our work boat uses
-      interchangeable attachments to collect surface material and manage heavier obstacles.</p>
+      <h2 class="h2">The Right Equipment for Debris Removal</h2>
+      <p class="lead">Different debris requires different equipment. Our workboat has five quick-change attachments. For leaf and debris removal, the skimmer, vegetation bucket, and hydraulic pole saw handle material ranging from fine surface debris to branches and downed wood.</p>
     </div>
 
     <div class="kit">
@@ -186,33 +182,29 @@ get_header();
         <li class="kit__row reveal">
           <span class="kit__tag">01</span>
           <div>
-            <h3 class="kit__h">Skimmer attachment</h3>
-            <p class="kit__p">Collects leaves, algae, and fine floating organic material from the
-            surface.</p>
+            <h3 class="kit__h">Skimmer Attachment</h3>
+            <p class="kit__p">Collects algae and other fine material floating on or just below the surface.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">02</span>
           <div>
-            <h3 class="kit__h">Vegetation bucket</h3>
-            <p class="kit__p">Lifts heavier plant material and larger accumulations from shallow
-            water.</p>
+            <h3 class="kit__h">Vegetation Bucket / Front-End Loader</h3>
+            <p class="kit__p">Scoops and removes vegetation from depths up to 3 feet.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">03</span>
           <div>
-            <h3 class="kit__h">Hydraulic pole saw</h3>
-            <p class="kit__p">Cuts low-hanging branches, small trees, and downed wood while working
-            from the water.</p>
+            <h3 class="kit__h">Hydraulic Pole Saw</h3>
+            <p class="kit__p">Cuts tree branches, small trees, and downed logs in the water.</p>
           </div>
         </li>
         <li class="kit__row reveal">
           <span class="kit__tag">04</span>
           <div>
-            <h3 class="kit__h">Work boat</h3>
-            <p class="kit__p">Provides access to shallow shorelines, coves, docks, and confined
-            areas where debris commonly collects.</p>
+            <h3 class="kit__h">Shallow-Water Workboat</h3>
+            <p class="kit__p">Provides access to shallow shorelines, coves, docks, and confined areas where leaves and debris commonly collect.</p>
           </div>
         </li>
       </ul>
@@ -229,7 +221,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Leaf and debris removal questions</h2>
+      <h2 class="h2">Leaf and Debris Removal Questions</h2>
     </div>
 
     <div class="faq">
@@ -245,8 +237,7 @@ get_header();
         <summary class="faq__q">Can you remove debris from shallow water?
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
         </summary>
-        <p class="faq__a">The compact work boat is designed to access shallow and confined areas
-        where full-size equipment may have difficulty operating.</p>
+        <p class="faq__a">The workboat is designed to access shallow and confined areas where full-size equipment may have difficulty operating.</p>
       </details>
 
       <details class="faq__item reveal">
@@ -281,10 +272,8 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Clear the leaves and debris from your water</h2>
-      <p class="cta__p">Send us photos of the affected lake, pond, or shoreline. We will review the
-      material, access conditions, and project scope before recommending the appropriate cleanup
-      approach.</p>
+      <h2 class="cta__h">Clear the Leaves and Debris From Your Water</h2>
+      <p class="cta__p">Tell us about the leaves or debris affecting your lake, pond, or shoreline. We will review the material, access conditions, and project scope before recommending the most suitable cleanup approach.</p>
     </div>
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">

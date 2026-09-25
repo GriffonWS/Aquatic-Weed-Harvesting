@@ -80,7 +80,7 @@ get_header();
     <div class="approach">
       <div class="approach__aside reveal">
         <p class="eyebrow">Who we work with</p>
-        <h2 class="h2">Invasive weed management for public and community waterbodies</h2>
+        <h2 class="h2">Invasive Weed Management for Public and Community Waterbodies</h2>
       </div>
 
       <ul class="approach__list">
@@ -105,9 +105,7 @@ get_header();
           <span class="approach__n">02</span>
           <div>
             <h3 class="approach__h">Public beach weed removal service</h3>
-            <p class="approach__p">Dense aquatic growth can affect swimming areas, shorelines, and
-            how visitors experience a public beach. Our compact work boat targets vegetation in
-            shallow and frequently used areas.</p>
+            <p class="approach__p">Dense aquatic growth can restrict swimming, affect shoreline access, and diminish the visitor experience at a public beach. Our workboat targets vegetation in shallow and frequently used areas.</p>
             <ul class="svc__list">
               <li>Swimming and wading areas</li>
               <li>Beachfront shorelines</li>
@@ -143,7 +141,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">What we control</p>
-      <h2 class="h2">Invasive aquatic vegetation we control</h2>
+      <h2 class="h2">Control Invasive Aquatic Growth Before It Spreads</h2>
     </div>
 
     <div class="wfront wfront--4">
@@ -186,8 +184,7 @@ get_header();
              alt="Lily pads covering the surface of shallow water.">
         <div class="wfrontCard__body">
           <h3 class="wfrontCard__h">Additional vegetation management services</h3>
-          <p class="wfrontCard__p">We also offer customized harvesting solutions for lily pads,
-          cattails, algae mats, and other nuisance aquatic weeds.</p>
+          <p class="wfrontCard__p">We also provide targeted mechanical control for phragmites, lily pads, cattails, algae mats, and other excessive aquatic growth. The appropriate removal method depends on the species, affected area, and waterbody conditions.</p>
         </div>
       </article>
     </div>
@@ -199,7 +196,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">The approach</p>
-      <h2 class="h2">Why use mechanical harvesting?</h2>
+      <h2 class="h2">Why Choose Mechanical Harvesting?</h2>
     </div>
 
     <div class="kit">
@@ -221,8 +218,7 @@ get_header();
           <span class="kit__tag">02</span>
           <div>
             <h3 class="kit__h">Biomass removal</h3>
-            <p class="kit__p">Collected plant material is removed from the water rather than being
-            left to decompose.</p>
+            <p class="kit__p">Harvested biomass is collected and removed from the water rather than left to decompose in the treatment area.</p>
           </div>
         </li>
         <li class="kit__row reveal">
@@ -245,9 +241,7 @@ get_header();
           <span class="kit__tag">05</span>
           <div>
             <h3 class="kit__h">No herbicide application</h3>
-            <p class="kit__p">Mechanical harvesting controls vegetation without using aquatic
-            herbicides. Any access requirements are reviewed based on the project and local
-            regulations.</p>
+            <p class="kit__p">Mechanical harvesting cuts, collects, and removes aquatic plant overgrowth without applying herbicides. Any access requirements are reviewed according to the project and local regulations.</p>
           </div>
         </li>
       </ul>
@@ -264,10 +258,8 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Before work begins</p>
-      <h2 class="h2">A clear scope for every project</h2>
-      <p class="lead">Municipal and association projects often involve public-use requirements and
-      strict budget constraints. Before work begins, we establish a clear project scope that
-      defines:</p>
+      <h2 class="h2">A Clear Scope for Every Project</h2>
+      <p class="lead">Municipal and association projects often involve public-use requirements, defined budgets, permits, and multiple stakeholders. Before work begins, we establish a clear project scope that defines:</p>
     </div>
 
     <ul class="offers">
@@ -288,7 +280,7 @@ get_header();
   <div class="wrap">
     <div class="section__head reveal">
       <p class="eyebrow">Questions</p>
-      <h2 class="h2">Invasive aquatic weed control questions</h2>
+      <h2 class="h2">Invasive Aquatic Weed Control Questions</h2>
     </div>
 
     <div class="faq">
@@ -340,7 +332,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Site assessment</p>
-      <h2 class="cta__h">Build a clear plan for your waterbody</h2>
+      <h2 class="cta__h">Build a Clear Plan for Your Waterbody</h2>
       <p class="cta__p">Tell us about the invasive vegetation, affected areas, public-use
       requirements, and seasonal priorities. We will review the project and recommend an appropriate
       mechanical harvesting approach.</p>

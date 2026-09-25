@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWH_VERSION', '2.5.2' );
+define( 'AWH_VERSION', '2.7.0' );
 
 /* ============================================================== theme setup */
 
@@ -71,7 +71,7 @@ function awh_img( $file ) {
  */
 function awh_document_title( $title ) {
 	if ( is_front_page() ) {
-		return 'Aquatic Weed Harvesting LLC — Got Lake Weeds? | Henning, MN';
+		return 'Aquatic Weed Removal in NY, NJ & PA | Aquatic Weed Harvesting LLC';
 	}
 	return $title;
 }
@@ -189,36 +189,45 @@ function awh_handle_quote() {
 		wp_send_json_success( array( 'message' => 'Thanks.' ) );
 	}
 
-	$name  = isset( $_POST['name'] ) ? sanitize_text_field( wp_unslash( $_POST['name'] ) ) : '';
-	$phone = isset( $_POST['phone'] ) ? sanitize_text_field( wp_unslash( $_POST['phone'] ) ) : '';
-	$email = isset( $_POST['email'] ) ? sanitize_email( wp_unslash( $_POST['email'] ) ) : '';
-	$water = isset( $_POST['water'] ) ? sanitize_text_field( wp_unslash( $_POST['water'] ) ) : '';
-	$area  = isset( $_POST['area'] ) ? sanitize_text_field( wp_unslash( $_POST['area'] ) ) : '';
-	$notes = isset( $_POST['notes'] ) ? sanitize_textarea_field( wp_unslash( $_POST['notes'] ) ) : '';
+	$field = function ( $key ) {
+		return isset( $_POST[ $key ] ) ? sanitize_text_field( wp_unslash( $_POST[ $key ] ) ) : '';
+	};
 
-	$weeds = array();
-	if ( ! empty( $_POST['weed'] ) ) {
-		foreach ( (array) wp_unslash( $_POST['weed'] ) as $w ) {
-			$weeds[] = sanitize_text_field( $w );
-		}
-	}
+	$name      = $field( 'name' );
+	$phone     = $field( 'phone' );
+	$email     = isset( $_POST['email'] ) ? sanitize_email( wp_unslash( $_POST['email'] ) ) : '';
+	$location  = $field( 'location' );
+	$property  = $field( 'property' );
+	$area      = $field( 'area' );
+	$weed      = $field( 'weed' );
+	$timeframe = $field( 'timeframe' );
+	$notes     = isset( $_POST['notes'] ) ? sanitize_textarea_field( wp_unslash( $_POST['notes'] ) ) : '';
 
 	if ( '' === $name || '' === $phone || ! is_email( $email ) ) {
 		wp_send_json_error( array( 'message' => 'Please check your name, phone and email.' ), 400 );
 	}
 
+	$photos = awh_quote_photos();
+
+	$or_dash = function ( $v ) {
+		return '' !== $v ? $v : '—';
+	};
+
 	$lines = array(
 		'New estimate request from the website.',
 		'',
-		'Name:       ' . $name,
-		'Phone:      ' . $phone,
-		'Email:      ' . $email,
-		'Lake/pond:  ' . ( '' !== $water ? $water : '—' ),
-		'Rough area: ' . ( '' !== $area ? $area : '—' ),
-		"What's growing: " . ( $weeds ? implode( ', ', $weeds ) : '—' ),
+		'Name:              ' . $name,
+		'Phone:             ' . $phone,
+		'Email:             ' . $email,
+		'Property location: ' . $or_dash( $location ),
+		'Type of property:  ' . $or_dash( $property ),
+		'Affected area:     ' . $or_dash( $area ),
+		"What's growing:    " . $or_dash( $weed ),
+		'Timeframe:         ' . $or_dash( $timeframe ),
+		'Photos attached:   ' . count( $photos ),
 		'',
-		'Notes:',
-		'' !== $notes ? $notes : '—',
+		'Additional details:',
+		$or_dash( $notes ),
 		'',
 		'---',
 		'Sent from ' . home_url( '/' ),
@@ -230,8 +239,14 @@ function awh_handle_quote() {
 		implode( "\n", $lines ),
 		array(
 			'Reply-To: ' . $name . ' <' . $email . '>',
-		)
+		),
+		$photos
 	);
+
+	// The attachments were only needed for the send.
+	foreach ( $photos as $path ) {
+		wp_delete_file( $path );
+	}
 
 	if ( ! $sent ) {
 		wp_send_json_error(
@@ -242,5 +257,58 @@ function awh_handle_quote() {
 
 	wp_send_json_success( array( 'message' => "Thanks — that's through. Troy will be in touch shortly." ) );
 }
+/**
+ * Save the optional photos from the estimate form so they can be attached to
+ * the email. Images only, at most 5 files of 8 MB each; anything else is
+ * skipped rather than failing the whole request.
+ *
+ * @return string[] Absolute paths of the saved files.
+ */
+function awh_quote_photos() {
+	if ( empty( $_FILES['photos'] ) || ! is_array( $_FILES['photos']['name'] ) ) {
+		return array();
+	}
+
+	require_once ABSPATH . 'wp-admin/includes/file.php';
+
+	$allowed = array(
+		'jpg|jpeg|jpe' => 'image/jpeg',
+		'png'          => 'image/png',
+		'gif'          => 'image/gif',
+		'webp'         => 'image/webp',
+		'heic'         => 'image/heic',
+	);
+	$files   = $_FILES['photos']; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput -- handled by wp_handle_upload.
+	$saved   = array();
+
+	foreach ( array_keys( $files['name'] ) as $i ) {
+		if ( count( $saved ) >= 5 ) {
+			break;
+		}
+		if ( UPLOAD_ERR_OK !== $files['error'][ $i ] || $files['size'][ $i ] > 8 * MB_IN_BYTES ) {
+			continue;
+		}
+		$file   = array(
+			'name'     => $files['name'][ $i ],
+			'type'     => $files['type'][ $i ],
+			'tmp_name' => $files['tmp_name'][ $i ],
+			'error'    => $files['error'][ $i ],
+			'size'     => $files['size'][ $i ],
+		);
+		$result = wp_handle_upload(
+			$file,
+			array(
+				'test_form' => false,
+				'mimes'     => $allowed,
+			)
+		);
+		if ( ! empty( $result['file'] ) ) {
+			$saved[] = $result['file'];
+		}
+	}
+
+	return $saved;
+}
+
 add_action( 'wp_ajax_awh_quote', 'awh_handle_quote' );
 add_action( 'wp_ajax_nopriv_awh_quote', 'awh_handle_quote' );
