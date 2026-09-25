@@ -169,14 +169,14 @@
 
     // TODO: wire to the client's form handler / inbox before launch.
     const btn = $('button[type="submit"]', form);
+    const label = btn.textContent;
     btn.disabled = true;
     btn.textContent = 'Sending…';
     setTimeout(() => {
       form.reset();
       btn.disabled = false;
-      btn.textContent = 'Send my request';
+      btn.textContent = label;
       $('#formOk').hidden = false;
-      $$('.chip input:checked', form).forEach(c => (c.checked = false));
     }, 700);
   });
   $$('.field__input', form || document).forEach(i => {
