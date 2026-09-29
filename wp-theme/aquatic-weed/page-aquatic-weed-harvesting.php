@@ -88,8 +88,6 @@ get_header();
 </section>
 
 <!-- ============ ONE ADAPTABLE SYSTEM ============ -->
-<!-- No .wavetop here: the hero ends on the hard edge of its spec bar, and a
-     wave is positioned bottom:100% so it would cut up across that bar. -->
 <section class="section" id="system">
   <div class="wrap">
     <div class="approach">

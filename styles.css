@@ -1594,6 +1594,33 @@ textarea.field__input{resize:vertical;min-height:92px}
 }
 
 /* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+/* the right-hand column runs several paragraphs, so the heading pins to the
+   top rather than sinking to the bottom of it */
+.section__head--top{align-items:start}
+/* the About copy was signed off with its labels in title case ("Our Focus"),
+   so on this page they show as written rather than in the site's caps */
+.page-about .eyebrow,.page-about .phero__crumb{text-transform:none;letter-spacing:.02em}
+.page-about .eyebrow{font-size:14px}
+.page-about .phero__crumb{font-size:13.5px}
+/* proof points under the hero copy, and the "our work includes" list —
+   two columns of ticks rather than one long stack */
+.about__proof{margin-top:clamp(26px,3.4vw,38px);grid-template-columns:repeat(2,max-content);column-gap:34px}
+.about__work{margin:2px 0 0;grid-template-columns:1fr 1fr;column-gap:24px}
+.about__quotes{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,24px)}
+.about__quote{
+  margin:0;padding:clamp(24px,3vw,34px);background:var(--card);
+  border:1px solid var(--line);border-left:3px solid var(--sun);border-radius:var(--r-lg);
+}
+.about__quote blockquote{margin:0 0 18px;font:600 clamp(17px,1.8vw,20px)/1.5 var(--display);letter-spacing:-.01em}
+.about__quote figcaption{display:grid;gap:3px;font-size:14px}
+.about__quote figcaption span{color:var(--txt-dim)}
+@media (max-width:600px){
+  .about__proof,.about__work,.about__quotes{grid-template-columns:1fr}
+}
+
+/* ==========================================================================
    SERVICE PAGE LAYOUTS
    Four layouts used only by the individual service pages, so a service page
    doesn't restate the card grids the parent pages already use. All of them
@@ -1624,7 +1651,7 @@ textarea.field__input{resize:vertical;min-height:92px}
 .section--band{background:linear-gradient(180deg,var(--bg),var(--deep-2) 55%,var(--bg))}
 /* The wave already sits over the band's bottom edge, so the section under it
    doesn't need a full --sec of padding as well. */
-.section--band+.section--wavetop{padding-top:clamp(20px,3vw,40px)}/* Two plain light sections back to back: one gap between them, not two.
+.section--band+.section--wavetop,.section--boat+.section--wavetop{padding-top:clamp(20px,3vw,40px)}/* Two plain light sections back to back: one gap between them, not two.
    Exact class matches so sections with their own background keep their padding. */
 .section:is([class="section"],[class="section section--rule"],[class="section section--serve"],[class="section section--wavetop"])+.section[class="section"]{padding-top:0}
 
@@ -1848,6 +1875,10 @@ textarea.field__input{resize:vertical;min-height:92px}
 }
 .boat__specs.boat__specs--wide .spec{grid-column:span 2}
 .boat__specs.boat__specs--wide .spec:nth-child(n+4){grid-column:span 3}
+/* About: four features, so one even row of four instead of 3 + a lone 4th */
+.boat__specs.boat__specs--four{grid-template-columns:repeat(4,1fr)}
+.boat__specs.boat__specs--four .spec,
+.boat__specs.boat__specs--four .spec:nth-child(n+4){grid-column:auto}
 @media (max-width:1080px){
   .boat__specs.boat__specs--wide{grid-template-columns:1fr 1fr}
   .boat__specs.boat__specs--wide .spec,
