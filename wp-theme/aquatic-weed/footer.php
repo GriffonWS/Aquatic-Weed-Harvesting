@@ -2,48 +2,51 @@
 /**
  * Footer, sticky mobile bar, closing tags.
  *
+ * Compact layout: logo / blurb / contact on one row, then the two link groups
+ * as wrapped inline rows, then the copyright bar.
+ *
  * @package aquatic-weed
  */
 
+// footer link for a Page, marked as the current page when we're on it
+$awh_foot = static function ( $slug, $label, $frag = '' ) {
+	$current = ( '' === $frag && is_page( $slug ) ) ? ' aria-current="page"' : '';
+	printf(
+		'<a href="%s%s"%s>%s</a>' . "\n",
+		esc_url( home_url( '/' . $slug . '/' ) ),
+		esc_attr( $frag ),
+		$current, // phpcs:ignore WordPress.Security.EscapeOutput -- fixed literal
+		esc_html( $label )
+	);
+};
 ?>
 <!-- ============ FOOTER ============ -->
 <footer class="footer on-dark">
-  <div class="wrap footer__grid">
-    <div class="footer__brand">
-      <img class="footer__logo" src="<?php echo awh_img( 'logo-256.png' ); ?>" width="256" height="256" loading="lazy"
-           alt="Got Lake Weeds? — Aquatic Weed Harvesting LLC">
-      <p class="footer__blurb">Aquatic Weed Harvesting LLC — mechanical aquatic vegetation and debris
-      removal for lakes and ponds. Based in west-central Minnesota, serving the Upper Midwest: Minnesota,
-      North Dakota and Wisconsin.</p>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <a href="<?php echo esc_url( home_url( '/aquatic-weed-harvesting/' ) ); ?>">Aquatic weed harvesting</a>
-      <a href="<?php echo esc_url( home_url( '/lake-weed-removal/' ) ); ?>">Lake weed removal</a>
-      <a href="<?php echo esc_url( home_url( '/pond-weed-removal/' ) ); ?>">Pond weed removal</a>
-      <a href="<?php echo esc_url( home_url( '/shoreline-weed-removal/' ) ); ?>">Shoreline weed removal</a>
-      <a href="<?php echo esc_url( home_url( '/muck-removal/' ) ); ?>">Muck reduction</a>
-      <a href="<?php echo esc_url( home_url( '/leaf-debris-removal/' ) ); ?>">Leaf &amp; debris removal</a>
-      <a href="<?php echo esc_url( home_url( '/invasive-weed-control/' ) ); ?>">Invasive aquatic weed control</a>
-    </div>
-    <div>
-      <h4>Company</h4>
-      <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>">About us</a>
-      <a href="<?php echo esc_url( home_url( '/who-we-serve/' ) ); ?>">Who we serve</a>
-      <a href="<?php echo esc_url( home_url( '/why-mechanical/' ) ); ?>">Why mechanical</a>
-      <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>">How it works</a>
-      <a href="<?php echo esc_url( home_url( '/#weeds' ) ); ?>">What we remove</a>
-      <a href="<?php echo esc_url( home_url( '/how-it-works/#boat' ) ); ?>">The boat</a>
-      <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>">Resources</a>
-      <a href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Free quote</a>
-    </div>
-    <div>
-      <h4>Get in touch</h4>
-      <a href="tel:+15184417742">Troy — +1 (518) 441-7742</a>
+  <div class="wrap footer__top">
+    <a class="footer__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="footer__logo" src="<?php echo awh_img( 'logo-256.png' ); ?>" width="256" height="256" loading="lazy" alt="Got Lake Weeds? — Aquatic Weed Harvesting LLC"></a>
+    <p class="footer__blurb">Aquatic Weed Harvesting LLC is dedicated to restoring and maintaining waterways through the mechanical removal of aquatic vegetation and debris. Based in the Hudson Valley, we serve the Northeast, including New York, New Jersey, and Pennsylvania.</p>
+    <div class="footer__contact">
+      <a href="tel:+15184417742">+1 (518) 441-7742</a>
       <a href="mailto:jim@wedowaterweeds.com">jim@wedowaterweeds.com</a>
       <span>49398 Leaf River Loop, Henning, MN 56551</span>
     </div>
   </div>
+  <nav class="wrap footer__links" aria-label="Footer">
+    <div class="footer__row">
+      <h4>Services</h4>
+      <div class="footer__list">
+        <?php
+        $awh_foot( 'aquatic-weed-harvesting', 'Aquatic weed harvesting' );
+        $awh_foot( 'lake-weed-removal', 'Lake weed removal' );
+        $awh_foot( 'pond-weed-removal', 'Pond weed removal' );
+        $awh_foot( 'shoreline-weed-removal', 'Shoreline weed removal' );
+        $awh_foot( 'muck-removal', 'Muck reduction' );
+        $awh_foot( 'leaf-debris-removal', 'Leaf & debris removal' );
+        $awh_foot( 'invasive-weed-control', 'Invasive aquatic weed removal' );
+        ?>
+      </div>
+    </div>
+  </nav>
   <div class="wrap footer__bar">
     <span>&copy; <span id="year"><?php echo esc_html( gmdate( 'Y' ) ); ?></span> Aquatic Weed Harvesting LLC. All rights reserved.</span>
     <span>wedowaterweeds.com</span>

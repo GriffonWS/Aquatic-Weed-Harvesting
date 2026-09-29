@@ -43,7 +43,7 @@ get_header();
               water</span></li>
           <li class="stat"><b class="stat__num" data-count="5" data-suffix=" ft">5 ft</b><span
               class="stat__label">Cutting depth<br>below the surface</span></li>
-          <li class="stat"><b class="stat__num" data-count="4">4</b><span
+          <li class="stat"><b class="stat__num" data-count="5">5</b><span
               class="stat__label">Quick-change<br>attachments</span></li>
         </ul>
       </div>

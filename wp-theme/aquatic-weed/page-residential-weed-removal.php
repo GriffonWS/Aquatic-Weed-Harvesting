@@ -63,8 +63,8 @@ get_header();
     <div class="svcs">
       <article class="svc reveal">
         <figure class="svc__media">
-          <img src="<?php echo awh_img( 'lake-ramp-weed.webp' ); ?>" width="1024" height="498" loading="lazy" decoding="async"
-            alt="A lake covered bank to bank in weed, seen from the shoreline.">
+          <img src="<?php echo awh_img( 'privatelake.jpg' ); ?>" width="1600" height="1200" loading="lazy" decoding="async"
+            alt="The work boat clearing weed along a private lakefront lined with homes.">
         </figure>
         <h3 class="svc__title">Private lakefront weed control</h3>
         <p class="svc__text">Dense aquatic weeds can restrict swimming, fishing, boating, and shoreline

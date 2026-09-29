@@ -48,20 +48,24 @@ get_header();
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
-<section class="shero on-dark">
-  <figure class="shero__panel">
-    <img src="<?php echo awh_img( 'crew-full-operation.webp' ); ?>" width="1280" height="960" loading="eager" decoding="async" fetchpriority="high"
-      alt="The work boat, excavator and haul truck running as one operation on a shared waterfront.">
-  </figure>
+<section class="hero hero--page on-dark">
+  <div class="hero__photo">
+    <img src="<?php echo awh_img( 'invasiveaquaticweed.jpg' ); ?>" width="1600" height="1200" decoding="async" fetchpriority="high"
+      alt="The work boat harvesting invasive weeds along a residential lakeshore covered in floating growth.">
+  </div>
+  <canvas class="hero__canvas" id="ripple" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
 
-  <div class="shero__inner">
-    <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Invasive aquatic weed control</b></p>
-    <h1 class="shero__title">Invasive Aquatic Weed <em>Control</em></h1>
-    <p class="shero__lead">Control invasive vegetation affecting public beaches, community lakes,
+  <div class="hero__inner">
+    <p class="hero__eyebrow phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Invasive aquatic weed control</b></p>
+    <h1 class="hero__title">
+      <span class="line"><span>Invasive Aquatic Weed <em>Control</em></span></span>
+    </h1>
+    <p class="hero__lead">Control invasive vegetation affecting public beaches, community lakes,
     boat launches, and shared waterfronts. We mechanically harvest unwanted growth, collect the cut
     vegetation, and remove the biomass from the water.</p>
 
-    <div class="shero__cta">
+    <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Site Assessment <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
     </div>
@@ -72,6 +76,13 @@ get_header();
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Lake and homeowner associations</li>
     </ul>
   </div>
+
+  <svg class="hero__waves" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+    <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z" />
+    <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z" />
+  </svg>
+
+  <a class="hero__scroll" href="#programs" aria-label="Scroll down"><span></span></a>
 </section>
 
 <!-- ============ PUBLIC & COMMUNITY WATERBODIES ============ -->

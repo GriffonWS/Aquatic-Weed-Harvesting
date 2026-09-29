@@ -38,18 +38,23 @@ get_header();
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
-<section class="shero on-dark">
-  <figure class="shero__panel">
-    <img src="<?php echo awh_img( 'harvester-shoreline.webp' ); ?>" width="1024" height="768" loading="eager" decoding="async" fetchpriority="high"
+<section class="hero hero--page on-dark">
+  <div class="hero__photo">
+    <img src="<?php echo awh_img( 'harvester-shoreline.webp' ); ?>" width="1024" height="768" decoding="async" fetchpriority="high"
       alt="Cut vegetation lifted out at the waterline and set on the bank.">
-  </figure>
+  </div>
+  <canvas class="hero__canvas" id="ripple" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
 
-  <div class="shero__inner">
-    <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Shoreline weed removal</b></p>
-    <h1 class="shero__title">Clear Overgrown Shorelines From the <em>Water Side</em></h1>
-    <p class="shero__lead">Clear cattails, lily pads, submerged weeds, and overhanging branches from hard-to-reach shorelines. Our specialized workboat approaches the shoreline from the water, reducing the need to operate heavy equipment on soft or unstable banks.</p>
+  <div class="hero__inner">
+    <p class="hero__eyebrow phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Shoreline weed removal</b></p>
+    <h1 class="hero__title">
+      <span class="line"><span>Clear Overgrown Shorelines</span></span>
+      <span class="line"><span>From the <em>Water Side</em></span></span>
+    </h1>
+    <p class="hero__lead">Clear cattails, lily pads, submerged weeds, and overhanging branches from hard-to-reach shorelines. Our specialized workboat approaches the shoreline from the water, reducing the need to operate heavy equipment on soft or unstable banks.</p>
 
-    <div class="shero__cta">
+    <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
     </div>
@@ -60,6 +65,13 @@ get_header();
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>No herbicide application</li>
     </ul>
   </div>
+
+  <svg class="hero__waves" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+    <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z" />
+    <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z" />
+  </svg>
+
+  <a class="hero__scroll" href="#access" aria-label="Scroll down"><span></span></a>
 </section>
 
 <!-- ============ RECLAIM ACCESS ============ -->
@@ -115,8 +127,9 @@ get_header();
       </article>
 
       <article class="wfrontCard reveal">
-        <img src="<?php echo awh_img( 'weed-algae.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
-             alt="A mat of filamentous algae gathering along the waterline.">
+        <video src="<?php echo awh_img( 'shoreline-water-chestnut.mp4' ); ?>" poster="<?php echo awh_img( 'shoreline-water-chestnut-poster.jpg' ); ?>"
+               width="320" height="240" autoplay muted loop playsinline preload="metadata"
+               aria-label="Floating water chestnut being collected from the water surface."></video>
         <div class="wfrontCard__body">
           <h3 class="wfrontCard__h">Floating vegetation</h3>
           <p class="wfrontCard__p">Use the skimmer attachment to collect algae, duckweed, and other
@@ -125,8 +138,9 @@ get_header();
       </article>
 
       <article class="wfrontCard reveal">
-        <img src="<?php echo awh_img( 'lakeside-crew.webp' ); ?>" width="1024" height="540" loading="lazy" decoding="async"
-             alt="Material lifted out of the water and piled on the ramp, ready to be hauled away.">
+        <video src="<?php echo awh_img( 'shoreline-branches.mp4' ); ?>" poster="<?php echo awh_img( 'shoreline-branches-poster.jpg' ); ?>"
+               width="320" height="240" autoplay muted loop playsinline preload="metadata"
+               aria-label="Branches and downed wood being cut and cleared from the water."></video>
         <div class="wfrontCard__body">
           <h3 class="wfrontCard__h">Branches and small trees</h3>
           <p class="wfrontCard__p">Cut tree branches, small trees, and downed logs in the water using a hydraulic pole saw.</p>

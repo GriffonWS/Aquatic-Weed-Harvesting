@@ -29,8 +29,9 @@ get_header();
       </div>
 
       <figure class="xhero__media reveal">
-        <img src="<?php echo awh_img( 'boat-in-weeds.jpg' ); ?>" width="1400" height="876" fetchpriority="high" decoding="async"
-          alt="The work boat cutting a lane through a pond covered in dense weed.">
+        <video src="<?php echo awh_img( 'how-it-works-equipment.mp4' ); ?>" poster="<?php echo awh_img( 'how-it-works-equipment-poster.jpg' ); ?>"
+          width="640" height="360" autoplay muted loop playsinline preload="auto"
+          aria-label="The work boat operating in shallow water with its quick-change attachments."></video>
       </figure>
     </div>
   </div>
@@ -108,8 +109,8 @@ get_header();
     </div>
     <div class="boat__figure reveal">
       <figure class="shot shot--feature">
-        <img src="<?php echo awh_img( 'crew-full-operation.webp' ); ?>" width="1280" height="960" loading="lazy" decoding="async"
-             alt="Our work boat holding tight to a weed-choked shoreline while the shore crew hauls the cut weed away.">
+        <img src="<?php echo awh_img( 'boat-in-weeds.jpg' ); ?>" width="1400" height="876" loading="lazy" decoding="async"
+             alt="The work boat cutting a lane through a pond covered in dense weed.">
       </figure>
       <div class="boat__badge">
         <b>No<br>chemicals</b>
@@ -140,8 +141,9 @@ get_header();
     </div>
 
         <figure class="shot shot--band reveal">
-      <img src="<?php echo awh_img( 'conveyor-load.jpg' ); ?>" width="2048" height="1536" loading="lazy" decoding="async"
-           alt="The boat's conveyor lifting a full mat of cut weed clear of the lake surface.">
+      <img src="<?php echo awh_img( 'harvesters-sunset.jpg' ); ?>" width="1536" height="2048" loading="lazy" decoding="async"
+           style="object-position:50% 37%"
+           alt="Two work boats moored at a lakeside dock at sunset, ready for the next job.">
     </figure>
 
     <div class="svcs svcs--text">

@@ -48,7 +48,11 @@ get_header();
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
-<section class="phero on-dark">
+<section class="phero phero--photo on-dark">
+  <div class="phero__photo">
+    <img src="<?php echo awh_img( 'cleanlake.webp' ); ?>" width="2048" height="1536" fetchpriority="high" decoding="async"
+      alt="A clear, calm lake reflecting the sky, lined with autumn trees, seen from the bow of the work boat.">
+  </div>
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Who we serve</b></p>
     <h1 class="phero__title">Aquatic Weed Removal for Private, Commercial, and Public <em>Waterways</em></h1>

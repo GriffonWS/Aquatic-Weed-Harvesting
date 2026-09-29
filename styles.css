@@ -732,7 +732,10 @@ em{font-style:normal}
   background:var(--card);border:1px solid var(--line);border-left:3px solid var(--sun);
   color:var(--txt-dim);font-size:15px;line-height:1.62;
 }
-.serve__note .offer__link{font-weight:600;color:var(--ink)}
+/* --accent, not --ink: --ink is white on the light surface, which made the
+   link vanish into the note */
+.serve__note .offer__link{font-weight:600;color:var(--accent)}
+.serve__note .offer__link:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* ==========================================================================
    BOAT

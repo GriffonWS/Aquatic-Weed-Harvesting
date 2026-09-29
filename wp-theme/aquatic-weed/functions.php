@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWH_VERSION', '2.7.0' );
+define( 'AWH_VERSION', '2.8.1' );
 
 /* ============================================================== theme setup */
 

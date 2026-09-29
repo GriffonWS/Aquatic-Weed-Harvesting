@@ -3,7 +3,7 @@ Theme Name: Aquatic Weed Harvesting
 Theme URI: https://wedowaterweeds.com/
 Author: Griffon Web Studios
 Description: Multi-page theme for Aquatic Weed Harvesting LLC — mechanical aquatic weed and debris removal, based in Henning, MN. Converted from the approved static build.
-Version: 2.7.0
+Version: 2.8.1
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -436,7 +436,7 @@ em{font-style:normal}
   position:relative;margin:0;border-radius:var(--r-xl);overflow:hidden;
   border:1px solid var(--line);box-shadow:var(--shadow);background:var(--deep-2);
 }
-.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.shot img,.shot video{width:100%;height:100%;object-fit:cover;display:block}
 /* landscape to match the source photography — fills the column, no letterboxing */
 .shot--feature{width:100%;aspect-ratio:4/3}
 /* a full-width band above a card grid — capped to the comparison slider's width
@@ -745,7 +745,10 @@ em{font-style:normal}
   background:var(--card);border:1px solid var(--line);border-left:3px solid var(--sun);
   color:var(--txt-dim);font-size:15px;line-height:1.62;
 }
-.serve__note .offer__link{font-weight:600;color:var(--ink)}
+/* --accent, not --ink: --ink is white on the light surface, which made the
+   link vanish into the note */
+.serve__note .offer__link{font-weight:600;color:var(--accent)}
+.serve__note .offer__link:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* ==========================================================================
    BOAT
@@ -1251,24 +1254,32 @@ textarea.field__input{resize:vertical;min-height:92px}
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-.footer{background:var(--bg);border-top:1px solid var(--line);padding-top:clamp(40px,5vw,64px)}
-/* every column starts on the same line: no top margins anywhere in the grid,
-   and the logo is sized to sit on the same cap height as the h4s */
-.footer__grid{
-  display:grid;grid-template-columns:1.7fr 1fr 1fr 1.2fr;
-  gap:clamp(24px,3vw,44px);align-items:start;
+/* Compact: one row of logo / blurb / contact, then the two link groups as
+   wrapped inline rows rather than tall columns, then the copyright bar. */
+.footer{background:var(--bg);border-top:1px solid var(--line);padding-top:clamp(26px,3.2vw,38px)}
+.footer__top{
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;
+  gap:clamp(18px,3vw,44px);padding-bottom:clamp(20px,2.4vw,26px);border-bottom:1px solid var(--line);
 }
-.footer__brand{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
-.footer__logo{width:auto;height:100px;margin:-8px 0 0}
-.footer__blurb{color:var(--txt-dim);font-size:14.5px;line-height:1.6;max-width:34ch;margin:0}
-.footer h4{font:600 12px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--txt);margin:0 0 16px}
-.footer__grid>div a,.footer__grid>div span{display:block;color:var(--txt-dim);font-size:14.5px;margin-bottom:9px;transition:color .25s,transform .25s}
-.footer__grid>div a:last-child,.footer__grid>div span:last-child{margin-bottom:0}
-.footer__grid>div a:hover{color:var(--accent);transform:translateX(3px)}
+.footer__brand{display:block;flex-shrink:0}
+.footer__logo{width:auto;height:64px}
+.footer__blurb{color:var(--txt-dim);font-size:14px;line-height:1.6;max-width:64ch;margin:0}
+.footer__contact{display:grid;gap:5px;justify-items:end;text-align:right;font-size:14px}
+.footer__contact a,.footer__contact span{color:var(--txt-dim);transition:color .25s}
+.footer__contact a:first-child{color:var(--txt);font-weight:600}
+.footer__contact a:hover{color:var(--accent)}
+
+.footer__links{display:grid;gap:10px;padding-block:clamp(16px,2vw,22px)}
+.footer__row{display:grid;grid-template-columns:92px 1fr;align-items:baseline;gap:14px}
+.footer h4{font:600 11.5px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--txt);margin:0}
+.footer__list{display:flex;flex-wrap:wrap;gap:6px 20px}
+.footer__list a{color:var(--txt-dim);font-size:14px;transition:color .25s}
+.footer__list a:hover,.footer__list a[aria-current="page"]{color:var(--accent)}
+
 .footer__bar{
   display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
-  margin-top:clamp(28px,4vw,44px);padding-block:18px;border-top:1px solid var(--line);
-  font-size:13px;color:var(--txt-dim);
+  padding-block:14px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--txt-dim);
 }
 
 /* ---------- sticky mobile bar ---------- */
@@ -1294,7 +1305,10 @@ textarea.field__input{resize:vertical;min-height:92px}
   .svcs,.weeds{grid-template-columns:repeat(2,1fr)}
   .svc--wide{grid-column:span 2;grid-template-columns:1fr}
   .svc--wide .svc__media{order:-1;margin-bottom:22px}
-  .footer__grid{grid-template-columns:1fr 1fr}
+  /* contact drops under the logo + blurb */
+  .footer__top{grid-template-columns:auto 1fr}
+  .footer__contact{grid-column:1 / -1;justify-items:start;text-align:left;
+    display:flex;flex-wrap:wrap;gap:6px 22px}
   .section__head--split{grid-template-columns:1fr}
   .quote-wrap,.boat,.urgency,.mission__inner{grid-template-columns:1fr}
   .urgency__figure{aspect-ratio:16/10}
@@ -1347,7 +1361,11 @@ textarea.field__input{resize:vertical;min-height:92px}
   .quote-call b{font-size:19px}
 }
 @media (max-width:600px){
-  .svcs,.weeds,.form__row,.boat__specs,.footer__grid{grid-template-columns:1fr}
+  .svcs,.weeds,.form__row,.boat__specs{grid-template-columns:1fr}
+  /* phone: everything stacks; each link group's label sits above its links */
+  .footer__top{grid-template-columns:1fr;gap:14px}
+  .footer__contact{flex-direction:column}
+  .footer__row{grid-template-columns:1fr;gap:10px}
   .compare,.factbar{grid-template-columns:1fr}
   .offers,.contact{grid-template-columns:1fr}
   .facts>div{grid-template-columns:1fr;gap:3px}
@@ -1385,6 +1403,19 @@ textarea.field__input{resize:vertical;min-height:92px}
     var(--bg);
 }
 .phero__inner{position:relative;z-index:2}
+/* Background footage (services.html) or photo (who-we-serve.html) behind the
+   copy. Scrimmed the same way as the home hero photo so the headline keeps its
+   contrast. */
+/* same top padding as the other heroes, so the crumb sits just under the nav */
+.phero--video,.phero--photo{padding-top:clamp(122px,13vw,158px)}
+.phero__video,.phero__photo{position:absolute;inset:0;overflow:hidden}
+.phero__video video,.phero__photo img{width:100%;height:100%;object-fit:cover;display:block}
+.phero__video::after,.phero__photo::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(100deg,var(--ink) 8%,rgba(13,34,28,.86) 40%,rgba(13,34,28,.5) 70%,rgba(13,34,28,.75)),
+    linear-gradient(0deg,rgba(13,34,28,.7),rgba(13,34,28,0) 40%);
+}
 .phero__crumb{
   display:inline-flex;align-items:center;gap:9px;margin:0 0 20px;
   font:600 12px/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--txt-dim);
@@ -1549,6 +1580,21 @@ textarea.field__input{resize:vertical;min-height:92px}
 }
 /* the hero already gave the top of the page its air */
 .shero + .section{padding-top:clamp(50px,6.5vw,86px)}
+
+/* ---- .hero--page — the home page hero on a service page ----
+   Same photo, scrim, canvas and waves as the home hero; only the headline is
+   scaled down, since a service title runs about twice the length of the home
+   one and each .line is allowed to wrap. The tick list takes the stat row's
+   place and its entrance animation. */
+/* sized to its content rather than the full viewport: centring shorter copy
+   in 100svh left a band of empty space under the nav. Top padding clears the
+   nav (as the old .shero did); bottom leaves room for the waves. */
+.hero--page{min-height:0;padding:clamp(122px,13vw,158px) 0 clamp(110px,14vw,190px)}
+.hero--page .hero__title{font-size:clamp(32px,4.4vw,62px);line-height:1.08;max-width:22ch}
+.hero--page .hero__photo img{object-position:60% 55%}
+.hero--page .shero__kicker{animation:up .9s .27s var(--ease) both}
+.hero--page .shero__specs{animation:up .9s .42s var(--ease) both}
+.hero--page + .section{padding-top:clamp(40px,5vw,70px)}
 @media (max-width:1080px){
   /* stacked: the panel stops being a panel and becomes a banner under the copy */
   .shero{display:block;min-height:0;padding-bottom:0}
@@ -1602,7 +1648,11 @@ textarea.field__input{resize:vertical;min-height:92px}
   margin:0 0 clamp(20px,2.4vw,28px);border-radius:var(--r-lg);overflow:hidden;
   border:1px solid var(--line);background:var(--deep-2);aspect-ratio:4/3;
 }
-.flow__media img{width:100%;height:100%;object-fit:cover;display:block}
+.flow__media img,.flow__media video{width:100%;height:100%;object-fit:cover;display:block}
+/* a portrait phone clip saved into a 4:3 frame with black bars burned in: the
+   picture is the middle 9:16 strip (~42% of the width), so zoom until that
+   strip fills the card and the bars fall outside it */
+.flow__media video.is-pillarboxed{transform:scale(2.4)}
 .flow__bar{display:flex;align-items:center;gap:14px;margin-bottom:16px}
 .flow__n{
   flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
@@ -1652,8 +1702,8 @@ textarea.field__input{resize:vertical;min-height:92px}
   transition:transform .5s var(--ease);
 }
 .wfrontCard:hover{transform:translateY(-6px)}
-.wfrontCard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
-.wfrontCard:hover img{transform:scale(1.05)}
+.wfrontCard img,.wfrontCard video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.wfrontCard:hover img,.wfrontCard:hover video{transform:scale(1.05)}
 /* the copy sits on the photo, so this card keeps its own dark scrim and light
    text in both themes rather than following the page tokens */
 .wfrontCard::after{
@@ -1788,7 +1838,7 @@ textarea.field__input{resize:vertical;min-height:92px}
   margin:0;overflow:hidden;aspect-ratio:4/3;background:var(--deep-2);
   border-radius:var(--r-xl);border:1px solid var(--line);box-shadow:var(--shadow);
 }
-.xhero__media img{width:100%;height:100%;object-fit:cover;display:block}
+.xhero__media img,.xhero__media video{width:100%;height:100%;object-fit:cover;display:block}
 
 .xhero + .section{padding-top:clamp(50px,6.5vw,86px)}
 @media (max-width:1080px){

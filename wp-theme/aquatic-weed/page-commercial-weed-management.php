@@ -42,8 +42,8 @@ get_header();
           alt="An excavator loading harvested vegetation into a haul truck on a commercial job.">
       </figure>
       <figure class="rhero__inset">
-        <img src="<?php echo awh_img( 'weedoo-work-boat-poster.jpg' ); ?>" width="1400" height="786" loading="eager" decoding="async"
-          alt="The shallow-draft work boat staged at the water's edge.">
+        <img src="<?php echo awh_img( 'commercial.jpg' ); ?>" width="1600" height="1200" loading="eager" decoding="async"
+          alt="The shallow-draft work boat lifting a load of harvested weed onto the shoreline.">
       </figure>
       <span class="rhero__tag">Commercial Aquatic Weed Removal in New York, New Jersey, and Pennsylvania</span>
     </div>

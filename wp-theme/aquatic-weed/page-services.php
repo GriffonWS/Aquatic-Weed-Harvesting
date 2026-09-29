@@ -14,7 +14,11 @@ get_header();
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
-<section class="phero on-dark">
+<section class="phero phero--video on-dark">
+  <div class="phero__video" aria-hidden="true">
+    <video src="<?php echo awh_img( 'services-hero.mp4' ); ?>" poster="<?php echo awh_img( 'services-hero-poster.jpg' ); ?>" width="1280" height="720"
+      autoplay muted loop playsinline preload="auto"></video>
+  </div>
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Services</b></p>
     <h1 class="phero__title">Mechanical Aquatic Weed Removal Services</h1>

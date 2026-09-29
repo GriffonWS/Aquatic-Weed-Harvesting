@@ -43,20 +43,25 @@ get_header();
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
-<section class="shero on-dark">
-  <figure class="shero__panel">
-    <img src="<?php echo awh_img( 'conveyor-load.jpg' ); ?>" width="2048" height="1536" loading="eager" decoding="async" fetchpriority="high"
-      alt="A full load of decomposing material on the boat's conveyor, on its way off the water.">
-  </figure>
+<section class="hero hero--page on-dark">
+  <div class="hero__photo">
+    <img src="<?php echo awh_img( 'muck-reduction-2.jpg' ); ?>" width="1600" height="1200" decoding="async" fetchpriority="high"
+      alt="The work boat's rake lifting a heavy load of dark muck and lily roots out of a pond.">
+  </div>
+  <canvas class="hero__canvas" id="ripple" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
 
-  <div class="shero__inner">
-    <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Muck removal</b></p>
-    <h1 class="shero__title">Lake Muck Removal and Pond Muck <em>Reduction</em></h1>
-    <p class="shero__lead">Remove accumulated organic sediment from problem areas in lakes and
+  <div class="hero__inner">
+    <p class="hero__eyebrow phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Muck removal</b></p>
+    <h1 class="hero__title">
+      <span class="line"><span>Lake Muck Removal and</span></span>
+      <span class="line"><span>Pond Muck <em>Reduction</em></span></span>
+    </h1>
+    <p class="hero__lead">Remove accumulated organic sediment from problem areas in lakes and
     ponds. Our mechanical muck removal service targets decomposed vegetation, leaves, algae, and
     other organic material that has settled on the bottom.</p>
 
-    <div class="shero__cta">
+    <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
     </div>
@@ -67,6 +72,13 @@ get_header();
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Sustainable removal without chemical muck treatments</li>
     </ul>
   </div>
+
+  <svg class="hero__waves" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+    <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z" />
+    <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z" />
+  </svg>
+
+  <a class="hero__scroll" href="#sediment" aria-label="Scroll down"><span></span></a>
 </section>
 
 <!-- ============ BEYOND SURFACE WEEDS ============ -->
@@ -181,8 +193,9 @@ get_header();
 
       <li class="flow__step reveal">
         <figure class="flow__media">
-          <img src="<?php echo awh_img( 'harvester-shoreline.webp' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
-               alt="Material lifted out of the water at the waterline onto the bank.">
+          <video class="is-pillarboxed" src="<?php echo awh_img( 'muck-reduction.mp4' ); ?>" poster="<?php echo awh_img( 'muck-reduction-poster.jpg' ); ?>"
+                 width="320" height="240" autoplay muted loop playsinline preload="metadata"
+                 aria-label="Organic muck being lifted from the bottom and out of the water."></video>
         </figure>
         <div class="flow__bar"><span class="flow__n">3</span><span class="flow__rule"></span></div>
         <h3 class="flow__h">Remove the sediment</h3>
@@ -231,8 +244,8 @@ get_header();
 
     <div class="kit">
       <figure class="kit__media reveal">
-        <img src="<?php echo awh_img( 'crew-full-operation.webp' ); ?>" width="1280" height="960" loading="lazy" decoding="async"
-             alt="The work boat, excavator and haul truck running as one operation on the bank.">
+        <img src="<?php echo awh_img( 'muck-reduction-1.jpg' ); ?>" width="1200" height="1600" loading="lazy" decoding="async"
+             alt="Muck and roots hanging from the raised rake as water drains back into the pond.">
       </figure>
 
       <div>

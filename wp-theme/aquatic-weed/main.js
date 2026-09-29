@@ -218,6 +218,20 @@
     });
   });
 
+  /* ------------------------------------------------------- hero footage */
+  // with reduced motion, hold the background videos on their poster frames
+  if (reduced) document.querySelectorAll('.phero__video video, .xhero__media video, .wfrontCard video, .flow__media video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+
+  // heavier clips (preload="none") only download and play once scrolled into
+  // view, and pause again when they leave it
+  const lazyClips = document.querySelectorAll('video[data-inview-play]');
+  if (lazyClips.length && !reduced && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => entries.forEach(({ target: v, isIntersecting }) => {
+      if (isIntersecting) v.play().catch(() => {}); else v.pause();
+    }), { rootMargin: '200px 0px' });
+    lazyClips.forEach(v => io.observe(v));
+  }
+
   /* ------------------------------------------------------------ hero water */
   // Skipped on phones on purpose — a per-frame canvas is what makes small
   // devices judder while scrolling. The CSS hides it at the same breakpoint.

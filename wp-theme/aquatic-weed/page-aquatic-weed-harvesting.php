@@ -48,22 +48,26 @@ get_header();
 <main id="main">
 
 <!-- ============ PAGE HERO ============ -->
-<!-- Split panel: copy on flat colour to the left, photograph filling the whole
-     right half of the viewport edge to edge. Not the home page's
-     photo-behind-copy hero, and not the flat centred .phero used on
-     services.html and the other top-level pages. -->
-<section class="shero on-dark">
-  <figure class="shero__panel">
-    <img src="<?php echo awh_img( 'boat-in-weeds.jpg' ); ?>" width="1400" height="876" loading="eager" decoding="async" fetchpriority="high"
+<!-- The home page's hero (photo behind the copy, ripple canvas, waves), with
+     .hero--page tuning the headline down for a longer, keyword-carrying title.
+     The breadcrumb sits in the eyebrow pill where the home page has its tagline. -->
+<section class="hero hero--page on-dark">
+  <div class="hero__photo">
+    <img src="<?php echo awh_img( 'boat-in-weeds.jpg' ); ?>" width="1400" height="876" fetchpriority="high" decoding="async"
       alt="The yellow work boat cutting a path through a pond covered bank to bank in weed.">
-  </figure>
+  </div>
+  <canvas class="hero__canvas" id="ripple" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
 
-  <div class="shero__inner">
-    <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Aquatic weed harvesting</b></p>
-    <h1 class="shero__title">Mechanical Aquatic Weed <em>Harvesting</em> for Lakes, Ponds, and Shorelines</h1>
-    <p class="shero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC uses a sustainable mechanical process to cut, collect, and remove unwanted aquatic vegetation and biomass without herbicides across New York, New Jersey, and Pennsylvania.</p>
+  <div class="hero__inner">
+    <p class="hero__eyebrow phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Aquatic weed harvesting</b></p>
+    <h1 class="hero__title">
+      <span class="line"><span>Mechanical Aquatic Weed <em>Harvesting</em></span></span>
+      <span class="line"><span>for Lakes, Ponds, and Shorelines</span></span>
+    </h1>
+    <p class="hero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC uses a sustainable mechanical process to cut, collect, and remove unwanted aquatic vegetation and biomass without herbicides across New York, New Jersey, and Pennsylvania.</p>
 
-    <div class="shero__cta">
+    <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
     </div>
@@ -74,6 +78,13 @@ get_header();
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Off-site hauling and disposal included</li>
     </ul>
   </div>
+
+  <svg class="hero__waves" viewBox="0 0 1440 130" preserveAspectRatio="none" aria-hidden="true">
+    <path class="w1" d="M0 60c180 40 320-30 520-10s300 60 480 30 260-40 440-20v70H0z" />
+    <path class="w2" d="M0 80c200 30 340-20 540 5s320 50 500 20 220-30 400-15v55H0z" />
+  </svg>
+
+  <a class="hero__scroll" href="#system" aria-label="Scroll down"><span></span></a>
 </section>
 
 <!-- ============ ONE ADAPTABLE SYSTEM ============ -->
