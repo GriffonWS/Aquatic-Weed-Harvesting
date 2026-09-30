@@ -94,6 +94,8 @@ function awh_create_pages() {
 		'how-it-works'             => 'How it works',
 		'who-we-serve'             => 'Who we serve',
 		'resources'                => 'Resources',
+		'videos'                   => 'Videos',
+		'blogs'                    => 'Blog and guides',
 		'contact'                  => 'Contact',
 		// One page per service, each with its own page-{slug}.php template.
 		'aquatic-weed-harvesting'  => 'Aquatic weed harvesting',

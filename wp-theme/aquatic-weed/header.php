@@ -81,8 +81,8 @@
       <div class="nav__item">
         <a class="nav__link nav__link--menu" href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?> aria-haspopup="true">Resources <svg class="nav__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
         <div class="nav__menu">
-          <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#videos">Videos</a>
-          <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#blogs">Blog &amp; guides</a>
+          <a href="<?php echo esc_url( home_url( '/videos/' ) ); ?>"<?php echo is_page( 'videos' ) ? ' aria-current="page"' : ''; ?>>Videos</a>
+          <a href="<?php echo esc_url( home_url( '/blogs/' ) ); ?>"<?php echo is_page( 'blogs' ) ? ' aria-current="page"' : ''; ?>>Blog &amp; guides</a>
         </div>
       </div>
       <a class="nav__link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php echo is_page( 'contact' ) ? ' aria-current="page"' : ''; ?>>Contact</a>
@@ -122,8 +122,8 @@
   </div>
   <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"<?php echo is_page( 'resources' ) ? ' aria-current="page"' : ''; ?>>Resources</a>
   <div class="drawer__sub">
-    <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#videos">Videos</a>
-    <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>#blogs">Blog &amp; guides</a>
+    <a href="<?php echo esc_url( home_url( '/videos/' ) ); ?>"<?php echo is_page( 'videos' ) ? ' aria-current="page"' : ''; ?>>Videos</a>
+    <a href="<?php echo esc_url( home_url( '/blogs/' ) ); ?>"<?php echo is_page( 'blogs' ) ? ' aria-current="page"' : ''; ?>>Blog &amp; guides</a>
   </div>
   <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php echo is_page( 'contact' ) ? ' aria-current="page"' : ''; ?>>Contact</a>
   <a class="btn btn--primary" href="<?php echo esc_url( home_url( '/contact/#quote' ) ); ?>">Get a free quote</a>
