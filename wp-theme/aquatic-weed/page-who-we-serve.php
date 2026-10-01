@@ -59,10 +59,10 @@ get_header();
     <p class="phero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC provides mechanical weed, shoreline, muck, and debris removal for residential, commercial, association, and municipal waterbodies across New York, New Jersey, and Pennsylvania.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
     </div>
 
-    <p class="eyebrow" style="margin:clamp(34px,4vw,48px) 0 0">Who we work with</p>
+    <p class="eyebrow" style="margin:clamp(34px,4vw,48px) 0 0">Who We Work With</p>
     <ul class="shero__specs" style="margin-top:16px">
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Waterfront property owners</li>
       <li class="shero__spec"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Businesses and lake associations</li>
@@ -164,7 +164,7 @@ get_header();
   <div class="wrap">
     <div class="approach">
       <div class="approach__aside reveal">
-        <p class="eyebrow">How we work</p>
+        <p class="eyebrow">How We Work</p>
         <h2 class="h2">Our Streamlined Process</h2>
       </div>
 
@@ -272,7 +272,7 @@ get_header();
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>Call (518) 441-7742</b></span>
+        <span><b>Call +1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

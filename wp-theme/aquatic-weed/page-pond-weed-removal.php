@@ -68,7 +68,7 @@ get_header();
 
     <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
     </div>
   </div>
 
@@ -85,7 +85,7 @@ get_header();
   <div class="wrap">
     <div class="approach">
       <div class="approach__aside reveal">
-        <p class="eyebrow">What it gives you back</p>
+        <p class="eyebrow">What It Gives You Back</p>
         <h2 class="h2">More Than Surface-Level Pond Weed Removal</h2>
       </div>
 
@@ -93,7 +93,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">01</span>
           <div>
-            <h3 class="approach__h">Restore access</h3>
+            <h3 class="approach__h">Restore Access</h3>
             <p class="approach__p">Clear excessive growth from shorelines, docks, fishing spots, and
             other frequently used areas.</p>
           </div>
@@ -101,7 +101,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">02</span>
           <div>
-            <h3 class="approach__h">Target the problem</h3>
+            <h3 class="approach__h">Target the Problem</h3>
             <p class="approach__p">Focus removal on the parts of the pond where vegetation is
             creating the greatest disruption.</p>
           </div>
@@ -109,7 +109,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">03</span>
           <div>
-            <h3 class="approach__h">Remove the material</h3>
+            <h3 class="approach__h">Remove the Material</h3>
             <p class="approach__p">Collect cut vegetation and floating growth rather than leaving it
             in the water.</p>
           </div>
@@ -117,7 +117,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">04</span>
           <div>
-            <h3 class="approach__h">Reach shallow areas</h3>
+            <h3 class="approach__h">Reach Shallow Areas</h3>
             <p class="approach__p">Use compact equipment designed for smaller, shallower waterbodies
             where full-size harvesters may be unsuitable.</p>
           </div>
@@ -132,7 +132,7 @@ get_header();
   <div class="wrap">
     <div class="section__head section__head--split reveal">
       <div>
-        <p class="eyebrow">What we handle</p>
+        <p class="eyebrow">What We Handle</p>
         <h2 class="h2">Common Pond Vegetation We Handle</h2>
       </div>
       <p class="lead">Different pond problems require different tools. Our workboat uses five quick-change attachments to manage submerged, rooted, emergent, and floating growth.</p>
@@ -143,7 +143,7 @@ get_header();
         <img src="<?php echo awh_img( 'weed-hydrilla.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
              alt="Hydrilla growing in thick submerged mats below the waterline.">
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Submerged aquatic weeds</h3>
+          <h3 class="wfrontCard__h">Submerged Aquatic Weeds</h3>
           <p class="wfrontCard__p">Mechanically cut and collect excessive underwater vegetation
           affecting access and open water.</p>
         </div>
@@ -153,7 +153,7 @@ get_header();
         <img src="<?php echo awh_img( 'weed-lily.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
              alt="Lily pads covering the surface of a shallow pond.">
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Lily pads</h3>
+          <h3 class="wfrontCard__h">Lily Pads</h3>
           <p class="wfrontCard__p">Remove dense lily pad growth from selected shorelines, fishing
           areas, and other high-use parts of the pond.</p>
         </div>
@@ -172,7 +172,7 @@ get_header();
         <img src="<?php echo awh_img( 'weed-algae.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
              alt="A mat of filamentous algae floating across the surface of the water.">
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Algae and floating material</h3>
+          <h3 class="wfrontCard__h">Algae and Floating Material</h3>
           <p class="wfrontCard__p">Collect surface algae and small floating particles using the
           skimmer attachment.</p>
         </div>
@@ -182,7 +182,7 @@ get_header();
         <img src="<?php echo awh_img( 'weed-chestnut.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
              alt="A water chestnut rosette floating on open water, spiked seed visible at the edge.">
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Invasive aquatic plants</h3>
+          <h3 class="wfrontCard__h">Invasive Aquatic Plants</h3>
           <p class="wfrontCard__p">Mechanical removal can target invasive plants such as Eurasian watermilfoil, hydrilla, water chestnut, and phragmites before dense growth restricts access, navigation, and recreation.</p>
         </div>
       </article>
@@ -197,7 +197,7 @@ get_header();
 <section class="section" id="equipment">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The equipment</p>
+      <p class="eyebrow">The Equipment</p>
       <h2 class="h2">Equipment Matched to the Pond</h2>
       <p class="lead">Ponds can contain several types of vegetation in a relatively small area. We
       utilize interchangeable attachments to tailor our removal approach to the specific vegetation
@@ -257,7 +257,7 @@ get_header();
 <section class="section section--band on-dark" id="process">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The process</p>
+      <p class="eyebrow">The Process</p>
       <h2 class="h2">How Pond Weed Removal Works</h2>
     </div>
 
@@ -268,7 +268,7 @@ get_header();
                alt="A pond blanketed shore to shore in bright green algae.">
         </figure>
         <div class="flow__bar"><span class="flow__n">1</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Show us the pond</h3>
+        <h3 class="flow__h">Show Us the Pond</h3>
         <p class="flow__p">Share the pond’s approximate size, affected areas, shoreline access, and any known vegetation. Photos are helpful when available.</p>
       </li>
 
@@ -278,7 +278,7 @@ get_header();
                alt="The shallow-draft work boat staged at the water's edge with its attachment fitted.">
         </figure>
         <div class="flow__bar"><span class="flow__n">2</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Receive a recommendation</h3>
+        <h3 class="flow__h">Receive a Recommendation</h3>
         <p class="flow__p">We review what is growing and determine which equipment and removal
         method are appropriate.</p>
       </li>
@@ -289,7 +289,7 @@ get_header();
                alt="Cut vegetation lifted out at the waterline onto the bank.">
         </figure>
         <div class="flow__bar"><span class="flow__n">3</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Select the priority areas</h3>
+        <h3 class="flow__h">Select the Priority Areas</h3>
         <p class="flow__p">We identify the shoreline, access points, fishing areas, or open-water
         sections that need attention.</p>
       </li>
@@ -300,7 +300,7 @@ get_header();
                alt="The same water after harvesting — open and clear again.">
         </figure>
         <div class="flow__bar"><span class="flow__n">4</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Remove the growth</h3>
+        <h3 class="flow__h">Remove the Growth</h3>
         <p class="flow__p">The workboat mechanically cuts, lifts, or collects unwanted vegetation and removes the collected biomass from the water.</p>
       </li>
     </ol>
@@ -367,8 +367,8 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <p class="eyebrow">Free pond assessment</p>
-      <h2 class="cta__h">Show Us What Is Growing</h2>
+      <p class="eyebrow">Free Pond Assessment</p>
+      <h2 class="cta__h">Show Us What is Growing</h2>
       <p class="cta__p">Send us photos of your pond and the areas you want cleared. We will review
       the vegetation, explain the recommended removal approach, and provide a no-obligation
       estimate.</p>

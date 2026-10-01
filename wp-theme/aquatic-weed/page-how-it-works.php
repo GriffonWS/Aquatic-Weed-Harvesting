@@ -98,7 +98,7 @@ get_header();
   <div class="wrap">
   <div class="boat">
     <div class="boat__copy reveal">
-      <p class="eyebrow">The equipment</p>
+      <p class="eyebrow">The Equipment</p>
       <h2 class="h2">Specialized Equipment for Shallow and Difficult Water</h2>
       <p class="lead">Full-size harvesters require sufficient depth, open operating space, and suitable
       launch access. Many aquatic weed problems occur in shallow coves, around private docks, or along
@@ -132,7 +132,7 @@ get_header();
 <section class="section" id="equipment">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The equipment process</p>
+      <p class="eyebrow">The Equipment Process</p>
       <h2 class="h2">Five Attachments, Changed at the Shoreline</h2>
       <p class="lead">Some projects involve more than one type of vegetation or debris. The five
       attachments can be changed at the shoreline, allowing the workboat to move from cutting submerged

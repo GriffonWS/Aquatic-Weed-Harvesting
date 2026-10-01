@@ -28,7 +28,7 @@ get_header();
 
       <div class="rhero__cta">
         <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Residential Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
       </div>
 
       <ul class="rhero__chips">
@@ -56,8 +56,8 @@ get_header();
 <section class="section" id="areas">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">Residential services</p>
-      <h2 class="h2">Focused on the areas you use most</h2>
+      <p class="eyebrow">Residential Services</p>
+      <h2 class="h2">Focused on the Areas You Use Most</h2>
     </div>
 
     <div class="svcs">
@@ -66,7 +66,7 @@ get_header();
           <img src="<?php echo awh_img( 'privatelake.jpg' ); ?>" width="1600" height="1200" loading="lazy" decoding="async"
             alt="The work boat clearing weed along a private lakefront lined with homes.">
         </figure>
-        <h3 class="svc__title">Private lakefront weed control</h3>
+        <h3 class="svc__title">Private Lakefront Weed Control</h3>
         <p class="svc__text">Dense aquatic weeds can restrict swimming, fishing, boating, and shoreline
         access. We target excessive growth around private waterfronts while leaving unaffected areas
         undisturbed.</p>
@@ -82,7 +82,7 @@ get_header();
           <img src="<?php echo awh_img( 'harvester-shoreline.webp' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
             alt="Cut vegetation lifted out at the waterline onto the bank.">
         </figure>
-        <h3 class="svc__title">Lake dock weed cleaning</h3>
+        <h3 class="svc__title">Lake Dock Weed Cleaning</h3>
         <p class="svc__text">Weeds and floating debris can collect around docks, ladders, boat lifts, and
         approaches. Our compact work boat operates around waterfront structures to clear frequently
         used areas.</p>
@@ -98,7 +98,7 @@ get_header();
           <img src="<?php echo awh_img( 'before-cleaning.jpg' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
             alt="A backyard pond blanketed shore to shore in bright green algae.">
         </figure>
-        <h3 class="svc__title">Residential pond cleaning service</h3>
+        <h3 class="svc__title">Residential Pond Cleaning Service</h3>
         <p class="svc__text">Restore access and visibility in private, backyard, and farm ponds affected
         by weeds, lily pads, cattails, algae, leaves, or organic buildup.</p>
         <ul class="svc__list">
@@ -116,8 +116,8 @@ get_header();
   <div class="wrap">
     <div class="approach">
       <div class="approach__aside reveal">
-        <p class="eyebrow">Get an accurate quote</p>
-        <h2 class="h2">Show us what is growing</h2>
+        <p class="eyebrow">Get an Accurate Quote</p>
+        <h2 class="h2">Show Us What is Growing</h2>
         <p class="lead">To help us prepare an accurate recommendation and quote, send us photos of the
         affected water and shoreline. Our team will evaluate the vegetation density, depth, and access
         to determine the ideal mechanical strategy.</p>
@@ -130,35 +130,35 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">01</span>
           <div>
-            <h3 class="approach__h">Clear photos</h3>
+            <h3 class="approach__h">Clear Photos</h3>
             <p class="approach__p">Overview shots of the affected water area and shoreline access point.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">02</span>
           <div>
-            <h3 class="approach__h">Property location</h3>
+            <h3 class="approach__h">Property Location</h3>
             <p class="approach__p">Address or coordinates for logistical and equipment planning.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">03</span>
           <div>
-            <h3 class="approach__h">Estimated size</h3>
+            <h3 class="approach__h">Estimated Size</h3>
             <p class="approach__p">Approximate square footage or shoreline length needing service.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">04</span>
           <div>
-            <h3 class="approach__h">Specific challenges</h3>
+            <h3 class="approach__h">Specific Challenges</h3>
             <p class="approach__p">Details on how growth impacts your dock, swimming, or boating activities.</p>
           </div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">05</span>
           <div>
-            <h3 class="approach__h">Access restrictions</h3>
+            <h3 class="approach__h">Access Restrictions</h3>
             <p class="approach__p">Information on steep slopes, narrow gates, overhead lines, or shallow ramps.</p>
           </div>
         </li>
@@ -171,14 +171,14 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <h2 class="cta__h">Ready to reclaim your waterfront?</h2>
+      <h2 class="cta__h">Ready to Reclaim Your Waterfront?</h2>
       <p class="cta__p">Get started today with a complimentary consultation and estimate for your
       lakefront, dock, or residential pond.</p>
     </div>
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>Call (518) 441-7742</b></span>
+        <span><b>Call +1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Residential Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

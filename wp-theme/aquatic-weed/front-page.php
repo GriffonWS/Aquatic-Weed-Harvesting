@@ -201,8 +201,8 @@ get_header();
     <section class="section" id="before-after">
       <div class="wrap">
         <div class="section__head section__head--center reveal">
-          <p class="eyebrow">Before &amp; after</p>
-          <h2 class="h2">Same pond<br>Same week</h2>
+          <p class="eyebrow">Before &amp; After</p>
+          <h2 class="h2">Same Pond<br>Same Week</h2>
           <p class="lead">Drag the slider to see what comes out of the water.</p>
         </div>
 

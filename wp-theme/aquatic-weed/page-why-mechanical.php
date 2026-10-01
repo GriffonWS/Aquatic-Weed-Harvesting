@@ -118,7 +118,7 @@ get_header();
   <div class="wrap cta">
     <div class="cta__copy reveal">
       <p class="eyebrow">Free Estimate</p>
-      <h2 class="cta__h">Show Us What Is Growing</h2>
+      <h2 class="cta__h">Show Us What is Growing</h2>
       <p class="cta__p">Tell us what is growing and how it is affecting the property. Include photos if
       available. We will review the problem, explain whether mechanical harvesting is appropriate, and
       provide a no-obligation estimate.</p>

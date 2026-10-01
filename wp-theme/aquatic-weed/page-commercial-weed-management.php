@@ -26,7 +26,7 @@ get_header();
 
       <div class="rhero__cta">
         <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Commercial Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
       </div>
 
       <ul class="rhero__chips">
@@ -54,7 +54,7 @@ get_header();
 <section class="section" id="properties">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">Commercial services</p>
+      <p class="eyebrow">Commercial Services</p>
       <h2 class="h2">Aquatic Weed Management for Commercial Properties</h2>
     </div>
 
@@ -64,7 +64,7 @@ get_header();
           <img src="<?php echo awh_img( 'before-cleaning.jpg' ); ?>" width="1024" height="768" loading="lazy" decoding="async"
             alt="A community pond blanketed in algae along its shoreline.">
         </figure>
-        <h3 class="svc__title">HOA pond maintenance service</h3>
+        <h3 class="svc__title">HOA Pond Maintenance Service</h3>
         <p class="svc__text">Community ponds and shared waterfronts need consistent care to remain accessible and presentable. We help HOAs manage excessive weeds, cattails, algae, leaves, and floating debris around common areas.</p>
         <ul class="svc__list">
           <li>Community ponds and shorelines</li>
@@ -78,7 +78,7 @@ get_header();
           <img src="<?php echo awh_img( 'weed-lily.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
             alt="Lily pads spreading across the surface of an ornamental pond.">
         </figure>
-        <h3 class="svc__title">Golf course pond weed management</h3>
+        <h3 class="svc__title">Golf Course Pond Weed Management</h3>
         <p class="svc__text">Overgrown ponds can affect course appearance, drainage areas, and the experience of members and guests. Our mechanical removal process targets unwanted growth while working around course schedules and priority areas.</p>
         <ul class="svc__list">
           <li>Course and ornamental ponds</li>
@@ -92,7 +92,7 @@ get_header();
           <img src="<?php echo awh_img( 'lake-ramp-weed.webp' ); ?>" width="1024" height="498" loading="lazy" decoding="async"
             alt="Weed growth spreading out from a boat launch into open water.">
         </figure>
-        <h3 class="svc__title">Marina weed removal company</h3>
+        <h3 class="svc__title">Marina Weed Removal Company</h3>
         <p class="svc__text">Dense aquatic vegetation can restrict boat slips, launch areas, fuel docks, and navigation routes. We remove weeds and floating debris from high-use marina areas to help keep the water safer and more accessible.</p>
         <ul class="svc__list">
           <li>Boat slips and dock approaches</li>
@@ -109,8 +109,8 @@ get_header();
   <div class="wrap">
     <div class="approach">
       <div class="approach__aside reveal">
-        <p class="eyebrow">How we plan the work</p>
-        <h2 class="h2">A clear plan with minimal disruption</h2>
+        <p class="eyebrow">How We Plan the Work</p>
+        <h2 class="h2">A Clear Plan with Minimal Disruption</h2>
         <p class="lead">Every commercial project begins with an assessment of the vegetation, affected
         areas, property access, and operating schedule. We define the priority treatment zones and
         select the appropriate equipment before work begins.</p>
@@ -119,11 +119,11 @@ get_header();
       </div>
 
       <ul class="approach__list">
-        <li class="approach__item reveal"><span class="approach__n">01</span><div><h3 class="approach__h">Defined treatment areas</h3></div></li>
-        <li class="approach__item reveal"><span class="approach__n">02</span><div><h3 class="approach__h">Seasonal or one-time removal</h3></div></li>
-        <li class="approach__item reveal"><span class="approach__n">03</span><div><h3 class="approach__h">Vegetation and debris collection</h3></div></li>
-        <li class="approach__item reveal"><span class="approach__n">04</span><div><h3 class="approach__h">Work scheduled around property use</h3></div></li>
-        <li class="approach__item reveal"><span class="approach__n">05</span><div><h3 class="approach__h">Removed-volume documentation when requested</h3></div></li>
+        <li class="approach__item reveal"><span class="approach__n">01</span><div><h3 class="approach__h">Defined Treatment Areas</h3></div></li>
+        <li class="approach__item reveal"><span class="approach__n">02</span><div><h3 class="approach__h">Seasonal or One-Time Removal</h3></div></li>
+        <li class="approach__item reveal"><span class="approach__n">03</span><div><h3 class="approach__h">Vegetation and Debris Collection</h3></div></li>
+        <li class="approach__item reveal"><span class="approach__n">04</span><div><h3 class="approach__h">Work Scheduled Around Property Use</h3></div></li>
+        <li class="approach__item reveal"><span class="approach__n">05</span><div><h3 class="approach__h">Removed-Volume Documentation When Requested</h3></div></li>
       </ul>
     </div>
   </div>
@@ -133,13 +133,13 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <h2 class="cta__h">Discuss your property</h2>
+      <h2 class="cta__h">Discuss Your Property</h2>
       <p class="cta__p">Tell us how aquatic vegetation or debris is affecting your property, guests, residents, or operations. We will review the conditions, identify the priority areas, and recommend a mechanical removal plan that fits your schedule.</p>
     </div>
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>Call (518) 441-7742</b></span>
+        <span><b>Call +1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Commercial Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

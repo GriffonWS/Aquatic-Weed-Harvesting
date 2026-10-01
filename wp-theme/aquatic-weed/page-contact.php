@@ -17,7 +17,7 @@ get_header();
 <section class="phero on-dark">
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Contact us</b></p>
-    <h1 class="phero__title">Request an aquatic weed<br>removal <em>estimate</em></h1>
+    <h1 class="phero__title">Request an Aquatic Weed<br>Removal <em>Estimate</em></h1>
     <p class="phero__lead">Tell us about the weeds, muck, debris, or shoreline growth affecting your lake or pond. Based in the Hudson Valley, Aquatic Weed Harvesting LLC provides mechanical removal services throughout New York, New Jersey, and Pennsylvania.</p>
     <p class="phero__lead">Complete the form, email us, or call to discuss your waterbody. Photos can help us understand the conditions, but they are not required to begin the conversation. We will review the project details, recommend an appropriate removal approach, and provide a no-obligation estimate.</p>
     <div class="phero__cta">
@@ -196,7 +196,7 @@ get_header();
           <svg viewBox="0 0 24 24"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
         </span>
         <span class="ccard__k">Estimates &amp; scheduling</span>
-        <b class="ccard__v">(518) 441-7742</b>
+        <b class="ccard__v">+1 (518) 441-7742</b>
       </a>
 
       <a class="ccard reveal" href="mailto:jim@wedowaterweeds.com">

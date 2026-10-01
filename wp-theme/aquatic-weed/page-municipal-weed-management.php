@@ -26,7 +26,7 @@ get_header();
 
       <div class="rhero__cta">
         <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Municipal Assessment <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
       </div>
 
       <ul class="rhero__chips">
@@ -54,7 +54,7 @@ get_header();
 <section class="section" id="programs">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">Public and community projects</p>
+      <p class="eyebrow">Public and Community Projects</p>
       <h2 class="h2">Planned Around Public and Community Use</h2>
     </div>
 
@@ -115,7 +115,7 @@ get_header();
   <div class="wrap">
     <div class="section__head section__head--split reveal">
       <div>
-        <p class="eyebrow">Project planning and coordination</p>
+        <p class="eyebrow">Project Planning and Coordination</p>
         <h2 class="h2">Tailored Project Scope for Every Waterbody</h2>
       </div>
       <p class="lead">Municipal and association projects may involve permits, budgets, public
@@ -152,7 +152,7 @@ get_header();
     <div class="cta__side reveal">
       <a class="cta__call" href="tel:+15184417742">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v3a2 2 0 01-2.2 2C11 18.4 5.6 13 5 6.2A2 2 0 016 3z"/></svg>
-        <span><b>Call (518) 441-7742</b></span>
+        <span><b>Call +1 (518) 441-7742</b></span>
       </a>
       <a class="btn btn--primary btn--lg btn--block" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Municipal Assessment <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
     </div>

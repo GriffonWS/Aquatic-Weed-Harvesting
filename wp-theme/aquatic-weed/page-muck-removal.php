@@ -63,7 +63,7 @@ get_header();
 
     <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
     </div>
 
     <ul class="shero__specs">
@@ -86,7 +86,7 @@ get_header();
   <div class="wrap">
     <div class="approach">
       <div class="approach__aside reveal">
-        <p class="eyebrow">What muck is</p>
+        <p class="eyebrow">What Muck Is</p>
         <h2 class="h2">Organic Sediment Removal for Lakes and Ponds</h2>
         <p class="lead">Lake and pond muck forms as aquatic vegetation, algae, leaves, and other biomass settle and decompose on the bottom. Over time, this soft organic sediment can reduce water depth, create unstable bottom conditions, and restrict access around docks, shorelines, and swimming areas.</p>
         <p class="lead">This service goes beyond surface weed removal. We physically extract accumulated organic sediment from targeted areas and can pair the work with aquatic vegetation and debris removal to address both existing buildup and the material contributing to future accumulation.</p>
@@ -96,7 +96,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">01</span>
           <div>
-            <h3 class="approach__h">Restore shallow areas</h3>
+            <h3 class="approach__h">Restore Shallow Areas</h3>
             <p class="approach__p">Removing accumulated sediment can recover usable depth around
             docks, shorelines, swimming areas, and other priority sections.</p>
           </div>
@@ -104,7 +104,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">02</span>
           <div>
-            <h3 class="approach__h">Improve bottom conditions</h3>
+            <h3 class="approach__h">Improve Bottom Conditions</h3>
             <p class="approach__p">Targeted organic sediment removal can reduce soft, unstable muck
             in frequently used areas.</p>
           </div>
@@ -112,7 +112,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">03</span>
           <div>
-            <h3 class="approach__h">Remove decaying material</h3>
+            <h3 class="approach__h">Remove Decaying Material</h3>
             <p class="approach__p">Extract decomposed vegetation, algae, leaves, and other organic
             matter that has collected on the bottom.</p>
           </div>
@@ -120,7 +120,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">04</span>
           <div>
-            <h3 class="approach__h">Address future buildup</h3>
+            <h3 class="approach__h">Address Future Buildup</h3>
             <p class="approach__p">Combine muck reduction with aquatic vegetation and debris removal
             to reduce additional organic material entering the pond or lake bottom.</p>
           </div>
@@ -134,7 +134,7 @@ get_header();
 <section class="section section--rule" id="areas">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">Where we work</p>
+      <p class="eyebrow">Where We Work</p>
       <h2 class="h2">Targeted Lake and Pond Muck Reduction Service</h2>
       <p class="lead">Muck does not accumulate evenly across an entire waterbody. Wind, currents,
       surrounding trees, aquatic vegetation, and shoreline conditions often concentrate organic
@@ -164,7 +164,7 @@ get_header();
 <section class="section section--band on-dark" id="process">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The process</p>
+      <p class="eyebrow">The Process</p>
       <h2 class="h2">How Mechanical Muck Removal Works</h2>
     </div>
 
@@ -175,7 +175,7 @@ get_header();
                alt="A private pond under a full mat of surface growth, with the bank behind it.">
         </figure>
         <div class="flow__bar"><span class="flow__n">1</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Assess the buildup</h3>
+        <h3 class="flow__h">Assess the Buildup</h3>
         <p class="flow__p">We review the affected area, sediment conditions, water depth, access,
         and the lake or pond's use.</p>
       </li>
@@ -186,7 +186,7 @@ get_header();
                alt="A shallow weedy corner of a lake seen from the launch ramp.">
         </figure>
         <div class="flow__bar"><span class="flow__n">2</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Define the removal area</h3>
+        <h3 class="flow__h">Define the Removal Area</h3>
         <p class="flow__p">The project focuses on specific locations such as docks, swimming areas,
         shorelines, coves, and shallow pond sections.</p>
       </li>
@@ -198,7 +198,7 @@ get_header();
                  aria-label="Organic muck being lifted from the bottom and out of the water."></video>
         </figure>
         <div class="flow__bar"><span class="flow__n">3</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Remove the sediment</h3>
+        <h3 class="flow__h">Remove the Sediment</h3>
         <p class="flow__p">Existing organic sediment is mechanically lifted and removed from the
         bottom.</p>
       </li>
@@ -209,7 +209,7 @@ get_header();
                alt="An excavator loading collected material into a dump truck to be hauled off site.">
         </figure>
         <div class="flow__bar"><span class="flow__n">4</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Manage the removed material</h3>
+        <h3 class="flow__h">Manage the Removed Material</h3>
         <p class="flow__p">The collected material is transferred out of the water and managed in
         accordance with the property conditions and the agreed project scope.</p>
       </li>
@@ -230,7 +230,7 @@ get_header();
   <div class="wrap">
     <div class="section__head section__head--split reveal">
       <div>
-        <p class="eyebrow">Mechanical, not chemical</p>
+        <p class="eyebrow">Mechanical, Not Chemical</p>
         <h2 class="h2">Sustainable Physical Removal Without Chemical Treatments</h2>
       </div>
       <div class="subhead__body">
@@ -252,23 +252,23 @@ get_header();
         <ul class="kit__list">
           <li class="kit__row reveal">
             <span class="kit__tag">01</span>
-            <h3 class="kit__h">Existing sediment is physically removed</h3>
+            <h3 class="kit__h">Existing Sediment is Physically Removed</h3>
           </li>
           <li class="kit__row reveal">
             <span class="kit__tag">02</span>
-            <h3 class="kit__h">Priority areas can be targeted</h3>
+            <h3 class="kit__h">Priority Areas Can Be Targeted</h3>
           </li>
           <li class="kit__row reveal">
             <span class="kit__tag">03</span>
-            <h3 class="kit__h">No chemical muck treatment applied</h3>
+            <h3 class="kit__h">No Chemical Muck Treatment Applied</h3>
           </li>
           <li class="kit__row reveal">
             <span class="kit__tag">04</span>
-            <h3 class="kit__h">Suitable for lakes and ponds</h3>
+            <h3 class="kit__h">Suitable for Lakes and Ponds</h3>
           </li>
           <li class="kit__row reveal">
             <span class="kit__tag">05</span>
-            <h3 class="kit__h">Can be combined with vegetation removal</h3>
+            <h3 class="kit__h">Can Be Combined with Vegetation Removal</h3>
           </li>
         </ul>
       </div>
@@ -324,7 +324,7 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <p class="eyebrow">Free initial assessment</p>
+      <p class="eyebrow">Free Initial Assessment</p>
       <h2 class="cta__h">Find Out What It Takes to Remove the Muck</h2>
       <p class="cta__p">Send us photos and basic information about your lake or pond. We will review
       the affected area, discuss the removal options, and provide a no-obligation estimate.</p>

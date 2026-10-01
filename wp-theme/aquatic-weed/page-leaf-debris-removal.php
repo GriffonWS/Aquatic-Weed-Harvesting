@@ -69,7 +69,7 @@ get_header();
 
     <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
     </div>
 
     <ul class="shero__specs">
@@ -92,7 +92,7 @@ get_header();
   <div class="wrap">
     <div class="approach">
       <div class="approach__aside reveal">
-        <p class="eyebrow">When to schedule</p>
+        <p class="eyebrow">When to Schedule</p>
         <h2 class="h2">Seasonal Lake Leaf Removal Service</h2>
         <p class="lead">Wind and currents can push large amounts of fallen leaves into coves, dock
         areas, and shallow shorelines. These natural collection points may become difficult to clean
@@ -106,7 +106,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">01</span>
           <div>
-            <h3 class="approach__h">Spring cleanup</h3>
+            <h3 class="approach__h">Spring Cleanup</h3>
             <p class="approach__p">Remove leaves, branches, and organic material that accumulated
             over winter before the waterfront enters its busiest season.</p>
           </div>
@@ -114,7 +114,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">02</span>
           <div>
-            <h3 class="approach__h">Fall cleanup</h3>
+            <h3 class="approach__h">Fall Cleanup</h3>
             <p class="approach__p">Collect fallen leaves and seasonal debris before they sink and
             contribute to additional bottom buildup.</p>
           </div>
@@ -122,7 +122,7 @@ get_header();
         <li class="approach__item reveal">
           <span class="approach__n">03</span>
           <div>
-            <h3 class="approach__h">Post-storm cleanup</h3>
+            <h3 class="approach__h">Post-Storm Cleanup</h3>
             <p class="approach__p">Remove branches, downed wood, and other natural debris after
             significant wind or storm activity.</p>
           </div>
@@ -138,7 +138,7 @@ get_header();
 <section class="section section--rule" id="debris">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">What we collect</p>
+      <p class="eyebrow">What We Collect</p>
       <h2 class="h2">Floating and Submerged Debris Cleanup</h2>
     </div>
 
@@ -146,7 +146,7 @@ get_header();
       <article class="svc svc--wide reveal">
         <span class="svc__num">01</span>
         <div class="svc__main">
-          <h3 class="svc__title">Fallen leaves</h3>
+          <h3 class="svc__title">Fallen Leaves</h3>
           <p class="svc__text">Collect floating leaf mats and loose leaves gathering near
           shorelines, docks, and pond edges.</p>
         </div>
@@ -154,20 +154,20 @@ get_header();
 
       <article class="svc reveal">
         <span class="svc__num">02</span>
-        <h3 class="svc__title">Plant material</h3>
+        <h3 class="svc__title">Plant Material</h3>
         <p class="svc__text">Remove loose vegetation and organic plant debris floating on the
         surface.</p>
       </article>
 
       <article class="svc reveal">
         <span class="svc__num">03</span>
-        <h3 class="svc__title">Branches and small trees</h3>
+        <h3 class="svc__title">Branches and Small Trees</h3>
         <p class="svc__text">Cut or lift low-hanging branches, small trees, and other woody material that obstruct the water.</p>
       </article>
 
       <article class="svc reveal">
         <span class="svc__num">04</span>
-        <h3 class="svc__title">Storm debris</h3>
+        <h3 class="svc__title">Storm Debris</h3>
         <p class="svc__text">Clear natural material carried into the water after wind, rain, or
         seasonal storms.</p>
       </article>
@@ -179,7 +179,7 @@ get_header();
 <section class="section section--band on-dark" id="equipment">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The equipment</p>
+      <p class="eyebrow">The Equipment</p>
       <h2 class="h2">The Right Equipment for Debris Removal</h2>
       <p class="lead">Different debris requires different equipment. Our workboat has five quick-change attachments. For leaf and debris removal, the skimmer, vegetation bucket, and hydraulic pole saw handle material ranging from fine surface debris to branches and downed wood.</p>
     </div>
@@ -283,8 +283,8 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <p class="eyebrow">Free estimate</p>
-      <h2 class="cta__h">Clear the Leaves and Debris From Your Water</h2>
+      <p class="eyebrow">Free Estimate</p>
+      <h2 class="cta__h">Clear the Leaves and Debris from Your Water</h2>
       <p class="cta__p">Tell us about the leaves or debris affecting your lake, pond, or shoreline. We will review the material, access conditions, and project scope before recommending the most suitable cleanup approach.</p>
     </div>
     <div class="cta__side reveal">

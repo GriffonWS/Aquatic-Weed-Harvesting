@@ -50,13 +50,13 @@ get_header();
     <p class="hero__eyebrow phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a> <i>/</i> <b>Shoreline weed removal</b></p>
     <h1 class="hero__title">
       <span class="line"><span>Clear Overgrown Shorelines</span></span>
-      <span class="line"><span>From the <em>Water Side</em></span></span>
+      <span class="line"><span>from the <em>Water Side</em></span></span>
     </h1>
     <p class="hero__lead">Clear cattails, lily pads, submerged weeds, and overhanging branches from hard-to-reach shorelines. Our specialized workboat approaches the shoreline from the water, reducing the need to operate heavy equipment on soft or unstable banks.</p>
 
     <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
-      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call (518) 441-7742</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
     </div>
 
     <ul class="shero__specs">
@@ -78,7 +78,7 @@ get_header();
 <section class="section" id="access">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">Why it matters</p>
+      <p class="eyebrow">Why It Matters</p>
       <h2 class="h2">Reclaim Access to Your Shoreline</h2>
       <p class="lead">Heavy vegetation can block waterfront views, restrict access, crowd docks, and
       make shoreline maintenance difficult. Soft banks and shallow water can also prevent
@@ -92,7 +92,7 @@ get_header();
 <section class="section section--rule" id="growth">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">What we clear</p>
+      <p class="eyebrow">What We Clear</p>
       <h2 class="h2">Targeted Shoreline Growth and Debris</h2>
     </div>
 
@@ -110,7 +110,7 @@ get_header();
         <img src="<?php echo awh_img( 'weed-lily.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
              alt="Lily pads covering the surface of shallow water near the bank.">
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Lily pads</h3>
+          <h3 class="wfrontCard__h">Lily Pads</h3>
           <p class="wfrontCard__p">Remove excessive lily pad growth affecting shoreline access,
           docks, and open-water areas.</p>
         </div>
@@ -120,7 +120,7 @@ get_header();
         <img src="<?php echo awh_img( 'weed-milfoil.jpg' ); ?>" width="1200" height="600" loading="lazy" decoding="async"
              alt="Eurasian watermilfoil in a dense underwater stand, tips breaking the surface.">
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Aquatic weeds</h3>
+          <h3 class="wfrontCard__h">Aquatic Weeds</h3>
           <p class="wfrontCard__p">Cut and collect submerged or emergent vegetation growing close to
           the shoreline.</p>
         </div>
@@ -131,7 +131,7 @@ get_header();
                width="320" height="240" autoplay muted loop playsinline preload="metadata"
                aria-label="Floating water chestnut being collected from the water surface."></video>
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Floating vegetation</h3>
+          <h3 class="wfrontCard__h">Floating Vegetation</h3>
           <p class="wfrontCard__p">Use the skimmer attachment to collect algae, duckweed, and other
           fine material gathering along the waterline.</p>
         </div>
@@ -142,7 +142,7 @@ get_header();
                width="320" height="240" autoplay muted loop playsinline preload="metadata"
                aria-label="Branches and downed wood being cut and cleared from the water."></video>
         <div class="wfrontCard__body">
-          <h3 class="wfrontCard__h">Branches and small trees</h3>
+          <h3 class="wfrontCard__h">Branches and Small Trees</h3>
           <p class="wfrontCard__p">Cut tree branches, small trees, and downed logs in the water using a hydraulic pole saw.</p>
         </div>
       </article>
@@ -157,7 +157,7 @@ get_header();
 <section class="section" id="equipment">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The equipment</p>
+      <p class="eyebrow">The Equipment</p>
       <h2 class="h2">Specialized Equipment for Difficult Shorelines</h2>
       <p class="lead">Shoreline projects often involve more than one type of vegetation. Interchangeable attachments allow the work boat to adapt without bringing several separate machines to the property.</p>
     </div>
@@ -215,7 +215,7 @@ get_header();
 <section class="section section--band on-dark" id="process">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">The process</p>
+      <p class="eyebrow">The Process</p>
       <h2 class="h2">How Shoreline Weed Removal Works</h2>
     </div>
 
@@ -226,7 +226,7 @@ get_header();
                alt="A weed-choked waterline seen from the launch ramp, before any work begins.">
         </figure>
         <div class="flow__bar"><span class="flow__n">1</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Show us the shoreline</h3>
+        <h3 class="flow__h">Show Us the Shoreline</h3>
         <p class="flow__p">Share details about the vegetation, affected area, water depth, nearby docks, and property access. Include photos if available.</p>
       </li>
 
@@ -236,7 +236,7 @@ get_header();
                alt="The shallow-draft work boat staged at the water's edge with its attachment fitted.">
         </figure>
         <div class="flow__bar"><span class="flow__n">2</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Review the conditions</h3>
+        <h3 class="flow__h">Review the Conditions</h3>
         <p class="flow__p">We identify the likely vegetation and determine which equipment is
         suitable for the shoreline.</p>
       </li>
@@ -247,7 +247,7 @@ get_header();
                alt="The work boat cutting a path through a weed mat toward the bank.">
         </figure>
         <div class="flow__bar"><span class="flow__n">3</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Define the priority areas</h3>
+        <h3 class="flow__h">Define the Priority Areas</h3>
         <p class="flow__p">The work can focus on docks, views, access points, fishing areas, or
         other sections that need attention.</p>
       </li>
@@ -258,7 +258,7 @@ get_header();
                alt="A full load of cut vegetation riding the boat's conveyor on its way off the water.">
         </figure>
         <div class="flow__bar"><span class="flow__n">4</span><span class="flow__rule"></span></div>
-        <h3 class="flow__h">Remove the growth</h3>
+        <h3 class="flow__h">Remove the Growth</h3>
         <p class="flow__p">We mechanically cut, lift, or collect the unwanted vegetation and remove
         the collected material from the water.</p>
       </li>
@@ -275,7 +275,7 @@ get_header();
   <div class="wrap">
     <div class="approach">
       <div class="approach__aside reveal">
-        <p class="eyebrow">Working from the water</p>
+        <p class="eyebrow">Working from the Water</p>
         <h2 class="h2">Reach Areas Land Equipment Cannot</h2>
         <p class="lead">Land-based equipment may damage soft banks or struggle to reach vegetation
         growing beyond the waterline. Working from a compact boat provides direct access to shallow
@@ -285,19 +285,19 @@ get_header();
       <ul class="approach__list">
         <li class="approach__item reveal">
           <span class="approach__n">01</span>
-          <div><h3 class="approach__h">Reduced reliance on soft banks</h3></div>
+          <div><h3 class="approach__h">Reduced Reliance on Soft Banks</h3></div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">02</span>
-          <div><h3 class="approach__h">Better access around docks and waterfront structures</h3></div>
+          <div><h3 class="approach__h">Better Access Around Docks and Waterfront Structures</h3></div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">03</span>
-          <div><h3 class="approach__h">Targeted removal in selected areas</h3></div>
+          <div><h3 class="approach__h">Targeted Removal in Selected Areas</h3></div>
         </li>
         <li class="approach__item reveal">
           <span class="approach__n">04</span>
-          <div><h3 class="approach__h">Multiple tools available from one boat</h3></div>
+          <div><h3 class="approach__h">Multiple Tools Available from One Boat</h3></div>
         </li>
       </ul>
     </div>
@@ -308,7 +308,7 @@ get_header();
 <section class="section section--rule" id="who">
   <div class="wrap">
     <div class="section__head reveal">
-      <p class="eyebrow">Who we help</p>
+      <p class="eyebrow">Who We Help</p>
       <h2 class="h2">Shoreline Removal for Different Waterfronts</h2>
     </div>
 
@@ -362,7 +362,7 @@ get_header();
 <section class="section section--cta on-dark">
   <div class="wrap cta">
     <div class="cta__copy reveal">
-      <p class="eyebrow">Free initial review</p>
+      <p class="eyebrow">Free Initial Review</p>
       <h2 class="cta__h">Get a Clear Plan for Your Shoreline</h2>
       <p class="cta__p">Tell us about the shoreline areas you want cleared. We will review the vegetation, access conditions, and project scope before recommending the most suitable removal approach.</p>
     </div>
