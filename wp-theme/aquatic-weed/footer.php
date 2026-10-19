@@ -24,7 +24,7 @@ $awh_foot = static function ( $slug, $label, $frag = '' ) {
 <footer class="footer on-dark">
   <div class="wrap footer__top">
     <a class="footer__brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="footer__logo" src="<?php echo awh_img( 'logo-256.png' ); ?>" width="256" height="256" loading="lazy" alt="Got Lake Weeds? — Aquatic Weed Harvesting LLC"></a>
-    <p class="footer__blurb">Aquatic Weed Harvesting LLC is dedicated to restoring and maintaining waterways through the mechanical removal of aquatic vegetation and debris. Based in the Hudson Valley, we serve the Northeast, including New York, New Jersey, and Pennsylvania.</p>
+    <p class="footer__blurb">Aquatic Weed Harvesting LLC is dedicated to restoring and maintaining waterways through the mechanical removal of aquatic vegetation and debris. Based in the Hudson Valley, we serve the Northeast and beyond.</p>
     <div class="footer__contact">
       <a href="tel:+15184417742">+1 (518) 441-7742</a>
       <a href="mailto:jim@wedowaterweeds.com">jim@wedowaterweeds.com</a>

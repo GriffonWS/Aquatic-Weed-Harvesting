@@ -56,7 +56,7 @@ get_header();
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Who we serve</b></p>
     <h1 class="phero__title">Aquatic Weed Removal for Private, Commercial, and Public <em>Waterways</em></h1>
-    <p class="phero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC provides mechanical weed, shoreline, muck, and debris removal for residential, commercial, association, and municipal waterbodies across New York, New Jersey, and Pennsylvania.</p>
+    <p class="phero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC provides mechanical weed, shoreline, muck, and debris removal for residential, commercial, association, and municipal waterbodies across the Northeast and beyond.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>

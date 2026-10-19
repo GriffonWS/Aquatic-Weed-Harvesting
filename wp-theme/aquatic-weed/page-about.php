@@ -22,7 +22,7 @@ get_header();
   <div class="wrap phero__inner">
     <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>About Aquatic Weed Harvesting LLC</b></p>
     <h1 class="phero__title">Aquatic Weed Removal Built for <em>Shallow Water</em></h1>
-    <p class="phero__lead">Aquatic Weed Harvesting LLC provides mechanical removal of aquatic vegetation, muck, shoreline material, and debris from lakes and ponds across New York, New Jersey, and Pennsylvania.</p>
+    <p class="phero__lead">Aquatic Weed Harvesting LLC provides mechanical removal of aquatic vegetation, muck, shoreline material, and debris from lakes and ponds across the Northeast and beyond.</p>
     <p class="phero__lead">Based in the Hudson Valley, we help homeowners, lake associations, commercial properties, and municipalities restore access to overgrown water without applying aquatic herbicides.</p>
     <div class="phero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
@@ -47,8 +47,8 @@ get_header();
   <div class="wrap">
     <div class="section__head section__head--split section__head--top reveal">
       <div>
-        <p class="eyebrow">Our Focus</p>
-        <h2 class="h2">Lake and Pond Cleanup Made for Difficult Water</h2>
+        <p class="eyebrow">Lake and Pond Cleanup Made for Difficult Water</p>
+        <h2 class="h2">Got Lake Weeds?</h2>
       </div>
       <div class="subhead__body">
         <p class="lead">Many aquatic weed problems develop in shallow coves, around docks, along shorelines, and in smaller waterways where full-size harvesters may not have enough room or depth to operate.</p>

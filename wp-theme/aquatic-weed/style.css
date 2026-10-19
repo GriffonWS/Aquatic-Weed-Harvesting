@@ -3,7 +3,7 @@ Theme Name: Aquatic Weed Harvesting
 Theme URI: https://wedowaterweeds.com/
 Author: Griffon Web Studios
 Description: Multi-page theme for Aquatic Weed Harvesting LLC — mechanical aquatic weed and debris removal, based in Henning, MN. Converted from the approved static build.
-Version: 2.8.2
+Version: 2.9.0
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -284,7 +284,7 @@ em{font-style:normal}
    ========================================================================== */
 .hero{
   position:relative;min-height:100svh;display:flex;align-items:center;
-  padding:150px 0 130px;overflow:hidden;
+  padding:clamp(140px,19svh,180px) 0 clamp(100px,14svh,140px);overflow:hidden;
   background:
     radial-gradient(120% 90% at 80% 0%,var(--deep-2) 0%,transparent 60%),
     radial-gradient(90% 70% at 10% 100%,rgba(33,116,152,.22) 0%,transparent 60%),
@@ -325,8 +325,9 @@ em{font-style:normal}
    still meant to render as one row, since .line clips overflow for the
    reveal animation */
 .hero__title{
-  font:800 clamp(34px,5.6vw,78px)/1.05 var(--display);
-  letter-spacing:-.03em;margin:0;max-width:20ch;
+  /* capped by viewport height too, so eyebrow → stats fit in one screen on laptops */
+  font:800 clamp(34px,min(5.4vw,7.6svh),74px)/1.05 var(--display);
+  letter-spacing:-.03em;margin:0;max-width:none;
 }
 .hero__title .line{display:block;overflow:hidden;padding-bottom:.06em}
 .hero__title .line>span{display:block;animation:up 1s var(--ease) both}
@@ -342,19 +343,19 @@ em{font-style:normal}
 @keyframes up{from{opacity:0;transform:translateY(105%)}}
 
 .hero__lead{
-  max-width:52ch;margin:18px 0 0;font-size:clamp(15.5px,1.6vw,18.5px);color:var(--txt-dim);
+  max-width:86ch;margin:18px 0 0;font-size:clamp(15px,min(1.35vw,2.2svh),18px);line-height:1.6;color:var(--txt-dim);
   animation:up .9s .22s var(--ease) both;
 }
 /* two paragraphs sit closer to each other than the title-to-lead gap above them */
 .hero__lead+.hero__lead{margin-top:12px}
 .hero__lead strong{color:var(--txt)}
-.hero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px;animation:up .9s .32s var(--ease) both}
+.hero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(20px,3svh,28px);animation:up .9s .32s var(--ease) both}
 .hero__cta .btn--primary:hover svg{transform:translateX(4px)}
 .hero__cta .btn svg{transition:transform .35s var(--ease)}
 
 .hero__stats{
   display:flex;flex-wrap:wrap;gap:clamp(20px,5vw,64px);
-  list-style:none;margin:clamp(34px,5vw,56px) 0 0;padding:0;
+  list-style:none;margin:clamp(22px,min(4vw,4.6svh),56px) 0 0;padding:0;
   animation:up .9s .42s var(--ease) both;
 }
 .stat{display:flex;flex-direction:column;gap:6px;position:relative;padding-left:20px}

@@ -20,7 +20,7 @@ get_header();
       <div class="xhero__copy">
         <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Why mechanical</b></p>
         <h1 class="xhero__title">Don’t Sink the Problem. <em>Remove It.</em></h1>
-        <p class="xhero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC provides sustainable mechanical weed control across New York, New Jersey, and Pennsylvania. We cut, collect, and remove unwanted aquatic vegetation and biomass without applying herbicides or leaving harvested plant material in the water.</p>
+        <p class="xhero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC provides sustainable mechanical weed control across the Northeast and beyond. We cut, collect, and remove unwanted aquatic vegetation and biomass without applying herbicides or leaving harvested plant material in the water.</p>
         <div class="xhero__cta">
           <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn--ghost btn--lg" href="tel:+15184417742">+1 (518) 441-7742</a>

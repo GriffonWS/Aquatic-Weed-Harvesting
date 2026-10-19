@@ -25,8 +25,8 @@ if ( is_page( 'about' ) ) {
 	$awh_og_title = 'About Aquatic Weed Harvesting LLC | Hudson Valley';
 	$awh_desc     = 'Founded in 2018, Aquatic Weed Harvesting LLC provides insured mechanical lake, pond, shoreline, muck, and debris removal across NY, NJ, and PA.';
 } else {
-	$awh_og_title = 'Aquatic Weed Removal in NY, NJ & PA | Aquatic Weed Harvesting LLC';
-	$awh_desc     = 'Aquatic Weed Harvesting LLC provides mechanical lake weed removal, pond cleaning, shoreline clearing, muck removal, and debris cleanup across New York, New Jersey, and Pennsylvania.';
+	$awh_og_title = 'Aquatic Weed Removal in the Northeast & Beyond | Aquatic Weed Harvesting LLC';
+	$awh_desc     = 'Aquatic Weed Harvesting LLC provides mechanical lake weed removal, pond cleaning, shoreline clearing, muck removal, tree trimming, and debris cleanup throughout the Northeast and beyond.';
 }
 ?>
 <meta name="description" content="<?php echo esc_attr( $awh_desc ); ?>">

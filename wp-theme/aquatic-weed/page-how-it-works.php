@@ -20,7 +20,7 @@ get_header();
       <div class="xhero__copy">
         <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>How it works</b></p>
         <h1 class="xhero__title">How Mechanical Aquatic Weed Removal <em>Works</em></h1>
-        <p class="xhero__lead">Every project begins with identifying the vegetation, defining the priority areas, and selecting the right mechanical removal approach. Based in the Hudson Valley, Aquatic Weed Harvesting LLC serves lakes, ponds, and shorelines throughout New York, New Jersey, and Pennsylvania.</p>
+        <p class="xhero__lead">Every project begins with identifying the vegetation, defining the priority areas, and selecting the right mechanical removal approach. Based in the Hudson Valley, Aquatic Weed Harvesting LLC serves lakes, ponds, and shorelines throughout the Northeast and beyond.</p>
         <p class="xhero__lead">Many residential waterfront projects can be completed in one or two working days, depending on vegetation density, treatment area, water depth, and property access.</p>
         <div class="xhero__cta">
           <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request an Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>

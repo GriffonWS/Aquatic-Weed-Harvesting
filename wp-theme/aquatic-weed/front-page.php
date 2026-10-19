@@ -22,10 +22,10 @@ get_header();
         <p class="hero__eyebrow">Aquatic Weed Harvesting LLC · Based in the Hudson Valley</p>
         <h1 class="hero__title">
           <span class="line"><span>Lake and Pond Weed Removal</span></span>
-          <span class="line"><span>Across the <em>Northeast</em></span></span>
+          <span class="line"><span>Across the <em>Northeast</em> and Beyond</span></span>
         </h1>
         <p class="hero__lead">
-          Aquatic Weed Harvesting LLC provides mechanical aquatic weed harvesting, lake weed removal, pond weed removal, shoreline clearing, muck removal, and floating debris cleanup across New York, New Jersey, and Pennsylvania.
+          Aquatic Weed Harvesting LLC provides mechanical aquatic weed harvesting, lake weed removal, pond weed removal, shoreline clearing, muck removal, tree trimming, and floating debris cleanup.
         </p>
         <p class="hero__lead">
           We use sustainable, environmentally responsible mechanical methods to cut, collect, and remove unwanted aquatic vegetation without using herbicides, helping homeowners, businesses, lake associations, and municipalities reclaim overgrown bodies of water.
@@ -61,10 +61,10 @@ get_header();
       <div class="marquee__track">
         <span>Eurasian Watermilfoil</span><i>✦</i><span>Water Chestnut</span><i>✦</i><span>Hydrilla</span><i>✦</i>
         <span>Lily Pads</span><i>✦</i><span>Cattails</span><i>✦</i><span>Coontail</span><i>✦</i>
-        <span>Filamentous Algae</span><i>✦</i><span>Downed Branches</span><i>✦</i>
+        <span>Filamentous Algae</span><i>✦</i><span>Tree Trimming</span><i>✦</i>
         <span>Eurasian Watermilfoil</span><i>✦</i><span>Water Chestnut</span><i>✦</i><span>Hydrilla</span><i>✦</i>
         <span>Lily Pads</span><i>✦</i><span>Cattails</span><i>✦</i><span>Coontail</span><i>✦</i>
-        <span>Filamentous Algae</span><i>✦</i><span>Downed Branches</span><i>✦</i>
+        <span>Filamentous Algae</span><i>✦</i><span>Tree Trimming</span><i>✦</i>
       </div>
     </div>
 
@@ -78,7 +78,7 @@ get_header();
             <li>Specialized aquatic vegetation removal</li>
             <li>Residential, commercial, and municipal projects</li>
             <li>Vegetation collected and removed from the water</li>
-            <li>Based in the Hudson Valley and serving New York, New Jersey, and Pennsylvania</li>
+            <li>Based in the Hudson Valley, serving the Northeast and beyond</li>
           </ul>
         </div>
 
@@ -113,8 +113,8 @@ get_header();
     <section class="section section--band on-dark" id="home-services">
       <div class="wrap">
         <div class="section__head reveal">
-          <p class="eyebrow">Mechanical Aquatic Vegetation Management</p>
-          <h2 class="h2">Complete Weed and Debris Removal Services</h2>
+          <p class="eyebrow">Complete Weed and Debris Removal Services</p>
+          <h2 class="h2">Got Lake Weeds?</h2>
         </div>
 
         <div class="svcs">
@@ -166,7 +166,7 @@ get_header();
                 alt="A full load of decomposing weed on the boat's conveyor, on its way off the water.">
             </figure>
             <span class="svc__num">05</span>
-            <h3 class="svc__title">Lake Muck Removal</h3>
+            <h3 class="svc__title">Lake Muck and Algae Removal</h3>
             <p class="svc__text">Physically remove accumulated organic sediment from selected docks, shorelines, swimming areas, and shallow sections.</p>
           </article>
 
@@ -381,7 +381,7 @@ get_header();
               <span class="approach__n">05</span>
               <div>
                 <h3 class="approach__h">Regional Service</h3>
-                <p class="approach__p">Based in the Hudson Valley, we serve residential, commercial, association, and municipal projects throughout New York, New Jersey, and Pennsylvania.</p>
+                <p class="approach__p">Based in the Hudson Valley, we serve residential, commercial, association, and municipal projects throughout the Northeast and beyond, traveling for larger projects outside the region.</p>
               </div>
             </li>
           </ul>

@@ -20,7 +20,7 @@ get_header();
       <div class="xhero__copy">
         <p class="phero__crumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a> <i>/</i> <b>Resources</b></p>
         <h1 class="xhero__title">Aquatic Weed Removal Videos and <em>Guides</em></h1>
-        <p class="xhero__lead">Explore videos and helpful guides on mechanical aquatic weed removal for lake, pond, and shoreline owners across New York, New Jersey, and Pennsylvania. Learn how harvesting works, identify common aquatic plants, and understand which removal approach may fit your waterbody.</p>
+        <p class="xhero__lead">Explore videos and helpful guides on mechanical aquatic weed removal for lake, pond, and shoreline owners across the Northeast and beyond. Learn how harvesting works, identify common aquatic plants, and choose the removal approach that fits your waterbody.</p>
         <div class="xhero__cta">
           <a class="btn btn--primary btn--lg" href="#blogs">Explore Insights <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn--ghost btn--lg" href="tel:+15184417742">Call +1 (518) 441-7742</a>
@@ -63,7 +63,7 @@ get_header();
         vegetation from shallow, hard-to-access waters. The demonstration highlights the mechanical
         process and equipment used to manage submerged weeds, floating material, and shoreline growth.</p>
         <p class="res__videoP">Project footage showcases operations across lakes, ponds, and shorelines
-        in New York, New Jersey, and Pennsylvania.</p>
+        in the Northeast and the surrounding regions.</p>
       </article>
 
       <div class="res__list" id="blogs">
@@ -104,9 +104,8 @@ get_header();
       <h2 class="h2">Help Prevent the Spread of Invasive Species</h2>
       <p class="lead">Cleaning boats, trailers, anchors, fishing equipment, and waders before moving
       between waterbodies can help prevent the spread of invasive plants.</p>
-      <p class="lead">Requirements vary by state. Check the current guidance from the appropriate New
-      York, New Jersey, or Pennsylvania natural-resources agency before launching or transporting
-      equipment.</p>
+      <p class="lead">Before launching or transporting equipment, consult local natural-resource agency
+      regulations, as requirements vary by state.</p>
       <p class="lead">Looking for information about a specific aquatic plant?
       <a class="text-link" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Contact us</a> for identification
       help and removal guidance.</p>

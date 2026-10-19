@@ -45,7 +45,7 @@ get_header();
         <img src="<?php echo awh_img( 'commercial.jpg' ); ?>" width="1600" height="1200" loading="eager" decoding="async"
           alt="The shallow-draft work boat lifting a load of harvested weed onto the shoreline.">
       </figure>
-      <span class="rhero__tag">Commercial Aquatic Weed Removal in New York, New Jersey, and Pennsylvania</span>
+      <span class="rhero__tag">Commercial Aquatic Weed Removal in the Northeast and beyond</span>
     </div>
   </div>
 </section>

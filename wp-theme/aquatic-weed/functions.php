@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AWH_VERSION', '2.8.2' );
+define( 'AWH_VERSION', '2.9.0' );
 
 /* ============================================================== theme setup */
 
@@ -71,7 +71,7 @@ function awh_img( $file ) {
  */
 function awh_document_title( $title ) {
 	if ( is_front_page() ) {
-		return 'Aquatic Weed Removal in NY, NJ & PA | Aquatic Weed Harvesting LLC';
+		return 'Aquatic Weed Removal in the Northeast & Beyond | Aquatic Weed Harvesting LLC';
 	}
 	if ( is_page( 'about' ) ) {
 		return 'About Aquatic Weed Harvesting LLC | Hudson Valley';

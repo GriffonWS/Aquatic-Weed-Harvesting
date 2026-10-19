@@ -65,7 +65,7 @@ get_header();
       <span class="line"><span>Mechanical Aquatic Weed <em>Harvesting</em></span></span>
       <span class="line"><span>for Lakes, Ponds, and Shorelines</span></span>
     </h1>
-    <p class="hero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC uses a sustainable mechanical process to cut, collect, and remove unwanted aquatic vegetation and biomass without herbicides across New York, New Jersey, and Pennsylvania.</p>
+    <p class="hero__lead">Based in the Hudson Valley, Aquatic Weed Harvesting LLC uses a sustainable mechanical process to cut, collect, and remove unwanted aquatic vegetation and biomass without herbicides across the Northeast and beyond.</p>
 
     <div class="hero__cta">
       <a class="btn btn--primary btn--lg" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>#quote">Request a Free Estimate <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
